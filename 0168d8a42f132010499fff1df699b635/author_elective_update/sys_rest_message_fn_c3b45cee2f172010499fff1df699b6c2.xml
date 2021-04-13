@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>Default GET</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>CloudifyIntegration [ Default GET ]</qualified_name>
+        <rest_endpoint>http://{cloudify_manager}/api/v3.1/</rest_endpoint>
+        <rest_message display_value="CloudifyIntegration">2f5454222f572010499fff1df699b6f0</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-06 12:40:14</sys_created_on>
+        <sys_id>c3b45cee2f172010499fff1df699b6c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sys_rest_message_fn_c3b45cee2f172010499fff1df699b6c2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-06 12:40:14</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>sys_rest_message_fn_c3b45cee2f172010499fff1df699b6c2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>Default GET</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>CloudifyIntegration [ Default GET ]</qualified_name><rest_endpoint>http://{cloudify_manager}/api/v3.1/</rest_endpoint><rest_message display_value="CloudifyIntegration">2f5454222f572010499fff1df699b6f0</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-04-06 12:40:14</sys_created_on><sys_id>c3b45cee2f172010499fff1df699b6c2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Default GET</sys_name><sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package><sys_policy/><sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope><sys_update_name>sys_rest_message_fn_c3b45cee2f172010499fff1df699b6c2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-04-06 12:40:14</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>270962723</payload_hash>
+        <record_name>Default GET</record_name>
+        <reverted_from/>
+        <source>4568d8a42f132010499fff1df699b637</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-06 12:40:14</sys_created_on>
+        <sys_id>4fb498222f572010499fff1df699b68b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178a73298710000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-06 12:40:14</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>87b498223157201036cae2adba5e7f8b</update_guid>
+        <update_guid_history>87b498223157201036cae2adba5e7f8b:270962723</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-06 12:48:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>0ea5496d7c9e462c82b396ad35efd421</sys_id>
+        <sys_metadata>c3b45cee2f172010499fff1df699b6c2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_c3b45cee2f172010499fff1df699b6c2</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_c3b45cee2f172010499fff1df699b6c2">4fb498222f572010499fff1df699b68b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-06 12:48:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

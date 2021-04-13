@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Cloudify">d3612e502f636010499fff1df699b699</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-12 09:24:37</sys_created_on>
+        <sys_id>5c81ae502f636010499fff1df699b6f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Cloudify</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_5c81ae502f636010499fff1df699b6f2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-12 09:24:37</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>sc_cat_item_catalog_5c81ae502f636010499fff1df699b6f2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Cloudify">d3612e502f636010499fff1df699b699</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-04-12 09:24:37</sys_created_on><sys_id>5c81ae502f636010499fff1df699b6f2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.Cloudify</sys_name><sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package><sys_policy/><sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope><sys_update_name>sc_cat_item_catalog_5c81ae502f636010499fff1df699b6f2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-04-12 09:24:37</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>533226811</payload_hash>
+        <record_name>Service Catalog.Cloudify</record_name>
+        <reverted_from/>
+        <source>4568d8a42f132010499fff1df699b637</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-12 09:24:37</sys_created_on>
+        <sys_id>1081ae502f636010499fff1df699b6f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178c565a9de0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-12 09:24:37</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>9481ae50936360103e0125039c90c1f5</update_guid>
+        <update_guid_history>9481ae50936360103e0125039c90c1f5:533226811</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.Cloudify">7f9122902f636010499fff1df699b6ab</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-12 09:25:08</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>01682c0d320e4b82852ab4ad1bcb5d99</sys_id>
+        <sys_metadata>5c81ae502f636010499fff1df699b6f2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Cloudify</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_5c81ae502f636010499fff1df699b6f2</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_5c81ae502f636010499fff1df699b6f2">1081ae502f636010499fff1df699b6f6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-12 09:25:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

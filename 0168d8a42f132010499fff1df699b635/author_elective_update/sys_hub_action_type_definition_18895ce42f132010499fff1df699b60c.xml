@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Provide a list of installed blueprints on the system</description>
+        <ih_action>false</ih_action>
+        <internal_name>list_blueprints</internal_name>
+        <label_cache>[{"name":"{{action.username}}","label":"action➛Username","type":"action","ref":""},{"name":"{{action.password}}","label":"action➛Password","type":"action","ref":""},{"name":"{{action.tenant}}","label":"action➛Tenant","type":"action","ref":""}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>List Blueprints</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-31 07:53:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>18895ce42f132010499fff1df699b60c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>List Blueprints</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_18895ce42f132010499fff1df699b60c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-31 12:22:32</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="DELETE" query="documentkey=18895ce42f132010499fff1df699b60c"/>
+    <sys_variable_value action="DELETE" query="document_key=18895ce42f132010499fff1df699b60c"/>
+    <sys_hub_step_instance action="DELETE" query="action=18895ce42f132010499fff1df699b60c^sys_idNOT INc9275da42fd32010499fff1df699b6e5"/>
+    <sys_hub_step_instance action="DELETE">
+        <action display_value="List Blueprints">18895ce42f132010499fff1df699b60c</action>
+        <cid>31644793-b0d6-454f-a588-4b7de7928f1a</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>listBlueprintsFromCFY</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-31 12:22:31</sys_created_on>
+        <sys_id>c9275da42fd32010499fff1df699b6e5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-31 12:22:32</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="DELETE" query="document_key=c9275da42fd32010499fff1df699b6e5"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c9275da42fd32010499fff1df699b6e5</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-31 12:22:32</sys_created_on>
+        <sys_id>99279da42fd32010499fff1df699b605</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-31 12:22:32</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c9275da42fd32010499fff1df699b6e5</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-31 12:22:32</sys_created_on>
+        <sys_id>d5279da42fd32010499fff1df699b605</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-31 12:22:32</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c9275da42fd32010499fff1df699b6e5</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-31 12:22:32</sys_created_on>
+        <sys_id>dd279da42fd32010499fff1df699b604</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-31 12:22:32</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_hub_input_scripts action="DELETE" query="instance=c9275da42fd32010499fff1df699b6e5^sys_idNOT IN55279da42fd32010499fff1df699b601"/>
+    <sys_hub_input_scripts action="DELETE">
+        <active>false</active>
+        <input_name>resource_path</input_name>
+        <instance>c9275da42fd32010499fff1df699b6e5</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"resource_path":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-31 12:22:32</sys_created_on>
+        <sys_id>55279da42fd32010499fff1df699b601</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-31 12:22:32</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_input action="DELETE" query="model=18895ce42f132010499fff1df699b60c^sys_idNOT IN68e998282f132010499fff1df699b6b5,a4e998282f132010499fff1df699b648,c9275da42fd32010499fff1df699b6da"/>
+    <sys_hub_action_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=231a9f3a-a8f7-4278-b075-796e9665c4c1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>username</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Username</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="List Blueprints">18895ce42f132010499fff1df699b60c</model>
+        <model_id>18895ce42f132010499fff1df699b60c</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_18895ce42f132010499fff1df699b60c</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-31 07:54:53</sys_created_on>
+        <sys_id>68e998282f132010499fff1df699b6b5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-31 08:02:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1192d291-c94b-4ac0-b545-3f19258adb03</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>password</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Password</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="List Blueprints">18895ce42f132010499fff1df699b60c</model>
+        <model_id>18895ce42f132010499fff1df699b60c</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_18895ce42f132010499fff1df699b60c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-31 07:54:53</sys_created_on>
+        <sys_id>a4e998282f132010499fff1df699b648</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-31 07:54:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4683f1e6-1f0b-4e46-926c-f6838db9cbb8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tenant</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Tenant</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="List Blueprints">18895ce42f132010499fff1df699b60c</model>
+        <model_id>18895ce42f132010499fff1df699b60c</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_18895ce42f132010499fff1df699b60c</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-31 12:22:31</sys_created_on>
+        <sys_id>c9275da42fd32010499fff1df699b6da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-31 12:22:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_input_18895ce42f132010499fff1df699b60c^sys_idNOT IN49275da42fd32010499fff1df699b6e2,a4e998282f132010499fff1df699b650,f0e998282f132010499fff1df699b6ba"/>
+    <sys_documentation action="DELETE">
+        <element>tenant</element>
+        <help/>
+        <hint/>
+        <label>Tenant</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_18895ce42f132010499fff1df699b60c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-31 12:22:31</sys_created_on>
+        <sys_id>49275da42fd32010499fff1df699b6e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-31 12:22:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>password</element>
+        <help/>
+        <hint/>
+        <label>Password</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_18895ce42f132010499fff1df699b60c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-31 07:54:53</sys_created_on>
+        <sys_id>a4e998282f132010499fff1df699b650</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-31 07:54:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>username</element>
+        <help/>
+        <hint/>
+        <label>Username</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_18895ce42f132010499fff1df699b60c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-31 07:54:53</sys_created_on>
+        <sys_id>f0e998282f132010499fff1df699b6ba</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-31 08:02:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>sys_hub_action_type_definition_18895ce42f132010499fff1df699b60c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_action_type_definition"&gt;&lt;sys_hub_action_type_definition action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;action_template/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description&gt;Provide a list of installed blueprints on the system&lt;/description&gt;&lt;ih_action&gt;false&lt;/ih_action&gt;&lt;internal_name&gt;list_blueprints&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"{{action.username}}","label":"action➛Username","type":"action","ref":""},{"name":"{{action.password}}","label":"action➛Password","type":"action","ref":""},{"name":"{{action.tenant}}","label":"action➛Tenant","type":"action","ref":""}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;name&gt;List Blueprints&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;state&gt;draft&lt;/state&gt;&lt;sys_class_name&gt;sys_hub_action_type_definition&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-31 07:53:13&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;18895ce42f132010499fff1df699b60c&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;List Blueprints&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cloudify" source="x_607849_cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_action_type_definition_18895ce42f132010499fff1df699b60c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 12:22:32&lt;/sys_updated_on&gt;&lt;system_level&gt;false&lt;/system_level&gt;&lt;type/&gt;&lt;/sys_hub_action_type_definition&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=18895ce42f132010499fff1df699b60c"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=18895ce42f132010499fff1df699b60c"/&gt;&lt;sys_hub_step_instance action="delete_multiple" query="action=18895ce42f132010499fff1df699b60c^sys_idNOT INc9275da42fd32010499fff1df699b6e5"/&gt;&lt;sys_hub_step_instance action="INSERT_OR_UPDATE"&gt;&lt;action display_value="List Blueprints"&gt;18895ce42f132010499fff1df699b60c&lt;/action&gt;&lt;cid&gt;31644793-b0d6-454f-a588-4b7de7928f1a&lt;/cid&gt;&lt;extended_inputs/&gt;&lt;extended_outputs/&gt;&lt;icon/&gt;&lt;inputs/&gt;&lt;label&gt;listBlueprintsFromCFY&lt;/label&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs/&gt;&lt;section/&gt;&lt;step_type display_value="REST"&gt;07a762fb47222200b4fad7527c9a7129&lt;/step_type&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-31 12:22:31&lt;/sys_created_on&gt;&lt;sys_id&gt;c9275da42fd32010499fff1df699b6e5&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 12:22:32&lt;/sys_updated_on&gt;&lt;/sys_hub_step_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=c9275da42fd32010499fff1df699b6e5"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;c9275da42fd32010499fff1df699b6e5&lt;/document_key&gt;&lt;order&gt;12&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-31 12:22:32&lt;/sys_created_on&gt;&lt;sys_id&gt;99279da42fd32010499fff1df699b605&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 12:22:32&lt;/sys_updated_on&gt;&lt;value&gt;35aa573fd7802200bdbaee5b5e610375&lt;/value&gt;&lt;variable display_value="MID Application"&gt;f11ebf865f101300a09a2abd7f466652&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;c9275da42fd32010499fff1df699b6e5&lt;/document_key&gt;&lt;order&gt;13&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-31 12:22:32&lt;/sys_created_on&gt;&lt;sys_id&gt;d5279da42fd32010499fff1df699b605&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 12:22:32&lt;/sys_updated_on&gt;&lt;value&gt;18409d8007482000dada43c0d1021e8f&lt;/value&gt;&lt;variable display_value="Capabilities"&gt;c30a451d2f201300a09a839fb18c95b4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;c9275da42fd32010499fff1df699b6e5&lt;/document_key&gt;&lt;order&gt;25&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-31 12:22:32&lt;/sys_created_on&gt;&lt;sys_id&gt;dd279da42fd32010499fff1df699b604&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 12:22:32&lt;/sys_updated_on&gt;&lt;value&gt;post&lt;/value&gt;&lt;variable display_value="HTTP Method"&gt;e85b7ebf47222200b4fad7527c9a71e3&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=c9275da42fd32010499fff1df699b6e5^sys_idNOT IN55279da42fd32010499fff1df699b601"/&gt;&lt;sys_hub_input_scripts action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;input_name&gt;resource_path&lt;/input_name&gt;&lt;instance&gt;c9275da42fd32010499fff1df699b6e5&lt;/instance&gt;&lt;referenced_table&gt;sys_hub_step_instance&lt;/referenced_table&gt;&lt;script&gt;{"resource_path":{"scriptActive":false}}&lt;/script&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-31 12:22:32&lt;/sys_created_on&gt;&lt;sys_id&gt;55279da42fd32010499fff1df699b601&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 12:22:32&lt;/sys_updated_on&gt;&lt;/sys_hub_input_scripts&gt;&lt;sys_hub_action_input action="delete_multiple" query="model=18895ce42f132010499fff1df699b60c^sys_idNOT IN68e998282f132010499fff1df699b6b5,a4e998282f132010499fff1df699b648,c9275da42fd32010499fff1df699b6da"/&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=231a9f3a-a8f7-4278-b075-796e9665c4c1&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;username&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Username&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="List Blueprints"&gt;18895ce42f132010499fff1df699b60c&lt;/model&gt;&lt;model_id&gt;18895ce42f132010499fff1df699b60c&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_18895ce42f132010499fff1df699b60c&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;2&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-31 07:54:53&lt;/sys_created_on&gt;&lt;sys_id&gt;68e998282f132010499fff1df699b6b5&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 08:02:08&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1192d291-c94b-4ac0-b545-3f19258adb03&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;password&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Password&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="List Blueprints"&gt;18895ce42f132010499fff1df699b60c&lt;/model&gt;&lt;model_id&gt;18895ce42f132010499fff1df699b60c&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_18895ce42f132010499fff1df699b60c&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-31 07:54:53&lt;/sys_created_on&gt;&lt;sys_id&gt;a4e998282f132010499fff1df699b648&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 07:54:53&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4683f1e6-1f0b-4e46-926c-f6838db9cbb8&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;tenant&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Tenant&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="List Blueprints"&gt;18895ce42f132010499fff1df699b60c&lt;/model&gt;&lt;model_id&gt;18895ce42f132010499fff1df699b60c&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_18895ce42f132010499fff1df699b60c&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;3&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-31 12:22:31&lt;/sys_created_on&gt;&lt;sys_id&gt;c9275da42fd32010499fff1df699b6da&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 12:22:31&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_18895ce42f132010499fff1df699b60c^sys_idNOT IN49275da42fd32010499fff1df699b6e2,a4e998282f132010499fff1df699b650,f0e998282f132010499fff1df699b6ba"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;tenant&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Tenant&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_input_18895ce42f132010499fff1df699b60c&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-31 12:22:31&lt;/sys_created_on&gt;&lt;sys_id&gt;49275da42fd32010499fff1df699b6e2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Cloudify" source="x_607849_cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 12:22:31&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;password&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Password&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_input_18895ce42f132010499fff1df699b60c&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-31 07:54:53&lt;/sys_created_on&gt;&lt;sys_id&gt;a4e998282f132010499fff1df699b650&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Cloudify" source="x_607849_cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 07:54:53&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;username&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Username&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_input_18895ce42f132010499fff1df699b60c&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-31 07:54:53&lt;/sys_created_on&gt;&lt;sys_id&gt;f0e998282f132010499fff1df699b6ba&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Cloudify" source="x_607849_cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 08:02:09&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1528799304</payload_hash>
+        <record_name>List Blueprints</record_name>
+        <reverted_from/>
+        <source>4568d8a42f132010499fff1df699b637</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-31 12:22:33</sys_created_on>
+        <sys_id>ed279da42fd32010499fff1df699b654</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178883c3fce0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-31 12:22:33</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>29279da4afd320102970fd3a907f0554</update_guid>
+        <update_guid_history>29279da4afd320102970fd3a907f0554:-1528799304,538b9c6852132010aed7903a871ca01d:-1345611937,f0e998288c132010c76b8797b4b4afc6:-1295026033,90899428c51320100d03956edac3441b:-841268277</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-01 09:51:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>561ed3b04f9342acab1a10347d74a510</sys_id>
+        <sys_metadata>18895ce42f132010499fff1df699b60c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>List Blueprints</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_18895ce42f132010499fff1df699b60c</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_18895ce42f132010499fff1df699b60c">ed279da42fd32010499fff1df699b654</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-01 09:51:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

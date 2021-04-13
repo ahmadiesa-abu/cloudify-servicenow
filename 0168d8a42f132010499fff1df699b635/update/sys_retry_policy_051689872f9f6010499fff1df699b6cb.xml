@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_retry_policy">
+    <sys_retry_policy action="INSERT_OR_UPDATE">
+        <condition table="http_retry_conditions">response_bodyNOT LIKEterminated^response_bodyNOT LIKEcancelled^response_bodyNOT LIKEfailed^EQ<item endquery="false" field="response_body" goto="false" newquery="false" operator="NOT LIKE" or="false" value="terminated"/>
+            <item endquery="false" field="response_body" goto="false" newquery="false" operator="NOT LIKE" or="false" value="cancelled"/>
+            <item endquery="false" field="response_body" goto="false" newquery="false" operator="NOT LIKE" or="false" value="failed"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <connection_type>http_retry_conditions</connection_type>
+        <count>60</count>
+        <interval>15</interval>
+        <name>Check Status</name>
+        <restrict_to>http_method,status_code,error,response_body,response_headers</restrict_to>
+        <retry_strategy>fixed_time_interval</retry_strategy>
+        <sys_class_name>sys_retry_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-08 05:36:06</sys_created_on>
+        <sys_id>051689872f9f6010499fff1df699b6cb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Check Status</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sys_retry_policy_051689872f9f6010499fff1df699b6cb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-08 05:50:37</sys_updated_on>
+    </sys_retry_policy>
+</record_update>
