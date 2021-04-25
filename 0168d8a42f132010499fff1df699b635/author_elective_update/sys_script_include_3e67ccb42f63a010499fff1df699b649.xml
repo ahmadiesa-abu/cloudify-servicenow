@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_607849_cloudify.cloudify_deployments</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>cloudify_deployments</name>
+        <script><![CDATA[var cloudify_deployments = Class.create();
+cloudify_deployments.prototype = {
+    initialize: function() {
+    },
+	/*
+	* @return {Object} Deployemnt List JSON
+	*/
+	listDeployments: function() {
+		var http = new cloudify_http("Cloudify Deployments", "List Deployments", null);
+		http.setQueryParam("_include","id");
+		var parsedResponse = http.execute();
+		return parsedResponse.items;
+	},
+	
+
+    type: 'cloudify_deployments'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-13 11:29:11</sys_created_on>
+        <sys_id>3e67ccb42f63a010499fff1df699b649</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>cloudify_deployments</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sys_script_include_3e67ccb42f63a010499fff1df699b649</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-13 11:33:32</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>sys_script_include_3e67ccb42f63a010499fff1df699b649</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_607849_cloudify.cloudify_deployments&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;cloudify_deployments&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var cloudify_deployments = Class.create();
+cloudify_deployments.prototype = {
+    initialize: function() {
+    },
+	/*
+	* @return {Object} Deployemnt List JSON
+	*/
+	listDeployments: function() {
+		var http = new cloudify_http("Cloudify Deployments", "List Deployments", null);
+		http.setQueryParam("_include","id");
+		var parsedResponse = http.execute();
+		return parsedResponse.items;
+	},
+	
+
+    type: 'cloudify_deployments'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-13 11:29:11&lt;/sys_created_on&gt;&lt;sys_id&gt;3e67ccb42f63a010499fff1df699b649&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;cloudify_deployments&lt;/sys_name&gt;&lt;sys_package display_value="Cloudify" source="x_607849_cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_3e67ccb42f63a010499fff1df699b649&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-13 11:33:32&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>701694205</payload_hash>
+        <record_name>cloudify_deployments</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-13 11:33:32</sys_created_on>
+        <sys_id>a69808382f63a010499fff1df699b631</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178cb020c5e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-13 11:33:32</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>ae9808388563a0102c52ef3040bd1a30</update_guid>
+        <update_guid_history>ae9808388563a0102c52ef3040bd1a30:701694205,02a784f4ed63a01071211bb369a3829e:1696865293,f697ccb47c63a0102450b9a8a9c27643:2146652091</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 13:00:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>74e2351f4c384e2689d32dd8eb748719</sys_id>
+        <sys_metadata>3e67ccb42f63a010499fff1df699b649</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cloudify_deployments</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>sys_script_include_3e67ccb42f63a010499fff1df699b649</sys_update_name>
+        <sys_update_version display_value="sys_script_include_3e67ccb42f63a010499fff1df699b649">a69808382f63a010499fff1df699b631</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 13:00:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

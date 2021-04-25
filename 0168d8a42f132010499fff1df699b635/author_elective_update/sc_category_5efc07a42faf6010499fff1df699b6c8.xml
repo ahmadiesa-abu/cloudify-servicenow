@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category">
+    <sc_category action="DELETE">
+        <active>true</active>
+        <description/>
+        <entitlement_script/>
+        <header_icon/>
+        <homepage_image/>
+        <homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer>
+        <icon/>
+        <image/>
+        <location/>
+        <mobile_hide_description>false</mobile_hide_description>
+        <mobile_picture/>
+        <mobile_subcategory_render_type>list</mobile_subcategory_render_type>
+        <module/>
+        <order>0</order>
+        <parent/>
+        <roles/>
+        <sc_catalog display_value="Cloudify Catalog">879b87242faf6010499fff1df699b6d0</sc_catalog>
+        <sys_class_name>sc_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-13 07:13:27</sys_created_on>
+        <sys_id>5efc07a42faf6010499fff1df699b6c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cloudify Blueprints</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sc_category_5efc07a42faf6010499fff1df699b6c8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-13 07:13:27</sys_updated_on>
+        <title>Cloudify Blueprints</title>
+    </sc_category>
+    <sys_translated_text action="DELETE" query="documentkey=5efc07a42faf6010499fff1df699b6c8"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>sc_category_5efc07a42faf6010499fff1df699b6c8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category"><sc_category action="INSERT_OR_UPDATE"><active>true</active><description/><entitlement_script/><header_icon/><homepage_image/><homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer><icon/><image/><location/><mobile_hide_description>false</mobile_hide_description><mobile_picture/><mobile_subcategory_render_type>list</mobile_subcategory_render_type><module/><order>0</order><parent/><roles/><sc_catalog display_value="Cloudify Catalog">879b87242faf6010499fff1df699b6d0</sc_catalog><sys_class_name>sc_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-04-13 07:13:27</sys_created_on><sys_id>5efc07a42faf6010499fff1df699b6c8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cloudify Blueprints</sys_name><sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package><sys_policy/><sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope><sys_update_name>sc_category_5efc07a42faf6010499fff1df699b6c8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-04-13 07:13:27</sys_updated_on><title>Cloudify Blueprints</title></sc_category><sys_translated_text action="delete_multiple" query="documentkey=5efc07a42faf6010499fff1df699b6c8"/></record_update>]]></payload>
+        <payload_hash>-801969246</payload_hash>
+        <record_name>Cloudify Blueprints</record_name>
+        <reverted_from/>
+        <source>4568d8a42f132010499fff1df699b637</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-13 07:13:27</sys_created_on>
+        <sys_id>b41d47a42faf6010499fff1df699b6fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178ca13f0780000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-13 07:13:27</sys_updated_on>
+        <type>Category</type>
+        <update_guid>fc1d47a4ccaf60105088158ec13a4cfb</update_guid>
+        <update_guid_history>fc1d47a4ccaf60105088158ec13a4cfb:-801969246</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Cloudify Blueprints">cefa7ed52f272010499fff1df699b61d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-15 13:49:48</sys_created_on>
+        <sys_db_object display_value="" name="sc_category">sc_category</sys_db_object>
+        <sys_id>136616ec80cb49ac85cf0b5c053e89b1</sys_id>
+        <sys_metadata>5efc07a42faf6010499fff1df699b6c8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cloudify Blueprints</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>sc_category_5efc07a42faf6010499fff1df699b6c8</sys_update_name>
+        <sys_update_version display_value="sc_category_5efc07a42faf6010499fff1df699b6c8">b41d47a42faf6010499fff1df699b6fc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 13:49:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
