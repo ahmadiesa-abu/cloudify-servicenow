@@ -20,6 +20,7 @@ cloudify_integration.prototype = {
 		http.setQueryParam("visibility", visibility);
 		http.setQueryParam("blueprint_archive_url", blueprint_archive_url);
 		http.setQueryParam("labels", labels);
+		http.setQueryParam("_include","id");
 		var parsedResponse = http.execute();
 		return parsedResponse;
 	},
@@ -36,6 +37,30 @@ cloudify_integration.prototype = {
 		var parsedResponse = http.execute();
 		return parsedResponse.items;
 	},
+	getBlueprintInputs: function(blueprint_id){
+		var http = new cloudify_http("Cloudify Blueprints", "Get Blueprint", null);
+		http.setQueryParam("id", blueprint_id);
+		http.setQueryParam("_include","plan");
+		var parsedResponse = http.execute();
+		var bp_inputs = parsedResponse.items[0].plan.inputs;
+		Object.keys(bp_inputs).forEach(function(key) {			
+			if (bp_inputs[key]["default"] !== undefined && bp_inputs[key]["type"] === undefined){
+				if (Array.isArray(bp_inputs[key]["default"]))
+					bp_inputs[key]["type"] = 'list';
+				else if (typeof bp_inputs[key]["default"] === 'number')
+					bp_inputs[key]["type"] = 'float';
+				else if (typeof bp_inputs[key]["default"] === 'string')
+					bp_inputs[key]["type"] = 'string';
+				else if (typeof bp_inputs[key]["default"] === 'object')
+					bp_inputs[key]["type"] = 'dict';
+				else if (typeof bp_inputs[key]["default"] === 'boolean')
+					bp_inputs[key]["type"] = 'boolean';
+				else
+					bp_inputs[key]["type"] = 'string';
+			}
+		});
+		return bp_inputs;
+	},
 	
 	/* Deployments Integration */
 	createDeployment: function(blueprint_id, deployment_id, inputs, site_name, labels, private_resource, skip_plugins_validation, visibility){
@@ -50,9 +75,10 @@ cloudify_integration.prototype = {
 		if (String(site_name)!=''){
 			content["site_name"] = String(site_name);
 		}
-		gs.info("content after : "+JSON.stringify(content));
+		gs.info("create deployment content : "+JSON.stringify(content, null, 4));
 		var http = new cloudify_http("Cloudify Deployments", "Create Deployment", JSON.stringify(content));
 		http.setParam("deployment_id", deployment_id);
+		http.setQueryParam("_include","id");
 		var parsedResponse = http.execute();
 		return parsedResponse;
 		
@@ -102,10 +128,11 @@ cloudify_integration.prototype = {
 			"queue": Boolean(queue),
 		};
 		if (String(schedule)!=''){
-			content["schedule"] = String(schedule);
+			content["scheduled_time"] = String(schedule);
 		}
+		gs.info("content = "+JSON.stringify(content, null, 4));
 		
-		var http = new cloudify_http("Cloudify Exeuctions", "Start Execution", JSON.stringify(content));
+		var http = new cloudify_http("Cloudify Executions", "Start Execution", JSON.stringify(content));
 		http.setQueryParam("_include","id");
 		var parsedResponse = http.execute();
 		return parsedResponse;
@@ -115,16 +142,16 @@ cloudify_integration.prototype = {
 			"deployment_id": String(deployment_id),
 			"action": String(action)
 		};
-		var http = new cloudify_http("Cloudify Exeuctions", "Cancel Execution", JSON.stringify(content));
-		http.setParam("excution_id", excution_id);
+		var http = new cloudify_http("Cloudify Executions", "Cancel Execution", JSON.stringify(content));
+		http.setParam("execution_id", execution_id);
 		http.setQueryParam("_include","id");
 		var parsedResponse = http.execute();
 		return parsedResponse;
 	},
 	getExecution: function(execution_id){
-		var http = new cloudify_http("Cloudify Exeuctions", "Get Execution", null);
-		http.setParam("excution_id", excution_id);
-		http.setQueryParam("_include","[id, status, error]");
+		var http = new cloudify_http("Cloudify Executions", "Get Execution", null);
+		http.setParam("execution_id", execution_id);
+		http.setQueryParam("_include",['id', 'status', 'error']);
 		var parsedResponse = http.execute();
 		return parsedResponse;
 	},
@@ -172,13 +199,13 @@ cloudify_integration.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-15 12:58:02</sys_created_on>
         <sys_id>5e2e6e5d2fe32010499fff1df699b660</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>65</sys_mod_count>
         <sys_name>cloudify_integration</sys_name>
         <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name>sys_script_include_5e2e6e5d2fe32010499fff1df699b660</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-22 07:34:17</sys_updated_on>
+        <sys_updated_on>2021-05-10 07:16:25</sys_updated_on>
     </sys_script_include>
 </record_update>
