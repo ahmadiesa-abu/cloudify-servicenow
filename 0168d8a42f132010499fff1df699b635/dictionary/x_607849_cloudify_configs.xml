@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Configs" max_length="40" name="x_607849_cloudify_configs" sizeclass="1" type="collection">
+    <element label="Configs" max_length="40" name="x_607849_cloudify_configs" sizeclass="2" type="collection">
         <element label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Host" max_length="255" name="host" type="string_full_utf8"/>
         <element label="Password" mandatory="true" max_length="255" name="password" type="password2"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Resources" max_length="40" name="x_607849_cloudify_resources" sizeclass="11" type="collection">
+    <element label="Resources" max_length="40" name="x_607849_cloudify_resources" sizeclass="0" type="collection">
         <element label="Resource ID" max_length="255" name="resource_id" type="string_full_utf8"/>
         <element label="Resource Type" max_length="255" name="resource_type" type="string_full_utf8"/>
     </element>
