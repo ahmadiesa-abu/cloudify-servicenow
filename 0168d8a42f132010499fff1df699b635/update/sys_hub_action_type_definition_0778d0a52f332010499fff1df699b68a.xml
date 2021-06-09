@@ -12,8 +12,8 @@
         <description/>
         <ih_action>false</ih_action>
         <internal_name>create_deployment</internal_name>
-        <label_cache>[{"name":"{{action.blueprint_id}}","label":"action➛Blueprint ID","type":"action","ref":""},{"name":"{{action.deployment_id}}","label":"action➛Deployment ID","type":"action","ref":""},{"name":"{{action.inputs}}","label":"action➛Inputs","type":"action","ref":""},{"name":"{{action.inputs.Input}}","label":"action➛Inputs➛Input","type":"action","ref":""},{"name":"{{action.inputs.Input.Name}}","label":"action➛Inputs➛Input➛Name","type":"action","ref":""},{"name":"{{action.inputs.Input.Value}}","label":"action➛Inputs➛Input➛Value","type":"action","ref":""},{"name":"{{action.site_name}}","label":"action➛Site Name","type":"action","ref":""},{"name":"{{action.labels}}","label":"action➛Labels","type":"action","ref":""},{"name":"{{action.labels.Label}}","label":"action➛Labels➛Label","type":"action","ref":""},{"name":"{{action.labels.Label.label_child1}}","label":"action➛Labels➛Label➛Label_child1","type":"action","ref":""},{"name":"{{action.private_resource}}","label":"action➛Private Resource","type":"action","ref":""},{"name":"{{action.skip_plugin_validations}}","label":"action➛Skip Plugin Validations","type":"action","ref":""},{"name":"{{action.visibility}}","label":"action➛Visibility","type":"action","ref":""},{"name":"{{action.labels.Label.Name}}","label":"action➛Labels➛Label➛Name","type":"action","ref":""},{"name":"{{action.labels.Label.Value}}","label":"action➛Labels➛Label➛Value","type":"action","ref":""},{"name":"{{action.inputs.Inputs}}","label":"action➛Inputs➛Inputs","type":"action","ref":""},{"name":"{{action.inputs.Inputs.Input_Name}}","label":"action➛Inputs➛Inputs➛Input Name","type":"action","ref":""},{"name":"{{action.inputs.Inputs.Input_name}}","label":"action➛Inputs➛Inputs➛Input name","type":"action","ref":""},{"name":"{{action.inputs.Inputs.input_name}}","label":"action➛Inputs➛Inputs➛input name","type":"action","ref":""},{"name":"{{action.inputs.Inputs.input_value}}","label":"action➛Inputs➛Inputs➛input value","type":"action","ref":""},{"name":"{{action.labels.Labels}}","label":"action➛Labels➛Labels","type":"action","ref":""},{"name":"{{action.labels.Labels.label_name}}","label":"action➛Labels➛Labels➛label name","type":"action","ref":""},{"name":"{{action.labels.Labels.label_value}}","label":"action➛Labels➛Labels➛label value","type":"action","ref":""},{"name":"{{action.inputs.Inputs.input_type}}","label":"action➛Inputs➛Inputs➛input type","type":"action","ref":""},{"name":"{{step[f67807bb-0a0a-4e6b-8e6d-c0ef88118a62].variable}}","label":"step➛Call Create Deployment API➛variable","type":"step","ref":""},{"name":"{{step[f67807bb-0a0a-4e6b-8e6d-c0ef88118a62].result}}","label":"step➛Call Create Deployment API➛Result","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>a2651699878c7810669e63d73cbb35eb</latest_snapshot>
+        <label_cache>[{"name":"{{action.blueprint_id}}","label":"action➛Blueprint ID","type":"action","ref":""},{"name":"{{action.deployment_id}}","label":"action➛Deployment ID","type":"action","ref":""},{"name":"{{action.inputs}}","label":"action➛Inputs","type":"action","ref":""},{"name":"{{action.inputs.Input}}","label":"action➛Inputs➛Input","type":"action","ref":""},{"name":"{{action.inputs.Input.Name}}","label":"action➛Inputs➛Input➛Name","type":"action","ref":""},{"name":"{{action.inputs.Input.Value}}","label":"action➛Inputs➛Input➛Value","type":"action","ref":""},{"name":"{{action.site_name}}","label":"action➛Site Name","type":"action","ref":""},{"name":"{{action.labels}}","label":"action➛Labels","type":"action","ref":""},{"name":"{{action.labels.Label}}","label":"action➛Labels➛Label","type":"action","ref":""},{"name":"{{action.labels.Label.label_child1}}","label":"action➛Labels➛Label➛Label_child1","type":"action","ref":""},{"name":"{{action.private_resource}}","label":"action➛Private Resource","type":"action","ref":""},{"name":"{{action.skip_plugin_validations}}","label":"action➛Skip Plugin Validations","type":"action","ref":""},{"name":"{{action.visibility}}","label":"action➛Visibility","type":"action","ref":""},{"name":"{{action.labels.Label.Name}}","label":"action➛Labels➛Label➛Name","type":"action","ref":""},{"name":"{{action.labels.Label.Value}}","label":"action➛Labels➛Label➛Value","type":"action","ref":""},{"name":"{{action.inputs.Inputs}}","label":"action➛Inputs➛Inputs","type":"action","ref":""},{"name":"{{action.inputs.Inputs.Input_Name}}","label":"action➛Inputs➛Inputs➛Input Name","type":"action","ref":""},{"name":"{{action.inputs.Inputs.Input_name}}","label":"action➛Inputs➛Inputs➛Input name","type":"action","ref":""},{"name":"{{action.inputs.Inputs.input_name}}","label":"action➛Inputs➛Inputs➛input name","type":"action","ref":""},{"name":"{{action.inputs.Inputs.input_value}}","label":"action➛Inputs➛Inputs➛input value","type":"action","ref":""},{"name":"{{action.labels.Labels}}","label":"action➛Labels➛Labels","type":"action","ref":""},{"name":"{{action.labels.Labels.label_name}}","label":"action➛Labels➛Labels➛label name","type":"action","ref":""},{"name":"{{action.labels.Labels.label_value}}","label":"action➛Labels➛Labels➛label value","type":"action","ref":""},{"name":"{{action.inputs.Inputs.input_type}}","label":"action➛Inputs➛Inputs➛input type","type":"action","ref":""},{"name":"{{action.created_by}}","label":"action➛Created By","type":"action","ref":""},{"name":"{{action.creator_email}}","label":"action➛Creator Email","type":"action","ref":""},{"name":"{{step[f67807bb-0a0a-4e6b-8e6d-c0ef88118a62].variable}}","label":"step➛Call Create Deployment API➛variable","type":"step","ref":""},{"name":"{{step[f67807bb-0a0a-4e6b-8e6d-c0ef88118a62].result}}","label":"step➛Call Create Deployment API➛Result","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>d1a80b2e87ac3010669e63d73cbb352d</latest_snapshot>
         <master_snapshot>a8e26d392fb32010499fff1df699b694</master_snapshot>
         <name>Create Deployment</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0778d0a52f332010499fff1df699b68a</sys_id>
-        <sys_mod_count>113</sys_mod_count>
+        <sys_mod_count>156</sys_mod_count>
         <sys_name>Create Deployment</sys_name>
         <sys_overrides/>
         <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_0778d0a52f332010499fff1df699b68a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-10 07:37:08</sys_updated_on>
+        <sys_updated_on>2021-06-08 05:04:45</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -70,10 +70,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-29 06:49:58</sys_created_on>
         <sys_id>6021a1f52fb32010499fff1df699b6cc</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-10 07:37:03</sys_updated_on>
+        <sys_updated_on>2021-06-08 05:04:40</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6021a1f52fb32010499fff1df699b6cc"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -126,11 +126,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-29 06:49:59</sys_created_on>
         <sys_id>b821e1f52fb32010499fff1df699b60c</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-10 07:37:03</sys_updated_on>
+        <sys_updated_on>2021-06-08 05:04:40</sys_updated_on>
         <value>(function execute(inputs, outputs) {
-  var cfy_integartion = new cloudify_integration();
+  var cfy_integration = new cloudify_integration();
 	// convert inputs array object to dict
   var dep_inputs = {};
   for (var i = 0; i &lt; inputs.dep_inputs.length; i++) {
@@ -172,7 +172,15 @@
       dep_labels.push(dep_label);
     }
   }
-  outputs.result = cfy_integartion.createDeployment(inputs.blueprint_id,inputs.deployment_id,dep_inputs,inputs.site_name, dep_labels, inputs.private_resource, inputs.skip_plugins_validation, inputs.visibility);
+  dep_labels.push({'created_from':'servicenow'});
+  var creator_email = inputs.creator_email;
+  // remove @ from the email and replace it with -at-
+  var lastIndex = creator_email.lastIndexOf('@');
+  creator_email = creator_email.substring(0, lastIndex) + '-at-' + creator_email.substring(lastIndex + 1);
+  
+  dep_labels.push({'created_by':creator_email});
+  
+  outputs.result = cfy_integration.createDeployment(inputs.blueprint_id,inputs.deployment_id,dep_inputs,inputs.site_name, dep_labels, inputs.private_resource, inputs.skip_plugins_validation, inputs.visibility);
   
 })(inputs, outputs);
 </value>
@@ -230,6 +238,30 @@
         <sys_updated_on>2021-04-29 06:49:59</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_6021a1f52fb32010499fff1df699b6cc</table>
         <value>{{action.blueprint_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>created_by</field>
+        <id>6021a1f52fb32010499fff1df699b6cc</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-02 07:41:28</sys_created_on>
+        <sys_id>92f274b087e47410669e63d73cbb3593</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-02 07:41:28</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_6021a1f52fb32010499fff1df699b6cc</table>
+        <value>{{action.created_by}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>creator_email</field>
+        <id>6021a1f52fb32010499fff1df699b6cc</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 04:52:50</sys_created_on>
+        <sys_id>3ee50f2a87ac3010669e63d73cbb35b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 04:52:50</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_6021a1f52fb32010499fff1df699b6cc</table>
+        <value>{{action.creator_email}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>deployment_id</field>
@@ -351,7 +383,7 @@
         <table>var__m_sys_hub_step_ext_input_6021a1f52fb32010499fff1df699b6cc</table>
         <value>{{action.visibility}}</value>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=6021a1f52fb32010499fff1df699b6cc^sys_idNOT IN2021a1f52fb32010499fff1df699b6f1,2c21a1f52fb32010499fff1df699b6d8,6c21a1f52fb32010499fff1df699b6fc,a821a1f52fb32010499fff1df699b6e0,ac21a1f52fb32010499fff1df699b6f8,e821a1f52fb32010499fff1df699b6dc,ec21a1f52fb32010499fff1df699b6d3,ec21a1f52fb32010499fff1df699b6f4"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=6021a1f52fb32010499fff1df699b6cc^sys_idNOT IN2021a1f52fb32010499fff1df699b6f1,2c21a1f52fb32010499fff1df699b6d8,6c21a1f52fb32010499fff1df699b6fc,a821a1f52fb32010499fff1df699b6e0,ac21a1f52fb32010499fff1df699b6f8,e821a1f52fb32010499fff1df699b6dc,ec21a1f52fb32010499fff1df699b6d3,ec21a1f52fb32010499fff1df699b6f4,fee50f2a87ac3010669e63d73cbb35a4"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1000,6 +1032,87 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>creator_email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Call Create Deployment API">6021a1f52fb32010499fff1df699b6cc</model>
+        <model_id>6021a1f52fb32010499fff1df699b6cc</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_6021a1f52fb32010499fff1df699b6cc</name>
+        <next_element/>
+        <order>800</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 04:52:50</sys_created_on>
+        <sys_id>fee50f2a87ac3010669e63d73cbb35a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 04:52:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
     <sys_hub_step_ext_output action="delete_multiple" query="model=6021a1f52fb32010499fff1df699b6cc^sys_idNOT IN7421e1f52fb32010499fff1df699b601"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1082,7 +1195,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=0778d0a52f332010499fff1df699b68a^sys_idNOT IN028370e92f732010499fff1df699b6bc,1283b82d2f732010499fff1df699b6de,5283b82d2f732010499fff1df699b6e4,a283b82d2f732010499fff1df699b6ea,d421a1f52fb32010499fff1df699b6ad,d821a1f52fb32010499fff1df699b6b6,de83b82d2f732010499fff1df699b6d7,e283b82d2f732010499fff1df699b6f0"/>
+    <sys_hub_action_input action="delete_multiple" query="model=0778d0a52f332010499fff1df699b68a^sys_idNOT IN028370e92f732010499fff1df699b6bc,1283b82d2f732010499fff1df699b6de,5283b82d2f732010499fff1df699b6e4,a283b82d2f732010499fff1df699b6ea,be950b2a87ac3010669e63d73cbb3549,d421a1f52fb32010499fff1df699b6ad,d821a1f52fb32010499fff1df699b6b6,de83b82d2f732010499fff1df699b6d7,e283b82d2f732010499fff1df699b6f0"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1145,14 +1258,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-28 08:52:15</sys_created_on>
         <sys_id>028370e92f732010499fff1df699b6bc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-28 08:52:15</sys_updated_on>
+        <sys_updated_on>2021-06-02 07:53:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1226,14 +1339,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-28 08:52:16</sys_created_on>
         <sys_id>1283b82d2f732010499fff1df699b6de</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-28 08:52:16</sys_updated_on>
+        <sys_updated_on>2021-06-02 07:53:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1307,14 +1420,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-28 08:52:16</sys_created_on>
         <sys_id>5283b82d2f732010499fff1df699b6e4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-28 08:52:16</sys_updated_on>
+        <sys_updated_on>2021-06-02 07:53:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1388,6 +1501,87 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-28 08:52:16</sys_created_on>
         <sys_id>a283b82d2f732010499fff1df699b6ea</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-02 07:53:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=7a168c65-7330-419f-a430-082845d46da5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>creator_email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Creator Email</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Deployment">0778d0a52f332010499fff1df699b68a</model>
+        <model_id>0778d0a52f332010499fff1df699b68a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_0778d0a52f332010499fff1df699b68a</name>
+        <next_element/>
+        <order>9</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 04:51:28</sys_created_on>
+        <sys_id>be950b2a87ac3010669e63d73cbb3549</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1395,7 +1589,7 @@
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-28 08:52:16</sys_updated_on>
+        <sys_updated_on>2021-06-08 04:51:28</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1469,14 +1663,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-29 06:49:57</sys_created_on>
         <sys_id>d421a1f52fb32010499fff1df699b6ad</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-29 07:40:33</sys_updated_on>
+        <sys_updated_on>2021-06-02 07:53:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1550,14 +1744,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-29 06:49:58</sys_created_on>
         <sys_id>d821a1f52fb32010499fff1df699b6b6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-29 07:40:33</sys_updated_on>
+        <sys_updated_on>2021-06-02 07:53:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1631,14 +1825,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-28 08:52:16</sys_created_on>
         <sys_id>de83b82d2f732010499fff1df699b6d7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-28 08:52:16</sys_updated_on>
+        <sys_updated_on>2021-06-02 07:53:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1712,14 +1906,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-28 08:52:16</sys_created_on>
         <sys_id>e283b82d2f732010499fff1df699b6f0</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-28 08:52:17</sys_updated_on>
+        <sys_updated_on>2021-06-02 07:53:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1815,7 +2009,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_0778d0a52f332010499fff1df699b68a^sys_idNOT IN1283b82d2f732010499fff1df699b6d6,2421a1f52fb32010499fff1df699b6bb,2a83b82d2f732010499fff1df699b6f8,2e83b82d2f732010499fff1df699b6ee,5a83b82d2f732010499fff1df699b6dc,9a83b82d2f732010499fff1df699b6e2,dc21a1f52fb32010499fff1df699b6b4,ea83b82d2f732010499fff1df699b6e8"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_0778d0a52f332010499fff1df699b68a^sys_idNOT IN1283b82d2f732010499fff1df699b6d6,2421a1f52fb32010499fff1df699b6bb,2a83b82d2f732010499fff1df699b6f8,2e83b82d2f732010499fff1df699b6ee,5a83b82d2f732010499fff1df699b6dc,7a950b2a87ac3010669e63d73cbb3551,9a83b82d2f732010499fff1df699b6e2,dc21a1f52fb32010499fff1df699b6b4,ea83b82d2f732010499fff1df699b6e8"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>blueprint_id</element>
         <help/>
@@ -1932,6 +2126,29 @@
         <url_target/>
     </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
+        <element>creator_email</element>
+        <help/>
+        <hint/>
+        <label>Creator Email</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_0778d0a52f332010499fff1df699b68a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 04:51:28</sys_created_on>
+        <sys_id>7a950b2a87ac3010669e63d73cbb3551</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 04:51:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
         <element>site_name</element>
         <help/>
         <hint/>
@@ -2028,17 +2245,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Create Deployment">0778d0a52f332010499fff1df699b68a</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"f9e2ad392fb32010499fff1df699b6c1","name":"plan"}}</plan>
-        <snapshot>a2651699878c7810669e63d73cbb35eb</snapshot>
+        <snapshot>d1a80b2e87ac3010669e63d73cbb352d</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-29 06:57:43</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f9e2ad392fb32010499fff1df699b6c1</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-10 07:37:09</sys_updated_on>
+        <sys_updated_on>2021-06-08 05:04:46</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2051,7 +2268,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>create_deployment</internal_name>
-        <label_cache>[{"name":"{{action.blueprint_id}}","label":"action➛Blueprint ID","type":"action","ref":""},{"name":"{{action.deployment_id}}","label":"action➛Deployment ID","type":"action","ref":""},{"name":"{{action.inputs}}","label":"action➛Inputs","type":"action","ref":""},{"name":"{{action.inputs.Input}}","label":"action➛Inputs➛Input","type":"action","ref":""},{"name":"{{action.inputs.Input.Name}}","label":"action➛Inputs➛Input➛Name","type":"action","ref":""},{"name":"{{action.inputs.Input.Value}}","label":"action➛Inputs➛Input➛Value","type":"action","ref":""},{"name":"{{action.site_name}}","label":"action➛Site Name","type":"action","ref":""},{"name":"{{action.labels}}","label":"action➛Labels","type":"action","ref":""},{"name":"{{action.labels.Label}}","label":"action➛Labels➛Label","type":"action","ref":""},{"name":"{{action.labels.Label.label_child1}}","label":"action➛Labels➛Label➛Label_child1","type":"action","ref":""},{"name":"{{action.private_resource}}","label":"action➛Private Resource","type":"action","ref":""},{"name":"{{action.skip_plugin_validations}}","label":"action➛Skip Plugin Validations","type":"action","ref":""},{"name":"{{action.visibility}}","label":"action➛Visibility","type":"action","ref":""},{"name":"{{action.labels.Label.Name}}","label":"action➛Labels➛Label➛Name","type":"action","ref":""},{"name":"{{action.labels.Label.Value}}","label":"action➛Labels➛Label➛Value","type":"action","ref":""},{"name":"{{action.inputs.Inputs}}","label":"action➛Inputs➛Inputs","type":"action","ref":""},{"name":"{{action.inputs.Inputs.Input_Name}}","label":"action➛Inputs➛Inputs➛Input Name","type":"action","ref":""},{"name":"{{action.inputs.Inputs.Input_name}}","label":"action➛Inputs➛Inputs➛Input name","type":"action","ref":""},{"name":"{{action.inputs.Inputs.input_name}}","label":"action➛Inputs➛Inputs➛input name","type":"action","ref":""},{"name":"{{action.inputs.Inputs.input_value}}","label":"action➛Inputs➛Inputs➛input value","type":"action","ref":""},{"name":"{{action.labels.Labels}}","label":"action➛Labels➛Labels","type":"action","ref":""},{"name":"{{action.labels.Labels.label_name}}","label":"action➛Labels➛Labels➛label name","type":"action","ref":""},{"name":"{{action.labels.Labels.label_value}}","label":"action➛Labels➛Labels➛label value","type":"action","ref":""},{"name":"{{action.inputs.Inputs.input_type}}","label":"action➛Inputs➛Inputs➛input type","type":"action","ref":""},{"name":"{{step[f67807bb-0a0a-4e6b-8e6d-c0ef88118a62].variable}}","label":"step➛Call Create Deployment API➛variable","type":"step","ref":""},{"name":"{{step[f67807bb-0a0a-4e6b-8e6d-c0ef88118a62].result}}","label":"step➛Call Create Deployment API➛Result","type":"step","ref":""}]</label_cache>
+        <label_cache>[{"name":"{{action.blueprint_id}}","label":"action➛Blueprint ID","type":"action","ref":""},{"name":"{{action.deployment_id}}","label":"action➛Deployment ID","type":"action","ref":""},{"name":"{{action.inputs}}","label":"action➛Inputs","type":"action","ref":""},{"name":"{{action.inputs.Input}}","label":"action➛Inputs➛Input","type":"action","ref":""},{"name":"{{action.inputs.Input.Name}}","label":"action➛Inputs➛Input➛Name","type":"action","ref":""},{"name":"{{action.inputs.Input.Value}}","label":"action➛Inputs➛Input➛Value","type":"action","ref":""},{"name":"{{action.site_name}}","label":"action➛Site Name","type":"action","ref":""},{"name":"{{action.labels}}","label":"action➛Labels","type":"action","ref":""},{"name":"{{action.labels.Label}}","label":"action➛Labels➛Label","type":"action","ref":""},{"name":"{{action.labels.Label.label_child1}}","label":"action➛Labels➛Label➛Label_child1","type":"action","ref":""},{"name":"{{action.private_resource}}","label":"action➛Private Resource","type":"action","ref":""},{"name":"{{action.skip_plugin_validations}}","label":"action➛Skip Plugin Validations","type":"action","ref":""},{"name":"{{action.visibility}}","label":"action➛Visibility","type":"action","ref":""},{"name":"{{action.labels.Label.Name}}","label":"action➛Labels➛Label➛Name","type":"action","ref":""},{"name":"{{action.labels.Label.Value}}","label":"action➛Labels➛Label➛Value","type":"action","ref":""},{"name":"{{action.inputs.Inputs}}","label":"action➛Inputs➛Inputs","type":"action","ref":""},{"name":"{{action.inputs.Inputs.Input_Name}}","label":"action➛Inputs➛Inputs➛Input Name","type":"action","ref":""},{"name":"{{action.inputs.Inputs.Input_name}}","label":"action➛Inputs➛Inputs➛Input name","type":"action","ref":""},{"name":"{{action.inputs.Inputs.input_name}}","label":"action➛Inputs➛Inputs➛input name","type":"action","ref":""},{"name":"{{action.inputs.Inputs.input_value}}","label":"action➛Inputs➛Inputs➛input value","type":"action","ref":""},{"name":"{{action.labels.Labels}}","label":"action➛Labels➛Labels","type":"action","ref":""},{"name":"{{action.labels.Labels.label_name}}","label":"action➛Labels➛Labels➛label name","type":"action","ref":""},{"name":"{{action.labels.Labels.label_value}}","label":"action➛Labels➛Labels➛label value","type":"action","ref":""},{"name":"{{action.inputs.Inputs.input_type}}","label":"action➛Inputs➛Inputs➛input type","type":"action","ref":""},{"name":"{{action.created_by}}","label":"action➛Created By","type":"action","ref":""},{"name":"{{action.creator_email}}","label":"action➛Creator Email","type":"action","ref":""},{"name":"{{step[f67807bb-0a0a-4e6b-8e6d-c0ef88118a62].variable}}","label":"step➛Call Create Deployment API➛variable","type":"step","ref":""},{"name":"{{step[f67807bb-0a0a-4e6b-8e6d-c0ef88118a62].result}}","label":"step➛Call Create Deployment API➛Result","type":"step","ref":""}]</label_cache>
         <master>true</master>
         <name>Create Deployment</name>
         <natlang/>
@@ -2064,7 +2281,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a8e26d392fb32010499fff1df699b694</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2072,7 +2289,7 @@
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-04 06:38:12</sys_updated_on>
+        <sys_updated_on>2021-06-08 04:52:55</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -2108,10 +2325,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-29 06:57:38</sys_created_on>
         <sys_id>f4e26d392fb32010499fff1df699b6df</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-10 07:37:08</sys_updated_on>
+        <sys_updated_on>2021-06-08 05:04:45</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f4e26d392fb32010499fff1df699b6df"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2178,11 +2395,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-29 06:57:39</sys_created_on>
         <sys_id>81e2ad392fb32010499fff1df699b650</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-10 07:37:08</sys_updated_on>
+        <sys_updated_on>2021-06-08 05:04:45</sys_updated_on>
         <value>(function execute(inputs, outputs) {
-  var cfy_integartion = new cloudify_integration();
+  var cfy_integration = new cloudify_integration();
 	// convert inputs array object to dict
   var dep_inputs = {};
   for (var i = 0; i &lt; inputs.dep_inputs.length; i++) {
@@ -2224,7 +2441,15 @@
       dep_labels.push(dep_label);
     }
   }
-  outputs.result = cfy_integartion.createDeployment(inputs.blueprint_id,inputs.deployment_id,dep_inputs,inputs.site_name, dep_labels, inputs.private_resource, inputs.skip_plugins_validation, inputs.visibility);
+  dep_labels.push({'created_from':'servicenow'});
+  var creator_email = inputs.creator_email;
+  // remove @ from the email and replace it with -at-
+  var lastIndex = creator_email.lastIndexOf('@');
+  creator_email = creator_email.substring(0, lastIndex) + '-at-' + creator_email.substring(lastIndex + 1);
+  
+  dep_labels.push({'created_by':creator_email});
+  
+  outputs.result = cfy_integration.createDeployment(inputs.blueprint_id,inputs.deployment_id,dep_inputs,inputs.site_name, dep_labels, inputs.private_resource, inputs.skip_plugins_validation, inputs.visibility);
   
 })(inputs, outputs);
 </value>
@@ -2268,6 +2493,30 @@
         <sys_updated_on>2021-04-29 06:57:40</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_f4e26d392fb32010499fff1df699b6df</table>
         <value>{{action.blueprint_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>created_by</field>
+        <id>f4e26d392fb32010499fff1df699b6df</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-02 07:41:33</sys_created_on>
+        <sys_id>aff2f4b087e47410669e63d73cbb3530</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-02 07:41:33</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f4e26d392fb32010499fff1df699b6df</table>
+        <value>{{action.created_by}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>creator_email</field>
+        <id>f4e26d392fb32010499fff1df699b6df</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 04:52:55</sys_created_on>
+        <sys_id>c4f58f2a87ac3010669e63d73cbb3504</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 04:52:55</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f4e26d392fb32010499fff1df699b6df</table>
+        <value>{{action.creator_email}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>deployment_id</field>
@@ -2389,7 +2638,7 @@
         <table>var__m_sys_hub_step_ext_input_f4e26d392fb32010499fff1df699b6df</table>
         <value>{{action.visibility}}</value>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=f4e26d392fb32010499fff1df699b6df^sys_idNOT IN34e2ad392fb32010499fff1df699b607,45e2ad392fb32010499fff1df699b632,7ce26d392fb32010499fff1df699b6e2,81e2ad392fb32010499fff1df699b638,b4e26d392fb32010499fff1df699b6e9,cde2ad392fb32010499fff1df699b63d,f0e26d392fb32010499fff1df699b6ef,f4e2ad392fb32010499fff1df699b601"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=f4e26d392fb32010499fff1df699b6df^sys_idNOT IN34e2ad392fb32010499fff1df699b607,45e2ad392fb32010499fff1df699b632,4cf54f2a87ac3010669e63d73cbb35f6,7ce26d392fb32010499fff1df699b6e2,81e2ad392fb32010499fff1df699b638,b4e26d392fb32010499fff1df699b6e9,cde2ad392fb32010499fff1df699b63d,f0e26d392fb32010499fff1df699b6ef,f4e2ad392fb32010499fff1df699b601"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2541,6 +2790,87 @@
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-04-29 06:57:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>creator_email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>creator_email</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Call Create Deployment API">f4e26d392fb32010499fff1df699b6df</model>
+        <model_id>f4e26d392fb32010499fff1df699b6df</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f4e26d392fb32010499fff1df699b6df</name>
+        <next_element/>
+        <order>800</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 04:52:55</sys_created_on>
+        <sys_id>4cf54f2a87ac3010669e63d73cbb35f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 04:52:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3120,7 +3450,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=a8e26d392fb32010499fff1df699b694^sys_idNOT IN2ce26d392fb32010499fff1df699b6a8,30e26d392fb32010499fff1df699b6d0,34e26d392fb32010499fff1df699b6d6,6ce26d392fb32010499fff1df699b6c6,a0e26d392fb32010499fff1df699b69c,a8e26d392fb32010499fff1df699b6ae,ace26d392fb32010499fff1df699b6a2,ece26d392fb32010499fff1df699b6c0"/>
+    <sys_hub_action_input action="delete_multiple" query="model=a8e26d392fb32010499fff1df699b694^sys_idNOT IN2ce26d392fb32010499fff1df699b6a8,30e26d392fb32010499fff1df699b6d0,34e26d392fb32010499fff1df699b6d6,6ce26d392fb32010499fff1df699b6c6,80f54f2a87ac3010669e63d73cbb35d1,a0e26d392fb32010499fff1df699b69c,a8e26d392fb32010499fff1df699b6ae,ace26d392fb32010499fff1df699b6a2,ece26d392fb32010499fff1df699b6c0"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -3183,14 +3513,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-29 06:57:37</sys_created_on>
         <sys_id>2ce26d392fb32010499fff1df699b6a8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-29 06:57:37</sys_updated_on>
+        <sys_updated_on>2021-06-02 07:54:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3264,14 +3594,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-29 06:57:38</sys_created_on>
         <sys_id>30e26d392fb32010499fff1df699b6d0</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-29 07:41:05</sys_updated_on>
+        <sys_updated_on>2021-06-02 07:54:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3345,14 +3675,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-29 06:57:38</sys_created_on>
         <sys_id>34e26d392fb32010499fff1df699b6d6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-29 07:41:05</sys_updated_on>
+        <sys_updated_on>2021-06-02 07:54:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3426,14 +3756,95 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-29 06:57:37</sys_created_on>
         <sys_id>6ce26d392fb32010499fff1df699b6c6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-29 06:57:38</sys_updated_on>
+        <sys_updated_on>2021-06-02 07:54:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=7a168c65-7330-419f-a430-082845d46da5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>creator_email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Creator Email</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Deployment">a8e26d392fb32010499fff1df699b694</model>
+        <model_id>a8e26d392fb32010499fff1df699b694</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_a8e26d392fb32010499fff1df699b694</name>
+        <next_element/>
+        <order>9</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 04:52:55</sys_created_on>
+        <sys_id>80f54f2a87ac3010669e63d73cbb35d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 04:52:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3507,14 +3918,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-29 06:57:37</sys_created_on>
         <sys_id>a0e26d392fb32010499fff1df699b69c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-29 06:57:37</sys_updated_on>
+        <sys_updated_on>2021-06-02 07:54:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3588,14 +3999,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-29 06:57:37</sys_created_on>
         <sys_id>a8e26d392fb32010499fff1df699b6ae</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-29 06:57:37</sys_updated_on>
+        <sys_updated_on>2021-06-02 07:54:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3669,14 +4080,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-29 06:57:37</sys_created_on>
         <sys_id>ace26d392fb32010499fff1df699b6a2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-29 06:57:37</sys_updated_on>
+        <sys_updated_on>2021-06-02 07:54:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3750,14 +4161,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-29 06:57:37</sys_created_on>
         <sys_id>ece26d392fb32010499fff1df699b6c0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-29 06:57:37</sys_updated_on>
+        <sys_updated_on>2021-06-02 07:54:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3853,7 +4264,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_a8e26d392fb32010499fff1df699b694^sys_idNOT IN28e26d392fb32010499fff1df699b6bf,64e26d392fb32010499fff1df699b6a7,70e26d392fb32010499fff1df699b6db,78e26d392fb32010499fff1df699b6ce,7ce26d392fb32010499fff1df699b6d4,a4e26d392fb32010499fff1df699b6c5,e0e26d392fb32010499fff1df699b6ad,e4e26d392fb32010499fff1df699b6a1"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_a8e26d392fb32010499fff1df699b694^sys_idNOT IN28e26d392fb32010499fff1df699b6bf,4cf54f2a87ac3010669e63d73cbb35d5,64e26d392fb32010499fff1df699b6a7,70e26d392fb32010499fff1df699b6db,78e26d392fb32010499fff1df699b6ce,7ce26d392fb32010499fff1df699b6d4,a4e26d392fb32010499fff1df699b6c5,e0e26d392fb32010499fff1df699b6ad,e4e26d392fb32010499fff1df699b6a1"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>private_resource</element>
         <help/>
@@ -3874,6 +4285,29 @@
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-04-29 06:57:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>creator_email</element>
+        <help/>
+        <hint/>
+        <label>Creator Email</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a8e26d392fb32010499fff1df699b694</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 04:52:55</sys_created_on>
+        <sys_id>4cf54f2a87ac3010669e63d73cbb35d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 04:52:55</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>

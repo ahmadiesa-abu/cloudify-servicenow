@@ -49,8 +49,6 @@ cloudify_integration.prototype = {
 					bp_inputs[key]["type"] = 'list';
 				else if (typeof bp_inputs[key]["default"] === 'number')
 					bp_inputs[key]["type"] = 'float';
-				else if (typeof bp_inputs[key]["default"] === 'string')
-					bp_inputs[key]["type"] = 'string';
 				else if (typeof bp_inputs[key]["default"] === 'object')
 					bp_inputs[key]["type"] = 'dict';
 				else if (typeof bp_inputs[key]["default"] === 'boolean')
@@ -75,7 +73,6 @@ cloudify_integration.prototype = {
 		if (String(site_name)!=''){
 			content["site_name"] = String(site_name);
 		}
-		gs.info("create deployment content : "+JSON.stringify(content, null, 4));
 		var http = new cloudify_http("Cloudify Deployments", "Create Deployment", JSON.stringify(content));
 		http.setParam("deployment_id", deployment_id);
 		http.setQueryParam("_include","id");
@@ -108,6 +105,14 @@ cloudify_integration.prototype = {
 		var parsedResponse = http.execute();
 		return parsedResponse.items;
 	},
+	getDeploymentWorkflows: function(deployment_id){
+		var http = new cloudify_http("Cloudify Deployments", "Get Deployment", null);
+		http.setQueryParam("id", deployment_id);
+		http.setQueryParam("_include","workflows");
+		var parsedResponse = http.execute();
+		var dp_workflows = parsedResponse.items[0].workflows;
+		return dp_workflows;
+	},
 	
 	/* Events Integration */
 	listEvents: function(filter_type, filter_value){
@@ -129,9 +134,7 @@ cloudify_integration.prototype = {
 		};
 		if (String(schedule)!=''){
 			content["scheduled_time"] = String(schedule);
-		}
-		gs.info("content = "+JSON.stringify(content, null, 4));
-		
+		}		
 		var http = new cloudify_http("Cloudify Executions", "Start Execution", JSON.stringify(content));
 		http.setQueryParam("_include","id");
 		var parsedResponse = http.execute();
@@ -155,7 +158,13 @@ cloudify_integration.prototype = {
 		var parsedResponse = http.execute();
 		return parsedResponse;
 	},
-	
+	listExecutions: function(deployment_id){
+		var http = new cloudify_http("Cloudify Executions", "List Executions", null);
+		http.setQueryParam("deployment_id", deployment_id);
+		http.setQueryParam("_include",['id', 'status', 'workflow_id']);
+		var parsedResponse = http.execute();
+		return parsedResponse.items;
+	},
 	/* Secrets Integration */
 	createSecret: function(secret_key, secret_value, update_if_exists, visibility, is_hidden_value){
 		var content = {
@@ -199,13 +208,13 @@ cloudify_integration.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-15 12:58:02</sys_created_on>
         <sys_id>5e2e6e5d2fe32010499fff1df699b660</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>73</sys_mod_count>
         <sys_name>cloudify_integration</sys_name>
         <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name>sys_script_include_5e2e6e5d2fe32010499fff1df699b660</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-10 11:54:34</sys_updated_on>
+        <sys_updated_on>2021-06-08 05:59:33</sys_updated_on>
     </sys_script_include>
 </record_update>
