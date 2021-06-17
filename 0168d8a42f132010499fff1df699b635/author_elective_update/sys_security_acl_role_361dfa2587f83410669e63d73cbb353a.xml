@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-17 11:56:21</sys_created_on>
+        <sys_id>361dfa2587f83410669e63d73cbb353a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_607849_cloudify_configs.x_607849_cloudify.user</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_security_acl display_value="x_607849_cloudify_configs">21a38fac2f6f6010499fff1df699b6ab</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_361dfa2587f83410669e63d73cbb353a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-17 11:56:21</sys_updated_on>
+        <sys_user_role display_value="x_607849_cloudify.user" name="x_607849_cloudify.user">b66d94f687e07010669e63d73cbb350a</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>sys_security_acl_role_361dfa2587f83410669e63d73cbb353a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-17 11:56:21</sys_created_on><sys_id>361dfa2587f83410669e63d73cbb353a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_607849_cloudify_configs.x_607849_cloudify.user</sys_name><sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package><sys_policy/><sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope><sys_security_acl display_value="x_607849_cloudify_configs">21a38fac2f6f6010499fff1df699b6ab</sys_security_acl><sys_update_name>sys_security_acl_role_361dfa2587f83410669e63d73cbb353a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-17 11:56:21</sys_updated_on><sys_user_role display_value="x_607849_cloudify.user" name="x_607849_cloudify.user">b66d94f687e07010669e63d73cbb350a</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1303373581</payload_hash>
+        <record_name>x_607849_cloudify_configs.x_607849_cloudify.user</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-17 11:56:21</sys_created_on>
+        <sys_id>9e2dbe6587f83410669e63d73cbb3573</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a19d44d040000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-17 11:56:21</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>962dbe65b6f83410189405f4e0ae4873</update_guid>
+        <update_guid_history>962dbe65b6f83410189405f4e0ae4873:-1303373581</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_607849_cloudify_configs.x_607849_cloudify.user">925d3e6587f83410669e63d73cbb357c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-17 11:57:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>80db4726d17c4032b6ed1a4dd8814aa9</sys_id>
+        <sys_metadata>361dfa2587f83410669e63d73cbb353a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_607849_cloudify_configs.x_607849_cloudify.user</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent display_value="x_607849_cloudify_configs">21a38fac2f6f6010499fff1df699b6ab</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_361dfa2587f83410669e63d73cbb353a</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_361dfa2587f83410669e63d73cbb353a">9e2dbe6587f83410669e63d73cbb3573</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-17 11:57:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

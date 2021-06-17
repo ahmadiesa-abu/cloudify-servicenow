@@ -40,7 +40,7 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>input_type</name>
-        <order/>
+        <order>3</order>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
@@ -68,14 +68,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-04 06:18:13</sys_created_on>
         <sys_id>b7594bd78773a010669e63d73cbb3591</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Input Type</sys_name>
         <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name>item_option_new_b7594bd78773a010669e63d73cbb3591</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-04 08:21:55</sys_updated_on>
+        <sys_updated_on>2021-06-13 10:52:10</sys_updated_on>
         <table/>
         <tooltip/>
         <type>6</type>

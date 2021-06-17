@@ -43,7 +43,7 @@
         <order/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
-        <published_ref display_value="Select an Environment">9445701a2f232010499fff1df699b613</published_ref>
+        <published_ref display_value="Select a certified environment">9445701a2f232010499fff1df699b613</published_ref>
         <question_text>Blueprint ID</question_text>
         <read_only>false</read_only>
         <read_roles/>

@@ -3,92 +3,107 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>host</element>
-            <list_id display_value="x_607849_cloudify_configs" element="NULL" name="x_607849_cloudify_configs" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">704b6b892f732010499fff1df699b688</list_id>
+            <list_id display_value="x_607849_cloudify_configs" element="NULL" name="x_607849_cloudify_configs" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">fdf4211487343010669e63d73cbb3504</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-04-27 08:58:01</sys_created_on>
-            <sys_id>304b6b892f732010499fff1df699b689</sys_id>
+            <sys_created_on>2021-06-13 08:18:37</sys_created_on>
+            <sys_id>b9f4211487343010669e63d73cbb3505</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-04-27 08:58:01</sys_updated_on>
+            <sys_updated_on>2021-06-13 08:18:37</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>password</element>
-            <list_id display_value="x_607849_cloudify_configs" element="NULL" name="x_607849_cloudify_configs" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">704b6b892f732010499fff1df699b688</list_id>
+            <list_id display_value="x_607849_cloudify_configs" element="NULL" name="x_607849_cloudify_configs" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">fdf4211487343010669e63d73cbb3504</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-04-27 08:58:01</sys_created_on>
-            <sys_id>b44b6b892f732010499fff1df699b689</sys_id>
+            <sys_created_on>2021-06-13 08:18:37</sys_created_on>
+            <sys_id>3df4211487343010669e63d73cbb3505</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-04-27 08:58:01</sys_updated_on>
+            <sys_updated_on>2021-06-13 08:18:37</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>tenant</element>
-            <list_id display_value="x_607849_cloudify_configs" element="NULL" name="x_607849_cloudify_configs" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">704b6b892f732010499fff1df699b688</list_id>
+            <list_id display_value="x_607849_cloudify_configs" element="NULL" name="x_607849_cloudify_configs" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">fdf4211487343010669e63d73cbb3504</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-04-27 08:58:01</sys_created_on>
-            <sys_id>384b6b892f732010499fff1df699b689</sys_id>
+            <sys_created_on>2021-06-13 08:18:37</sys_created_on>
+            <sys_id>bdf4211487343010669e63d73cbb3505</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-04-27 08:58:01</sys_updated_on>
+            <sys_updated_on>2021-06-13 08:18:37</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>use_ssl</element>
-            <list_id display_value="x_607849_cloudify_configs" element="NULL" name="x_607849_cloudify_configs" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">704b6b892f732010499fff1df699b688</list_id>
+            <list_id display_value="x_607849_cloudify_configs" element="NULL" name="x_607849_cloudify_configs" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">fdf4211487343010669e63d73cbb3504</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-04-27 08:58:01</sys_created_on>
-            <sys_id>b84b6b892f732010499fff1df699b689</sys_id>
+            <sys_created_on>2021-06-13 08:18:37</sys_created_on>
+            <sys_id>31f4211487343010669e63d73cbb3506</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-04-27 08:58:01</sys_updated_on>
+            <sys_updated_on>2021-06-13 08:18:37</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>username</element>
-            <list_id display_value="x_607849_cloudify_configs" element="NULL" name="x_607849_cloudify_configs" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">704b6b892f732010499fff1df699b688</list_id>
+            <list_id display_value="x_607849_cloudify_configs" element="NULL" name="x_607849_cloudify_configs" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">fdf4211487343010669e63d73cbb3504</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-04-27 08:58:01</sys_created_on>
-            <sys_id>3c4b6b892f732010499fff1df699b689</sys_id>
+            <sys_created_on>2021-06-13 08:18:37</sys_created_on>
+            <sys_id>b1f4211487343010669e63d73cbb3506</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-04-27 08:58:01</sys_updated_on>
+            <sys_updated_on>2021-06-13 08:18:37</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>active</element>
-            <list_id display_value="x_607849_cloudify_configs" element="NULL" name="x_607849_cloudify_configs" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">704b6b892f732010499fff1df699b688</list_id>
+            <list_id display_value="x_607849_cloudify_configs" element="NULL" name="x_607849_cloudify_configs" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">fdf4211487343010669e63d73cbb3504</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-04-27 08:58:01</sys_created_on>
-            <sys_id>bc4b6b892f732010499fff1df699b689</sys_id>
+            <sys_created_on>2021-06-13 08:18:37</sys_created_on>
+            <sys_id>35f4211487343010669e63d73cbb3506</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-04-27 08:58:01</sys_updated_on>
+            <sys_updated_on>2021-06-13 08:18:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>mid_server</element>
+            <list_id display_value="x_607849_cloudify_configs" element="NULL" name="x_607849_cloudify_configs" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">fdf4211487343010669e63d73cbb3504</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-06-13 08:18:37</sys_created_on>
+            <sys_id>b5f4211487343010669e63d73cbb3506</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-06-13 08:18:37</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -102,10 +117,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-04-27 08:58:01</sys_created_on>
+            <sys_created_on>2021-06-13 08:18:37</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>704b6b892f732010499fff1df699b688</sys_id>
+            <sys_id>fdf4211487343010669e63d73cbb3504</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_607849_cloudify_configs</sys_name>
             <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
@@ -113,7 +128,7 @@
             <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
             <sys_update_name>sys_ui_list_x_607849_cloudify_configs_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-04-27 08:58:01</sys_updated_on>
+            <sys_updated_on>2021-06-13 08:18:37</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
