@@ -25,6 +25,7 @@
 	try{
 		var ga = new GlideAjax('cloudify_ui_scripts');
 		ga.addParam('sysparm_name', 'getBlueprintInputs');
+		ga.addParam('config_name', g_form.getValue('config_name'));
 		ga.addParam('blueprint_id', newValue);
 		ga.getXML(InputsParse);		
 	}catch(error){}
@@ -58,7 +59,7 @@ function InputsParse(response) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0fbf3d3a87dcb010669e63d73cbb3564</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name>PopulateBlueprintsInput</sys_name>
         <sys_overrides/>
         <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
@@ -66,7 +67,7 @@ function InputsParse(response) {
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name>catalog_script_client_0fbf3d3a87dcb010669e63d73cbb3564</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-13 10:54:17</sys_updated_on>
+        <sys_updated_on>2021-07-11 08:48:07</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

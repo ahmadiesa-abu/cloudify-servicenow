@@ -9,11 +9,26 @@
         <name>cloudify_ui_scripts</name>
         <script><![CDATA[var cloudify_ui_scripts = Class.create();
 cloudify_ui_scripts.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getCloudifyConfigs: function(){
+		var configs = [];
+		try{
+			var gr = new GlideRecordSecure("x_607849_cloudify_configs");
+			gr.addQuery('active','=',true);
+			gr.query();
+			while (gr.next()) {
+				configs.push(String(gr.name));
+			}
+		}catch(error){
+			configs = [];
+		}
+		return JSON.stringify(configs);
+	},
 	getBlueprints: function(){
 		var blueprints = {};
 		try{
+			var config_name = this.getParameter('config_name');
 			var cfy_integartion = new cloudify_integration();
-			blueprints = cfy_integartion.listBlueprints();
+			blueprints = cfy_integartion.listBlueprints(config_name);
 		}catch(error){
 			blueprints = {};
 		}
@@ -23,29 +38,25 @@ cloudify_ui_scripts.prototype = Object.extendsObject(global.AbstractAjaxProcesso
 		var inputs = {};
 		try{
 			var blueprint_id = this.getParameter('blueprint_id');
+			var config_name = this.getParameter('config_name');
 			var cfy_integartion = new cloudify_integration();
-			inputs = cfy_integartion.getBlueprintInputs(blueprint_id);
+			inputs = cfy_integartion.getBlueprintInputs(config_name, blueprint_id);
 		}catch(error){
 			inputs = {};
 		}
 		return JSON.stringify(inputs);
 	},
-	/*getUserEmail: function(){
-		var user_id = this.getParameter('user_id');
-		var gr = new GlideRecord('sys_user');
-		gr.get(user_id);
-		return gr.email;
-	},*/
 	getDeployments: function(){
 		var deps = [];
 		try{
 			var user_id = this.getParameter('user_id');
+			var config_name = this.getParameter('config_name');
 			var gr = new GlideRecord('sys_user');
 			gr.get(user_id);
 			var lastIndex = gr.email.lastIndexOf('@');
 			var creator_email = gr.email.substring(0, lastIndex) + '-at-' + gr.email.substring(lastIndex + 1);
 			var cfy_integartion = new cloudify_integration();
-			var deployments = cfy_integartion.listDeployments();
+			var deployments = cfy_integartion.listDeployments(config_name);
 			Object.keys(deployments).forEach(function(key) {	
 				var labels = deployments[key]["labels"];
 				var fromSn = false;
@@ -69,8 +80,9 @@ cloudify_ui_scripts.prototype = Object.extendsObject(global.AbstractAjaxProcesso
 		var workflows = [];
 		try {
 			var deployment_id = this.getParameter('deployment_id');
+			var config_name = this.getParameter('config_name');
 			var cfy_integartion = new cloudify_integration();	
-			workflows = cfy_integartion.getDeploymentWorkflows(deployment_id);
+			workflows = cfy_integartion.getDeploymentWorkflows(config_name, deployment_id);
 		}catch(error){
 			workflows = [];
 		}
@@ -80,9 +92,10 @@ cloudify_ui_scripts.prototype = Object.extendsObject(global.AbstractAjaxProcesso
 		var params = {};
 		try{
 			var deployment_id = this.getParameter('deployment_id');
+			var config_name = this.getParameter('config_name');
 			var workflowName = this.getParameter('workflow_name');
 			var cfy_integartion = new cloudify_integration();
-			var workflows = cfy_integartion.getDeploymentWorkflows(deployment_id);
+			var workflows = cfy_integartion.getDeploymentWorkflows(config_name, deployment_id);
 			for (key in workflows){
 				if (workflows[key]['name'] == workflowName){
 					params = workflows[key]['parameters'];
@@ -100,13 +113,13 @@ cloudify_ui_scripts.prototype = Object.extendsObject(global.AbstractAjaxProcesso
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-03 14:45:09</sys_created_on>
         <sys_id>d9b37b8f87b76010669e63d73cbb351c</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name>cloudify_ui_scripts</sys_name>
         <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name>sys_script_include_d9b37b8f87b76010669e63d73cbb351c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-14 12:54:08</sys_updated_on>
+        <sys_updated_on>2021-06-20 06:43:11</sys_updated_on>
     </sys_script_include>
 </record_update>

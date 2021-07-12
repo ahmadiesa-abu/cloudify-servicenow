@@ -8,7 +8,7 @@
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
         <cat_item display_value="Create Environment">26b478d62f232010499fff1df699b62b</cat_item>
-        <cat_variable/>
+        <cat_variable>IO:16b059e68738f410669e63d73cbb3585</cat_variable>
         <condition/>
         <description/>
         <field/>
@@ -17,10 +17,17 @@
         <messages/>
         <name>FetchBlueprints</name>
         <order/>
-        <script><![CDATA[function onLoad() {
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	if (isLoading || newValue == '') {
+		g_form.clearOptions('blueprint_id');
+		g_form.addOption('blueprint_id','','-- None --');
+		g_form.setValue('blueprint_id', '');
+		return;
+	}
 	try{
 		var ga = new GlideAjax('cloudify_ui_scripts');
 		ga.addParam('sysparm_name', 'getBlueprints');
+		ga.addParam('config_name', newValue);
 		ga.getXML(InputsParse);		
 	}catch(error){}
 
@@ -41,7 +48,7 @@ function InputsParse(response) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9335618687e03010669e63d73cbb357e</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>FetchBlueprints</sys_name>
         <sys_overrides/>
         <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
@@ -49,9 +56,9 @@ function InputsParse(response) {
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name>catalog_script_client_9335618687e03010669e63d73cbb357e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-10 09:00:47</sys_updated_on>
+        <sys_updated_on>2021-06-20 07:22:54</sys_updated_on>
         <table/>
-        <type>onLoad</type>
+        <type>onChange</type>
         <ui_type>10</ui_type>
         <variable_set/>
         <view/>

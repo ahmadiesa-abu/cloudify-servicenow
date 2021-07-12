@@ -11,15 +11,6 @@
 cloudify_utils.prototype = {
     initialize: function() {
     },
-	
-	/*
-    Hack around SN blocking sleep
-    @param {Integer} ms - milliseconds to sleep.
-    */
-    sleep: function(ms) {
-      var unixtime_ms = new Date().getTime();
-      while(new Date().getTime() < unixtime_ms + ms) { /*null*/ }
-    },
 
     /*
     * @param {Array} outputs - Outputs to be formatted. They are expected to be an
@@ -133,49 +124,6 @@ cloudify_utils.prototype = {
 			req.update();
 		}
 	},
-	
-	convertVariableSetToListOfDict: function(variable_set){
-		var result = [];		
-		var rows = variable_set.getRows();
-        for (var j=0; j<variable_set.getRowCount(); j++) {
-            var row = rows[j];
-            var cells = row.getCells();
-			var temp = {};
-			var var_name;
-			var var_value;
-            for (var k=0; k<cells.length; k++) {
-                var cell = cells[k];
-				if (cell.getLabel().contains("Name"))
-					var_name = cell.getCellDisplayValue();
-				else if(cell.getLabel().contains("Value"))
-					var_value = cell.getCellDisplayValue();
-            }
-			temp[var_name] = var_value;
-			result.push(temp);
-        }
-		return result;
-	},
-	
-	convertVariableSetToDict: function(variable_set){
-		var result = {};
-		
-		var rows = variable_set.getRows();
-        for (var j=0; j<variable_set.getRowCount(); j++) {
-            var row = rows[j];
-            var cells = row.getCells();
-			var var_name;
-			var var_value;
-            for (var k=0; k<cells.length; k++) {
-                var cell = cells[k];
-				if (cell.getLabel().contains("Name"))
-					var_name = cell.getCellDisplayValue();
-				else if(cell.getLabel().contains("Value"))
-					var_value = cell.getCellDisplayValue();
-            }
-			result[var_name] = var_value;
-        }
-		return result;
-	},
 
     type: 'cloudify_utils'
 };]]></script>
@@ -183,13 +131,13 @@ cloudify_utils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-13 08:21:42</sys_created_on>
         <sys_id>be2cdfa02fef6010499fff1df699b677</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>cloudify_utils</sys_name>
         <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name>sys_script_include_be2cdfa02fef6010499fff1df699b677</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-15 08:33:16</sys_updated_on>
+        <sys_updated_on>2021-06-21 09:58:06</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from/>
+        <description>Run Server Side Validation Script</description>
+        <display_name>Run Server Side Script</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>2</order>
+        <snapshot/>
+        <step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-22 08:52:28</sys_created_on>
+        <sys_id>de928cdb87b87810669e63d73cbb3559</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sys_atf_step_de928cdb87b87810669e63d73cbb3559</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-22 09:05:10</sys_updated_on>
+        <table/>
+        <test display_value="CloudifyTest">9d72489387f87810669e63d73cbb357f</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=de928cdb87b87810669e63d73cbb3559"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>de928cdb87b87810669e63d73cbb3559</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-22 08:52:28</sys_created_on>
+        <sys_id>99030c9387f87810669e63d73cbb350d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-22 09:05:10</sys_updated_on>
+        <value>(function(outputs, steps, stepResult, assertEqual) {&#13;
+    return true;&#13;
+&#13;
+})(outputs, steps, stepResult, assertEqual);&#13;
+&#13;
+jasmine.getEnv().execute();&#13;
+</value>
+        <variable display_value="Test script">989d9e235324220002c6435723dc3484</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>de928cdb87b87810669e63d73cbb3559</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-22 08:52:28</sys_created_on>
+        <sys_id>d1030c9387f87810669e63d73cbb350d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-22 08:52:28</sys_updated_on>
+        <value>3.1</value>
+        <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>sys_atf_step_de928cdb87b87810669e63d73cbb3559</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from/><description>Run Server Side Validation Script</description><display_name>Run Server Side Script</display_name><inputs/><mugshots_cache_json/><notes/><order>2</order><snapshot/><step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-22 08:52:28</sys_created_on><sys_id>de928cdb87b87810669e63d73cbb3559</sys_id><sys_mod_count>6</sys_mod_count><sys_name>Run Server Side Script</sys_name><sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package><sys_policy/><sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope><sys_update_name>sys_atf_step_de928cdb87b87810669e63d73cbb3559</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-22 09:05:10</sys_updated_on><table/><test display_value="CloudifyTest">9d72489387f87810669e63d73cbb357f</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=de928cdb87b87810669e63d73cbb3559"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>de928cdb87b87810669e63d73cbb3559</document_key><order>200</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-22 08:52:28</sys_created_on><sys_id>99030c9387f87810669e63d73cbb350d</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-22 09:05:10</sys_updated_on><value>(function(outputs, steps, stepResult, assertEqual) {&#13;
+    return true;&#13;
+&#13;
+})(outputs, steps, stepResult, assertEqual);&#13;
+&#13;
+jasmine.getEnv().execute();&#13;
+</value><variable display_value="Test script">989d9e235324220002c6435723dc3484</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>de928cdb87b87810669e63d73cbb3559</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-22 08:52:28</sys_created_on><sys_id>d1030c9387f87810669e63d73cbb350d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-22 08:52:28</sys_updated_on><value>3.1</value><variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>-439087701</payload_hash>
+        <record_name>Run Server Side Script</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-22 09:05:10</sys_created_on>
+        <sys_id>dbe5445787f87810669e63d73cbb3517</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a32f75dfa0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-22 09:05:10</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>53e54457f3f8781026e96cd07fd56b17</update_guid>
+        <update_guid_history>53e54457f3f8781026e96cd07fd56b17:-439087701,a0c5c4577ff87810e9d027c60619a418:-797045965,ac94081774f87810fa554ccd01b0c2fd:-249161583,8d04c0174ef87810f513895ebc3f8b73:-471331864,79c3ccd3bff878106ba97cf86ead4a90:-1993962009,d5030c9358f878100040e5dc7fef830f:-651989494</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-22 09:05:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>5d287e9afa1c4648a429aa1821daa590</sys_id>
+        <sys_metadata>de928cdb87b87810669e63d73cbb3559</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>sys_atf_step_de928cdb87b87810669e63d73cbb3559</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_de928cdb87b87810669e63d73cbb3559">dbe5445787f87810669e63d73cbb3517</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-22 09:05:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

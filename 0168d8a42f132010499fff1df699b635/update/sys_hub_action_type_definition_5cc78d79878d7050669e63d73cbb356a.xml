@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>testexecutions</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>TestExecutions</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-30 08:17:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5cc78d79878d7050669e63d73cbb356a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>TestExecutions</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_5cc78d79878d7050669e63d73cbb356a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-30 10:25:44</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=5cc78d79878d7050669e63d73cbb356a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5cc78d79878d7050669e63d73cbb356a"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=5cc78d79878d7050669e63d73cbb356a^sys_idNOT IN11d78d79878d7050669e63d73cbb3593"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="TestExecutions">5cc78d79878d7050669e63d73cbb356a</action>
+        <cid>7d27d34e-4b43-41ac-bf1e-d55a26efc958</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-30 08:17:55</sys_created_on>
+        <sys_id>11d78d79878d7050669e63d73cbb3593</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-30 10:25:43</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=11d78d79878d7050669e63d73cbb3593"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>11d78d79878d7050669e63d73cbb3593</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-30 08:17:55</sys_created_on>
+        <sys_id>55d701b9878d7050669e63d73cbb35cd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-30 10:25:44</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+  var cfy_integration = new cloudify_integration();
+  var exec_ids = ['d943e80d-29f8-473b-a2d6-cd99226b7fb5', '013609fd-bc58-4556-97da-36d3ac1257d4','24e81c7d-6379-4c63-9063-ed5aacec1fef'];/*, '24e81c7d-6379-4c63-9063-ed5aacec1fef', 'a78b45ed-6769-45d6-9679-639d062848dc', '51cad813-edb0-44b2-a4e1-4bed1f161176', '24a00fc5-bf7d-4de8-82e1-aa7b22aa8039', 'd8b6c6ed-5b90-48e2-8e35-0f743dc4a4ac', 'b788818b-c6e2-4437-b8be-11b1295712f8', 'd70f1bb3-1d70-4d85-ac12-3bd0a64c42ea', '1284402c-eebb-4dc6-92b1-b342e7b0b1cf', 'e94e906d-79bb-4db3-922b-348aac15b1d7', '158889f4-3f0b-4431-aa50-f3c6d92ce22d', '21816f7e-925c-4ae8-87c7-4f54d547fe11', '8cd0ec16-7052-419b-89ab-017d77d2cd01', '07b27690-158b-4f09-8f16-e7aae7a8cd2d', '6a010f00-0539-4295-b8a4-5eeb92e3af05', '71fdb001-30e7-4daf-9eb0-2b4370863d85', 'b5a81bb6-467e-46ae-b2d1-9f0a09e09f66', '59bee9aa-af19-4a5e-af1e-664ef6fefcb9', '9839e484-0d62-412e-ad0c-0d00d1a7c7d9', 'c7a96238-9437-4b25-8699-40638546760b', 'b3de8e52-2730-419c-bdfb-b5ca3835bf8d', 'f106cb4f-077c-4db0-b6ca-8691385da9d6', '00d93711-246a-4d1a-afdc-0928e07199ce', 'f868f010-6175-4c6d-b5cf-c3c483f2f0da', '10daf04c-39b9-48f2-8cca-6ce3810e2688', 'bc744607-45c2-44ff-a380-efcfbec4b69b', '840fea30-1dad-4a7c-b7c7-6a9bae934bd8', '11b22aa0-999e-4047-a661-027b2e91e9d8', '71c6dd98-25d6-4d33-9f93-74e2b36c38bc', '1c3dc999-be9a-4d54-b986-8b3e29343c16', '2b12ecd8-6995-4c93-aacd-496728e6e38b', '85c66138-9211-40e7-81f5-364fb7ef5cca', '4e6b4b20-ef20-44d2-b6ef-d11df8807349', '724185f2-fa4f-430b-b1c5-743225743560']*/
+  var result = cfy_integration.getExecutionsBulk('default_tenant', exec_ids);
+  gs.info('result = '+JSON.stringify(result));
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>11d78d79878d7050669e63d73cbb3593</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-30 10:25:44</sys_created_on>
+        <sys_id>6115e9f18701b050669e63d73cbb35a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-30 10:25:44</sys_updated_on>
+        <value/>
+        <variable display_value="Select MID Server">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>11d78d79878d7050669e63d73cbb3593</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-30 10:25:44</sys_created_on>
+        <sys_id>a515e9f18701b050669e63d73cbb35a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-30 10:25:44</sys_updated_on>
+        <value/>
+        <variable display_value="MID Selection">cbd1070373531010791f94596bf6a776</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>11d78d79878d7050669e63d73cbb3593</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-30 10:25:44</sys_created_on>
+        <sys_id>ad15e9f18701b050669e63d73cbb35a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-30 10:25:44</sys_updated_on>
+        <value/>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+</record_update>

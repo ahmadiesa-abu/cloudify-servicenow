@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Configs" max_length="40" name="x_607849_cloudify_configs" sizeclass="2" type="collection">
+    <element label="Configs" max_length="40" name="x_607849_cloudify_configs" sizeclass="4" type="collection">
         <element label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Host" max_length="255" name="host" type="string_full_utf8"/>
         <element label="Mid Server" max_length="255" name="mid_server" type="string_full_utf8"/>
+        <element label="Name" max_length="255" name="name" type="string_full_utf8"/>
         <element label="Password" mandatory="true" max_length="255" name="password" type="password2"/>
+        <element label="Groups" max_length="255" name="role_classifier" type="string_full_utf8"/>
         <element default="default_tenant" label="Tenant" max_length="255" name="tenant" type="string_full_utf8"/>
         <element default="admin" label="Username" max_length="255" name="username" type="string_full_utf8"/>
         <element label="Use SSL" max_length="40" name="use_ssl" type="boolean"/>

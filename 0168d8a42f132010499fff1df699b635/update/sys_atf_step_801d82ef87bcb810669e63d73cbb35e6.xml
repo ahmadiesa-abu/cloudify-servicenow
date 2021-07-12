@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Run Server Side Validation Script</description>
+        <display_name>Run Server Side Script</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes>delete sanity check blueprint</notes>
+        <order>9</order>
+        <snapshot/>
+        <step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-23 13:34:21</sys_created_on>
+        <sys_id>801d82ef87bcb810669e63d73cbb35e6</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sys_atf_step_801d82ef87bcb810669e63d73cbb35e6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-24 09:27:08</sys_updated_on>
+        <table/>
+        <test display_value="CloudifyTest">9d72489387f87810669e63d73cbb357f</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=801d82ef87bcb810669e63d73cbb35e6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>801d82ef87bcb810669e63d73cbb35e6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-23 13:34:21</sys_created_on>
+        <sys_id>142d06ef87bcb810669e63d73cbb3573</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-23 13:34:21</sys_updated_on>
+        <value>3.1</value>
+        <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>801d82ef87bcb810669e63d73cbb35e6</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-23 13:34:21</sys_created_on>
+        <sys_id>d42d06ef87bcb810669e63d73cbb3573</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-24 08:56:41</sys_updated_on>
+        <value>(function(outputs, steps, stepResult, assertEqual) {&#13;
+	var config_name = 'dev_tenant';&#13;
+	describe('delete sanity check', function(){&#13;
+		it('delete blueprint', function(){&#13;
+			var unixtime_ms = new Date().getTime();&#13;
+			while(new Date().getTime() &lt; unixtime_ms + 1000) { /*null*/ }&#13;
+			var cfy_int = new cloudify_integration();&#13;
+			result = cfy_int.deleteBlueprint(config_name, 'sanity_check', true);&#13;
+			expect(result.responseStatusCode).toBe(204);&#13;
+			&#13;
+		});&#13;
+	});&#13;
+	&#13;
+})(outputs, steps, stepResult, assertEqual);&#13;
+&#13;
+jasmine.getEnv().execute();&#13;
+</value>
+        <variable display_value="Test script">989d9e235324220002c6435723dc3484</variable>
+    </sys_variable_value>
+</record_update>
