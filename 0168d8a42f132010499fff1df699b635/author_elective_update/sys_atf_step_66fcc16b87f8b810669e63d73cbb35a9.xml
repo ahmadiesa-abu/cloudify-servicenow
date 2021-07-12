@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from/>
+        <description>Validate there is at least one record in 'x_607849_cloudify_configs' matching query:
+Active = true
+With a failure timeout of 5 Seconds</description>
+        <display_name>Record Query</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>2</order>
+        <snapshot/>
+        <step_config display_value="Record Query">2d82e3c7531400109e02ddeeff7b12a7</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-23 08:54:43</sys_created_on>
+        <sys_id>66fcc16b87f8b810669e63d73cbb35a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record Query</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sys_atf_step_66fcc16b87f8b810669e63d73cbb35a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-23 08:54:43</sys_updated_on>
+        <table>x_607849_cloudify_configs</table>
+        <test display_value="CloudifyTest">9d72489387f87810669e63d73cbb357f</test>
+        <timeout>1970-01-01 00:00:05</timeout>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=66fcc16b87f8b810669e63d73cbb35a9"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>66fcc16b87f8b810669e63d73cbb35a9</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-23 08:54:43</sys_created_on>
+        <sys_id>1c2d01ab87f8b810669e63d73cbb3546</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-23 08:54:43</sys_updated_on>
+        <value>records_match_query</value>
+        <variable display_value="Assert type">b86c0427531000109e02ddeeff7b1227</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>66fcc16b87f8b810669e63d73cbb35a9</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-23 08:54:43</sys_created_on>
+        <sys_id>542d01ab87f8b810669e63d73cbb3547</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-23 08:54:43</sys_updated_on>
+        <value>active=true^EQ</value>
+        <variable display_value="Conditions">915990ab531000109e02ddeeff7b12f8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>66fcc16b87f8b810669e63d73cbb35a9</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-23 08:54:43</sys_created_on>
+        <sys_id>902d01ab87f8b810669e63d73cbb3547</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-23 08:54:43</sys_updated_on>
+        <value>x_607849_cloudify_configs</value>
+        <variable display_value="Table">78b8d86b531000109e02ddeeff7b12f3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>66fcc16b87f8b810669e63d73cbb35a9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-23 08:54:43</sys_created_on>
+        <sys_id>dc2d01ab87f8b810669e63d73cbb3546</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-23 08:54:43</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enforce security">02fb0027531000109e02ddeeff7b120b</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>sys_atf_step_66fcc16b87f8b810669e63d73cbb35a9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from/><description>Validate there is at least one record in 'x_607849_cloudify_configs' matching query:
+Active = true
+With a failure timeout of 5 Seconds</description><display_name>Record Query</display_name><inputs/><mugshots_cache_json/><notes/><order>2</order><snapshot/><step_config display_value="Record Query">2d82e3c7531400109e02ddeeff7b12a7</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-23 08:54:43</sys_created_on><sys_id>66fcc16b87f8b810669e63d73cbb35a9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Record Query</sys_name><sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package><sys_policy/><sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope><sys_update_name>sys_atf_step_66fcc16b87f8b810669e63d73cbb35a9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-23 08:54:43</sys_updated_on><table>x_607849_cloudify_configs</table><test display_value="CloudifyTest">9d72489387f87810669e63d73cbb357f</test><timeout>1970-01-01 00:00:05</timeout><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=66fcc16b87f8b810669e63d73cbb35a9"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>66fcc16b87f8b810669e63d73cbb35a9</document_key><order>200</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-23 08:54:43</sys_created_on><sys_id>1c2d01ab87f8b810669e63d73cbb3546</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-23 08:54:43</sys_updated_on><value>records_match_query</value><variable display_value="Assert type">b86c0427531000109e02ddeeff7b1227</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>66fcc16b87f8b810669e63d73cbb35a9</document_key><order>400</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-23 08:54:43</sys_created_on><sys_id>542d01ab87f8b810669e63d73cbb3547</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-23 08:54:43</sys_updated_on><value>active=true^EQ</value><variable display_value="Conditions">915990ab531000109e02ddeeff7b12f8</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>66fcc16b87f8b810669e63d73cbb35a9</document_key><order>300</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-23 08:54:43</sys_created_on><sys_id>902d01ab87f8b810669e63d73cbb3547</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-23 08:54:43</sys_updated_on><value>x_607849_cloudify_configs</value><variable display_value="Table">78b8d86b531000109e02ddeeff7b12f3</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>66fcc16b87f8b810669e63d73cbb35a9</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-23 08:54:43</sys_created_on><sys_id>dc2d01ab87f8b810669e63d73cbb3546</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-23 08:54:43</sys_updated_on><value>1</value><variable display_value="Enforce security">02fb0027531000109e02ddeeff7b120b</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>-603152910</payload_hash>
+        <record_name>Record Query</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-23 08:54:43</sys_created_on>
+        <sys_id>982d01ab87f8b810669e63d73cbb3549</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a38142c000000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-23 08:54:43</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>902d01abaef8b810690ce7a6e9ed2f49</update_guid>
+        <update_guid_history>902d01abaef8b810690ce7a6e9ed2f49:-603152910</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-23 08:59:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>4a833e37239c472e9b0b94019c245011</sys_id>
+        <sys_metadata>66fcc16b87f8b810669e63d73cbb35a9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record Query</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>sys_atf_step_66fcc16b87f8b810669e63d73cbb35a9</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_66fcc16b87f8b810669e63d73cbb35a9">982d01ab87f8b810669e63d73cbb3549</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-23 08:59:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Executions" max_length="40" name="x_607849_cloudify_executions" sizeclass="0" type="collection">
+    <element label="Executions" max_length="40" name="x_607849_cloudify_executions" sizeclass="155" type="collection">
         <element label="Cloudify Action Type" max_length="255" name="cloudify_action_type" type="string_full_utf8"/>
+        <element label="Config Name" max_length="255" name="config_name" type="string_full_utf8"/>
         <element label="Execution ID" max_length="255" name="execution_id" type="string_full_utf8"/>
         <element label="Last Known State" max_length="255" name="last_known_state" type="string_full_utf8"/>
         <element label="Request" max_length="32" name="request" reference="sc_request" type="reference"/>

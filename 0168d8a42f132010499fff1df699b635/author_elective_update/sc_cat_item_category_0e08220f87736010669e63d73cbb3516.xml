@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Delete Blueprint">b6bcb6192f272010499fff1df699b65d</sc_cat_item>
+        <sc_category display_value="Cloudify Resources">ab6a7a952f272010499fff1df699b640</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-03 09:12:08</sys_created_on>
+        <sys_id>0e08220f87736010669e63d73cbb3516</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cloudify Resources.Delete Blueprint</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sc_cat_item_category_0e08220f87736010669e63d73cbb3516</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-03 09:12:08</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>sc_cat_item_category_0e08220f87736010669e63d73cbb3516</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Delete Blueprint">b6bcb6192f272010499fff1df699b65d</sc_cat_item><sc_category display_value="Cloudify Resources">ab6a7a952f272010499fff1df699b640</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-05-03 09:12:08</sys_created_on><sys_id>0e08220f87736010669e63d73cbb3516</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cloudify Resources.Delete Blueprint</sys_name><sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package><sys_policy/><sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope><sys_update_name>sc_cat_item_category_0e08220f87736010669e63d73cbb3516</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-05-03 09:12:08</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>1831240480</payload_hash>
+        <record_name>Cloudify Resources.Delete Blueprint</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-03 09:12:08</sys_created_on>
+        <sys_id>8608220f87736010669e63d73cbb351a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179317fc8020000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-03 09:12:08</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>ce08220f4c736010a0092ed5a78ac619</update_guid>
+        <update_guid_history>ce08220f4c736010a0092ed5a78ac619:1831240480</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Cloudify Resources.Delete Blueprint">cd9cd1ff8714b010669e63d73cbb356b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-30 08:09:19</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>429c972444784db2a46a7f36820221a9</sys_id>
+        <sys_metadata>0e08220f87736010669e63d73cbb3516</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cloudify Resources.Delete Blueprint</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_0e08220f87736010669e63d73cbb3516</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_0e08220f87736010669e63d73cbb3516">8608220f87736010669e63d73cbb351a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-30 08:09:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

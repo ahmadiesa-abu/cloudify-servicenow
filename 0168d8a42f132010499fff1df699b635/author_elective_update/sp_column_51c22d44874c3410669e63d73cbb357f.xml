@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <size>12</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">59c22d44874c3410669e63d73cbb357c</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-06 06:43:27</sys_created_on>
+        <sys_id>51c22d44874c3410669e63d73cbb357f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sp_column_51c22d44874c3410669e63d73cbb357f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-06 06:43:27</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>sp_column_51c22d44874c3410669e63d73cbb357f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">59c22d44874c3410669e63d73cbb357c</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-05-06 06:43:27</sys_created_on><sys_id>51c22d44874c3410669e63d73cbb357f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package><sys_policy/><sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope><sys_update_name>sp_column_51c22d44874c3410669e63d73cbb357f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-05-06 06:43:27</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>-1041823993</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-06 06:43:27</sys_created_on>
+        <sys_id>a1c22d44874c3410669e63d73cbb3581</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179406abe4f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-06 06:43:27</sys_updated_on>
+        <type>Column</type>
+        <update_guid>e9c22d44944c341087f7ca54abdd4680</update_guid>
+        <update_guid_history>e9c22d44944c341087f7ca54abdd4680:-1041823993</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1">58d26944874c3410669e63d73cbb35a4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-06 06:43:39</sys_created_on>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>1d0eac62c35944009903cf0b12a10000</sys_id>
+        <sys_metadata>51c22d44874c3410669e63d73cbb357f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>sp_column_51c22d44874c3410669e63d73cbb357f</sys_update_name>
+        <sys_update_version display_value="sp_column_51c22d44874c3410669e63d73cbb357f">a1c22d44874c3410669e63d73cbb3581</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-06 06:43:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

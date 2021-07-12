@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="Create Deployment">26b478d62f232010499fff1df699b62b</cat_item>
+        <cat_item display_value="Create Environment">26b478d62f232010499fff1df699b62b</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -24,15 +24,15 @@
         <help_tag>More information</help_tag>
         <help_text/>
         <hidden>false</hidden>
-        <include_none>false</include_none>
+        <include_none>true</include_none>
         <instructions/>
         <layout>normal</layout>
         <list_table/>
         <lookup_label/>
         <lookup_price/>
-        <lookup_table/>
+        <lookup_table>x_607849_cloudify_list_value</lookup_table>
         <lookup_unique>false</lookup_unique>
-        <lookup_value/>
+        <lookup_value>value</lookup_value>
         <macro/>
         <macroponent/>
         <mandatory>true</mandatory>
@@ -40,11 +40,11 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>blueprint_id</name>
-        <order/>
+        <order>4</order>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Blueprint ID</question_text>
+        <question_text>Select a certified environment</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -68,21 +68,21 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-18 06:39:58</sys_created_on>
         <sys_id>9445701a2f232010499fff1df699b613</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Blueprint ID</sys_name>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Select a certified environment</sys_name>
         <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name>item_option_new_9445701a2f232010499fff1df699b613</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-18 06:39:58</sys_updated_on>
+        <sys_updated_on>2021-06-20 07:17:03</sys_updated_on>
         <table/>
         <tooltip/>
-        <type>6</type>
+        <type>5</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set/>

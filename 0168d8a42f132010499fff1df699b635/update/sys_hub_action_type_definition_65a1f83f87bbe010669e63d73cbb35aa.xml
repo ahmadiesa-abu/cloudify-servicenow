@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>poll_execution_status</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot>030ed9a68778f410669e63d73cbb354b</latest_snapshot>
+        <master_snapshot>25d270bf87bbe010669e63d73cbb3567</master_snapshot>
+        <name>Poll Execution Status</name>
+        <natlang/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 08:30:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>65a1f83f87bbe010669e63d73cbb35aa</sys_id>
+        <sys_mod_count>105</sys_mod_count>
+        <sys_name>Poll Execution Status</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_65a1f83f87bbe010669e63d73cbb35aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-20 07:34:43</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=65a1f83f87bbe010669e63d73cbb35aa"/>
+    <sys_variable_value action="delete_multiple" query="document_key=65a1f83f87bbe010669e63d73cbb35aa"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=65a1f83f87bbe010669e63d73cbb35aa^sys_idNOT IN99b2bc7f87bbe010669e63d73cbb351f"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Poll Execution Status">65a1f83f87bbe010669e63d73cbb35aa</action>
+        <cid>3797f688-a17e-4c17-88eb-402ed40be33a</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Update Executions</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 08:34:59</sys_created_on>
+        <sys_id>99b2bc7f87bbe010669e63d73cbb351f</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-20 07:34:41</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=99b2bc7f87bbe010669e63d73cbb351f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>99b2bc7f87bbe010669e63d73cbb351f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 08:35:33</sys_created_on>
+        <sys_id>21d270bf87bbe010669e63d73cbb3555</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 08:35:33</sys_updated_on>
+        <value/>
+        <variable display_value="Select MID Server">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>99b2bc7f87bbe010669e63d73cbb351f</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 08:34:59</sys_created_on>
+        <sys_id>6db2bc7f87bbe010669e63d73cbb352a</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-20 07:34:41</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+  var cfy_integration = new cloudify_integration();
+  var utils = new cloudify_utils();
+  var gr = new GlideRecord("x_607849_cloudify_executions");
+  gr.addQuery("last_known_state", "NOT IN", "terminated,failed,cancelled");
+  gr.query();
+
+  while (gr.next()) {
+      if (gr.execution_id){
+        var execution = cfy_integration.getExecution(gr.config_name, gr.execution_id);
+        //gs.info("execution "+gr.execution_id+" : "+JSON.stringify(execution));
+        var execution_status = execution.status;
+        if (execution_status === gr.last_known_state) {
+            continue; // no-op
+        }
+        gr.last_known_state = execution_status;
+        gr.update();
+        var comment = utils.formatCommentBlockQuote(gr.cloudify_action_type+" status: "+execution_status);
+		if (execution_status=='terminated')
+          comment = utils.formatCommentBlockQuote(gr.cloudify_action_type+" status: Complete");
+        
+        utils.postRITMComment(gr.requested_item, comment);
+        
+        if(execution_status=='terminated'||execution_status=='failed' || execution_status=='cancelled'){
+          var execution_events = cfy_integration.listEvents(gr.config_name, 'execution_id', gr.execution_id);
+          comment = utils.formatCommentBlockQuote(gr.cloudify_action_type+" Events: "+JSON.stringify(execution_events));
+          utils.postRITMComment(gr.requested_item, comment);
+        }
+        
+        if(execution_status=='terminated'){
+          if(gr.cloudify_action_type=='Install Deployment'){
+            var dep_id = gr.requested_item.variables.deployment_id;
+            var outputs = cfy_integration.getDeploymentOutputs(gr.config_name, dep_id);
+            comment = utils.formatCommentBlockQuote("Deployment outputs: "+JSON.stringify(outputs));
+            utils.postRITMComment(gr.requested_item, comment);
+
+            var capabilities = cfy_integration.getDeploymentCapabilities(gr.config_name, dep_id);
+            comment = utils.formatCommentBlockQuote("Deployment capabilities: "+JSON.stringify(capabilities));
+            utils.postRITMComment(gr.requested_item, comment);
+          }
+          if (gr.cloudify_action_type!='Uninstall Deployment' &amp;&amp; gr.cloudify_action_type!='Create Deployment'){
+          	utils.updateRITMState(gr.requested_item, 3); //'Closed Complete'
+            utils.updateReqState(gr.request, 3); //'Closed Complete'
+          }
+        }else if (execution_status=='failed' || execution_status=='cancelled'){
+          if (gr.cloudify_action_type!='Uninstall Deployment'){
+          	utils.updateRITMState(gr.requested_item, 4); //'Closed Incomplete'
+            utils.updateReqState(gr.request, 4); //'Closed Incomplete'
+          }
+        }
+            
+     }else{
+       // Execution Id is empty
+       gr.last_known_state = 'failed'
+       gr.update();
+     }
+  }
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>99b2bc7f87bbe010669e63d73cbb351f</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 08:35:33</sys_created_on>
+        <sys_id>6dd270bf87bbe010669e63d73cbb3554</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 08:35:33</sys_updated_on>
+        <value/>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>99b2bc7f87bbe010669e63d73cbb351f</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 08:35:33</sys_created_on>
+        <sys_id>a9d270bf87bbe010669e63d73cbb3554</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 08:35:33</sys_updated_on>
+        <value/>
+        <variable display_value="MID Selection">cbd1070373531010791f94596bf6a776</variable>
+    </sys_variable_value>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=65a1f83f87bbe010669e63d73cbb35aa^sys_idNOT INb9d270bf87bbe010669e63d73cbb3598"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Poll Execution Status">65a1f83f87bbe010669e63d73cbb35aa</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"b9d270bf87bbe010669e63d73cbb3598","name":"plan"}}</plan>
+        <snapshot>030ed9a68778f410669e63d73cbb354b</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 08:35:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b9d270bf87bbe010669e63d73cbb3598</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-20 07:34:44</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>poll_execution_status</internal_name>
+        <label_cache>[]</label_cache>
+        <master>true</master>
+        <name>Poll Execution Status</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="Poll Execution Status">65a1f83f87bbe010669e63d73cbb35aa</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 08:35:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>25d270bf87bbe010669e63d73cbb3567</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 08:35:33</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=25d270bf87bbe010669e63d73cbb3567"/>
+    <sys_variable_value action="delete_multiple" query="document_key=25d270bf87bbe010669e63d73cbb3567"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=25d270bf87bbe010669e63d73cbb3567^sys_idNOT IN61d270bf87bbe010669e63d73cbb356b"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Poll Execution Status">25d270bf87bbe010669e63d73cbb3567</action>
+        <cid>3797f688-a17e-4c17-88eb-402ed40be33a</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Update Executions</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 08:35:33</sys_created_on>
+        <sys_id>61d270bf87bbe010669e63d73cbb356b</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-20 07:34:43</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=61d270bf87bbe010669e63d73cbb356b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>61d270bf87bbe010669e63d73cbb356b</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 08:35:33</sys_created_on>
+        <sys_id>35d270bf87bbe010669e63d73cbb3572</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-20 07:34:43</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+  var cfy_integration = new cloudify_integration();
+  var utils = new cloudify_utils();
+  var gr = new GlideRecord("x_607849_cloudify_executions");
+  gr.addQuery("last_known_state", "NOT IN", "terminated,failed,cancelled");
+  gr.query();
+
+  while (gr.next()) {
+      if (gr.execution_id){
+        var execution = cfy_integration.getExecution(gr.config_name, gr.execution_id);
+        //gs.info("execution "+gr.execution_id+" : "+JSON.stringify(execution));
+        var execution_status = execution.status;
+        if (execution_status === gr.last_known_state) {
+            continue; // no-op
+        }
+        gr.last_known_state = execution_status;
+        gr.update();
+        var comment = utils.formatCommentBlockQuote(gr.cloudify_action_type+" status: "+execution_status);
+		if (execution_status=='terminated')
+          comment = utils.formatCommentBlockQuote(gr.cloudify_action_type+" status: Complete");
+        
+        utils.postRITMComment(gr.requested_item, comment);
+        
+        if(execution_status=='terminated'||execution_status=='failed' || execution_status=='cancelled'){
+          var execution_events = cfy_integration.listEvents(gr.config_name, 'execution_id', gr.execution_id);
+          comment = utils.formatCommentBlockQuote(gr.cloudify_action_type+" Events: "+JSON.stringify(execution_events));
+          utils.postRITMComment(gr.requested_item, comment);
+        }
+        
+        if(execution_status=='terminated'){
+          if(gr.cloudify_action_type=='Install Deployment'){
+            var dep_id = gr.requested_item.variables.deployment_id;
+            var outputs = cfy_integration.getDeploymentOutputs(gr.config_name, dep_id);
+            comment = utils.formatCommentBlockQuote("Deployment outputs: "+JSON.stringify(outputs));
+            utils.postRITMComment(gr.requested_item, comment);
+
+            var capabilities = cfy_integration.getDeploymentCapabilities(gr.config_name, dep_id);
+            comment = utils.formatCommentBlockQuote("Deployment capabilities: "+JSON.stringify(capabilities));
+            utils.postRITMComment(gr.requested_item, comment);
+          }
+          if (gr.cloudify_action_type!='Uninstall Deployment' &amp;&amp; gr.cloudify_action_type!='Create Deployment'){
+          	utils.updateRITMState(gr.requested_item, 3); //'Closed Complete'
+            utils.updateReqState(gr.request, 3); //'Closed Complete'
+          }
+        }else if (execution_status=='failed' || execution_status=='cancelled'){
+          if (gr.cloudify_action_type!='Uninstall Deployment'){
+          	utils.updateRITMState(gr.requested_item, 4); //'Closed Incomplete'
+            utils.updateReqState(gr.request, 4); //'Closed Incomplete'
+          }
+        }
+            
+     }else{
+       // Execution Id is empty
+       gr.last_known_state = 'failed'
+       gr.update();
+     }
+  }
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>61d270bf87bbe010669e63d73cbb356b</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 08:35:33</sys_created_on>
+        <sys_id>71d270bf87bbe010669e63d73cbb3572</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 08:35:33</sys_updated_on>
+        <value/>
+        <variable display_value="Select MID Server">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>61d270bf87bbe010669e63d73cbb356b</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 08:35:33</sys_created_on>
+        <sys_id>bdd270bf87bbe010669e63d73cbb3571</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 08:35:33</sys_updated_on>
+        <value/>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>61d270bf87bbe010669e63d73cbb356b</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 08:35:33</sys_created_on>
+        <sys_id>f9d270bf87bbe010669e63d73cbb3571</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 08:35:33</sys_updated_on>
+        <value/>
+        <variable display_value="MID Selection">cbd1070373531010791f94596bf6a776</variable>
+    </sys_variable_value>
+</record_update>

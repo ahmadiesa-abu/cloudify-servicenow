@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from/>
+        <description>Open "Create Environment" in the "Service Portal" portal</description>
+        <display_name>Open a Catalog Item (SP)</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>2</order>
+        <snapshot/>
+        <step_config display_value="Open a Catalog Item (SP)">e81f02dc73e703008e6b0d573cf6a76f</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-21 16:27:16</sys_created_on>
+        <sys_id>4061680387307810669e63d73cbb35a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open a Catalog Item (SP)</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sys_atf_step_4061680387307810669e63d73cbb35a2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-21 16:27:16</sys_updated_on>
+        <table/>
+        <test display_value="CloudifyTest">f1416ccf87fc3810669e63d73cbb352b</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=4061680387307810669e63d73cbb35a2"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>4061680387307810669e63d73cbb35a2</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-21 16:27:16</sys_created_on>
+        <sys_id>39812c0387307810669e63d73cbb35ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-21 16:27:16</sys_updated_on>
+        <value>9f12251147132100ba13a5554ee490f4</value>
+        <variable display_value="Page">83d1dadc73e703008e6b0d573cf6a779</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>4061680387307810669e63d73cbb35a2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-21 16:27:16</sys_created_on>
+        <sys_id>71812c0387307810669e63d73cbb35eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-21 16:27:16</sys_updated_on>
+        <value>81b75d3147032100ba13a5554ee4902b</value>
+        <variable display_value="Portal">3731d6dc73e703008e6b0d573cf6a788</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>4061680387307810669e63d73cbb35a2</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-21 16:27:16</sys_created_on>
+        <sys_id>bd812c0387307810669e63d73cbb35ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-21 16:27:16</sys_updated_on>
+        <value>26b478d62f232010499fff1df699b62b</value>
+        <variable display_value="Catalog Item">ac615adc73e703008e6b0d573cf6a702</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>4061680387307810669e63d73cbb35a2</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-21 16:27:16</sys_created_on>
+        <sys_id>f9812c0387307810669e63d73cbb35ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-21 16:27:16</sys_updated_on>
+        <value/>
+        <variable display_value="Query parameters">3a6e5fb15f1013001f1e1f9f2f7313e3</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>sys_atf_step_4061680387307810669e63d73cbb35a2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from/><description>Open "Create Environment" in the "Service Portal" portal</description><display_name>Open a Catalog Item (SP)</display_name><inputs/><mugshots_cache_json/><notes/><order>2</order><snapshot/><step_config display_value="Open a Catalog Item (SP)">e81f02dc73e703008e6b0d573cf6a76f</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-21 16:27:16</sys_created_on><sys_id>4061680387307810669e63d73cbb35a2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Open a Catalog Item (SP)</sys_name><sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package><sys_policy/><sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope><sys_update_name>sys_atf_step_4061680387307810669e63d73cbb35a2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-21 16:27:16</sys_updated_on><table/><test display_value="CloudifyTest">f1416ccf87fc3810669e63d73cbb352b</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=4061680387307810669e63d73cbb35a2"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>4061680387307810669e63d73cbb35a2</document_key><order>110</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-21 16:27:16</sys_created_on><sys_id>39812c0387307810669e63d73cbb35ea</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-21 16:27:16</sys_updated_on><value>9f12251147132100ba13a5554ee490f4</value><variable display_value="Page">83d1dadc73e703008e6b0d573cf6a779</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>4061680387307810669e63d73cbb35a2</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-21 16:27:16</sys_created_on><sys_id>71812c0387307810669e63d73cbb35eb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-21 16:27:16</sys_updated_on><value>81b75d3147032100ba13a5554ee4902b</value><variable display_value="Portal">3731d6dc73e703008e6b0d573cf6a788</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>4061680387307810669e63d73cbb35a2</document_key><order>120</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-21 16:27:16</sys_created_on><sys_id>bd812c0387307810669e63d73cbb35ea</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-21 16:27:16</sys_updated_on><value>26b478d62f232010499fff1df699b62b</value><variable display_value="Catalog Item">ac615adc73e703008e6b0d573cf6a702</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>4061680387307810669e63d73cbb35a2</document_key><order>150</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-21 16:27:16</sys_created_on><sys_id>f9812c0387307810669e63d73cbb35ea</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-21 16:27:16</sys_updated_on><value/><variable display_value="Query parameters">3a6e5fb15f1013001f1e1f9f2f7313e3</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>1830770401</payload_hash>
+        <record_name>Open a Catalog Item (SP)</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-21 16:27:16</sys_created_on>
+        <sys_id>39812c0387307810669e63d73cbb35ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a2f65c6310000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-21 16:27:16</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>31812c03fa30781049f112c8cb3710ed</update_guid>
+        <update_guid_history>31812c03fa30781049f112c8cb3710ed:1830770401</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-21 16:28:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>278398b86f324d1a8641fd260ada2f99</sys_id>
+        <sys_metadata>4061680387307810669e63d73cbb35a2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open a Catalog Item (SP)</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>sys_atf_step_4061680387307810669e63d73cbb35a2</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_4061680387307810669e63d73cbb35a2">39812c0387307810669e63d73cbb35ed</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-21 16:28:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

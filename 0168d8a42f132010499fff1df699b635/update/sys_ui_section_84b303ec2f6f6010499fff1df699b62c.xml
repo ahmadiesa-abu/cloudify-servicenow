@@ -4,13 +4,13 @@
             <element>username</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-04-13 06:32:27</sys_created_on>
-            <sys_id>8cb303ec2f6f6010499fff1df699b632</sys_id>
+            <sys_created_on>2021-06-13 08:17:22</sys_created_on>
+            <sys_id>a7a4e9d087343010669e63d73cbb3568</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_607849_cloudify_configs" sys_domain="global" view="Default view">84b303ec2f6f6010499fff1df699b62c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-04-13 06:32:27</sys_updated_on>
+            <sys_updated_on>2021-06-13 08:17:22</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>host</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-04-13 06:32:27</sys_created_on>
-            <sys_id>84b303ec2f6f6010499fff1df699b633</sys_id>
+            <sys_created_on>2021-06-13 08:17:22</sys_created_on>
+            <sys_id>2ba4e9d087343010669e63d73cbb3568</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_607849_cloudify_configs" sys_domain="global" view="Default view">84b303ec2f6f6010499fff1df699b62c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-04-13 06:32:27</sys_updated_on>
+            <sys_updated_on>2021-06-13 08:17:22</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>tenant</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-04-13 06:32:27</sys_created_on>
-            <sys_id>08b303ec2f6f6010499fff1df699b633</sys_id>
+            <sys_created_on>2021-06-13 08:17:22</sys_created_on>
+            <sys_id>aba4e9d087343010669e63d73cbb3568</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_607849_cloudify_configs" sys_domain="global" view="Default view">84b303ec2f6f6010499fff1df699b62c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-04-13 06:32:27</sys_updated_on>
+            <sys_updated_on>2021-06-13 08:17:22</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>password</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-04-13 06:32:27</sys_created_on>
-            <sys_id>88b303ec2f6f6010499fff1df699b633</sys_id>
+            <sys_created_on>2021-06-13 08:17:22</sys_created_on>
+            <sys_id>2fa4e9d087343010669e63d73cbb3568</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_607849_cloudify_configs" sys_domain="global" view="Default view">84b303ec2f6f6010499fff1df699b62c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-04-13 06:32:27</sys_updated_on>
+            <sys_updated_on>2021-06-13 08:17:22</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,83 @@
             <element>use_ssl</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-04-13 06:32:27</sys_created_on>
-            <sys_id>0cb303ec2f6f6010499fff1df699b633</sys_id>
+            <sys_created_on>2021-06-13 08:17:22</sys_created_on>
+            <sys_id>afa4e9d087343010669e63d73cbb3568</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_607849_cloudify_configs" sys_domain="global" view="Default view">84b303ec2f6f6010499fff1df699b62c</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-04-13 06:32:27</sys_updated_on>
+            <sys_updated_on>2021-06-13 08:17:22</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-06-13 08:17:22</sys_created_on>
+            <sys_id>23a4e9d087343010669e63d73cbb3569</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_607849_cloudify_configs" sys_domain="global" view="Default view">84b303ec2f6f6010499fff1df699b62c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-06-13 08:17:22</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mid_server</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-06-13 08:17:22</sys_created_on>
+            <sys_id>a3a4e9d087343010669e63d73cbb3569</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_607849_cloudify_configs" sys_domain="global" view="Default view">84b303ec2f6f6010499fff1df699b62c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-06-13 08:17:22</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-06-20 06:15:38</sys_created_on>
+            <sys_id>60fb8da28738f410669e63d73cbb35e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_607849_cloudify_configs" sys_domain="global" view="Default view">84b303ec2f6f6010499fff1df699b62c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-06-20 06:15:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>classifier</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-06-20 06:15:38</sys_created_on>
+            <sys_id>e4fb8da28738f410669e63d73cbb35ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_607849_cloudify_configs" sys_domain="global" view="Default view">84b303ec2f6f6010499fff1df699b62c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-06-20 06:15:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>role_classifier</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-06-20 06:21:35</sys_created_on>
+            <sys_id>af4d09e287b4f410669e63d73cbb352a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_607849_cloudify_configs" sys_domain="global" view="Default view">84b303ec2f6f6010499fff1df699b62c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-06-20 06:21:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

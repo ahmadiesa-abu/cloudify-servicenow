@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_schedule">
+    <wf_workflow_schedule action="DELETE">
+        <active>false</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>Cloudify Resources Poller</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-01 00:00:30</run_period>
+        <run_start>2021-04-26 07:49:10</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>periodically</run_type>
+        <script><![CDATA[var ws = new global.WorkflowScheduler(); ws.run();]]></script>
+        <sys_class_name>wf_workflow_schedule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-26 07:49:42</sys_created_on>
+        <sys_id>5ae1d2f82f336010499fff1df699b6aa</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Cloudify Resources Poller</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>wf_workflow_schedule_5ae1d2f82f336010499fff1df699b6aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 08:51:00</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+        <workflow display_value="Poll Cloudify Resources">618f86782f336010499fff1df699b619</workflow>
+    </wf_workflow_schedule>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>wf_workflow_schedule_5ae1d2f82f336010499fff1df699b6aa</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="wf_workflow_schedule"&gt;&lt;wf_workflow_schedule action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;business_calendar/&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;entered_time/&gt;&lt;name&gt;Cloudify Resources Poller&lt;/name&gt;&lt;offset/&gt;&lt;offset_type&gt;0&lt;/offset_type&gt;&lt;run_as display_value="System Administrator"&gt;6816f79cc0a8016401c5a33be04be441&lt;/run_as&gt;&lt;run_as_tz/&gt;&lt;run_dayofmonth&gt;1&lt;/run_dayofmonth&gt;&lt;run_dayofweek&gt;1&lt;/run_dayofweek&gt;&lt;run_period&gt;1970-01-01 00:00:30&lt;/run_period&gt;&lt;run_start&gt;2021-04-26 07:49:10&lt;/run_start&gt;&lt;run_time&gt;1970-01-01 08:00:00&lt;/run_time&gt;&lt;run_type&gt;periodically&lt;/run_type&gt;&lt;script&gt;&lt;![CDATA[var ws = new global.WorkflowScheduler(); ws.run();]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;wf_workflow_schedule&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-26 07:49:42&lt;/sys_created_on&gt;&lt;sys_id&gt;5ae1d2f82f336010499fff1df699b6aa&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Cloudify Resources Poller&lt;/sys_name&gt;&lt;sys_package display_value="Cloudify" source="x_607849_cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_update_name&gt;wf_workflow_schedule_5ae1d2f82f336010499fff1df699b6aa&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-27 08:51:00&lt;/sys_updated_on&gt;&lt;time_zone/&gt;&lt;upgrade_safe&gt;false&lt;/upgrade_safe&gt;&lt;workflow display_value="Poll Cloudify Resources"&gt;618f86782f336010499fff1df699b619&lt;/workflow&gt;&lt;/wf_workflow_schedule&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1605535053</payload_hash>
+        <record_name>Cloudify Resources Poller</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 08:51:00</sys_created_on>
+        <sys_id>ee594a728710f010669e63d73cbb358d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179ad0510840000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 08:51:00</sys_updated_on>
+        <type>Workflow Schedule</type>
+        <update_guid>2a594a72ae10f0104c214588124ee18d</update_guid>
+        <update_guid_history>2a594a72ae10f0104c214588124ee18d:1605535053,801bd6b04a73601057c059101c5f007b:88607508,da029ab8713360101937a5cc99da7093:783281631</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Cloudify Resources Poller">c00d1dff8714b010669e63d73cbb359e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-30 08:11:09</sys_created_on>
+        <sys_db_object display_value="" name="wf_workflow_schedule">wf_workflow_schedule</sys_db_object>
+        <sys_id>d9a1b154432a4688941a975bc7ad6ca4</sys_id>
+        <sys_metadata>5ae1d2f82f336010499fff1df699b6aa</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cloudify Resources Poller</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>wf_workflow_schedule_5ae1d2f82f336010499fff1df699b6aa</sys_update_name>
+        <sys_update_version display_value="wf_workflow_schedule_5ae1d2f82f336010499fff1df699b6aa">ee594a728710f010669e63d73cbb358d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-30 08:11:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

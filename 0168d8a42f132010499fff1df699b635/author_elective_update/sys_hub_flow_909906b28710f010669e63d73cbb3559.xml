@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-quebec-12-09-2020__patch1-02-18-2021</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>cloudify_resource_poller</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot>82b657d487643410669e63d73cbb3522</latest_snapshot>
+        <master_snapshot>4f652d7b8754b010669e63d73cbb351e</master_snapshot>
+        <name>Cloudify Resource Poller</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>c3652d7b8754b010669e63d73cbb3548</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 08:51:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>909906b28710f010669e63d73cbb3559</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Cloudify Resource Poller</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sys_hub_flow_909906b28710f010669e63d73cbb3559</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-06 08:49:51</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=909906b28710f010669e63d73cbb3559"/>
+    <sys_variable_value action="DELETE" query="document_key=909906b28710f010669e63d73cbb3559"/>
+    <sys_flow_timer_trigger action="DELETE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period>1970-01-01 00:00:30</run_period>
+        <run_start>2021-05-30 08:47:57</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-30 08:47:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c3652d7b8754b010669e63d73cbb3548</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-30 08:47:57</sys_updated_on>
+        <time/>
+        <timer_type>1</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="DELETE" query="name=Trigger:c3652d7b8754b010669e63d73cbb3548^sys_idNOT IN0b652d7b8754b010669e63d73cbb3548"/>
+    <sys_flow_trigger_auto_script action="DELETE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>Trigger:c3652d7b8754b010669e63d73cbb3548</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period>1970-01-01 00:00:30</run_period>
+        <run_start>2021-05-30 08:47:57</run_start>
+        <run_time/>
+        <run_type>periodically</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('c3652d7b8754b010669e63d73cbb3548');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-30 08:47:57</sys_created_on>
+        <sys_id>0b652d7b8754b010669e63d73cbb3548</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-30 08:47:57</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">c3652d7b8754b010669e63d73cbb3548</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_hub_trigger_instance action="DELETE" query="flow=909906b28710f010669e63d73cbb3559^sys_idNOT IN14d90ab28710f010669e63d73cbb351e"/>
+    <sys_hub_trigger_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Cloudify Resource Poller">909906b28710f010669e63d73cbb3559</flow>
+        <name>Repeat</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 08:53:02</sys_created_on>
+        <sys_id>14d90ab28710f010669e63d73cbb351e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-30 08:47:57</sys_updated_on>
+        <trigger_definition display_value="Repeat">f63f0d94c32222002841b63b12d3aeed</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>repeat</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="DELETE" query="document_key=14d90ab28710f010669e63d73cbb351e"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>14d90ab28710f010669e63d73cbb351e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 08:53:02</sys_created_on>
+        <sys_id>94d90ab28710f010669e63d73cbb351f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 08:53:02</sys_updated_on>
+        <value>1970-01-01 00:00:30</value>
+        <variable display_value="Repeat">1c5f4d94c32222002841b63b12d3aeb3</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="DELETE" query="id=909906b28710f010669e63d73cbb3559^sys_idNOT IN949906b28710f010669e63d73cbb355b"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>909906b28710f010669e63d73cbb3559</id>
+        <name>Cloudify Resource Poller</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 08:51:57</sys_created_on>
+        <sys_id>949906b28710f010669e63d73cbb355b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 08:51:57</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="DELETE" query="flow=909906b28710f010669e63d73cbb3559^sys_idNOT IN10d90ab28710f010669e63d73cbb3524"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Poll Cloudify Resources">e1784f558780b810669e63d73cbb354d</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Cloudify Resource Poller">909906b28710f010669e63d73cbb3559</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 08:53:02</sys_created_on>
+        <sys_id>10d90ab28710f010669e63d73cbb3524</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-30 08:47:57</sys_updated_on>
+        <ui_id>502b7647-ec05-49b5-96c5-a6e10b8686ba</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=10d90ab28710f010669e63d73cbb3524"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=909906b28710f010669e63d73cbb3559^sys_idNOT INcf652d7b8754b010669e63d73cbb354a"/>
+    <sys_flow_trigger_plan action="DELETE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"cf652d7b8754b010669e63d73cbb354a","name":"plan"}}</plan>
+        <plan_id>909906b28710f010669e63d73cbb3559</plan_id>
+        <snapshot>82b657d487643410669e63d73cbb3522</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-30 08:47:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cf652d7b8754b010669e63d73cbb354a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-30 08:47:57</sys_updated_on>
+        <trigger display_value="">c3652d7b8754b010669e63d73cbb3548</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>cloudify_resource_poller</internal_name>
+        <label_cache>[]</label_cache>
+        <master>true</master>
+        <name>Cloudify Resource Poller</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Cloudify Resource Poller">909906b28710f010669e63d73cbb3559</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-30 08:47:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4f652d7b8754b010669e63d73cbb351e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-30 08:47:57</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=4f652d7b8754b010669e63d73cbb351e"/>
+    <sys_variable_value action="DELETE" query="document_key=4f652d7b8754b010669e63d73cbb351e"/>
+    <sys_hub_trigger_instance action="DELETE" query="flow=4f652d7b8754b010669e63d73cbb351e^sys_idNOT INc3652d7b8754b010669e63d73cbb352b"/>
+    <sys_hub_trigger_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Cloudify Resource Poller">4f652d7b8754b010669e63d73cbb351e</flow>
+        <name>Repeat</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-30 08:47:57</sys_created_on>
+        <sys_id>c3652d7b8754b010669e63d73cbb352b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-30 08:47:57</sys_updated_on>
+        <trigger_definition display_value="Repeat">f63f0d94c32222002841b63b12d3aeed</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>repeat</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="DELETE" query="document_key=c3652d7b8754b010669e63d73cbb352b"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>c3652d7b8754b010669e63d73cbb352b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-30 08:47:57</sys_created_on>
+        <sys_id>cf652d7b8754b010669e63d73cbb352b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-30 08:47:57</sys_updated_on>
+        <value>1970-01-01 00:00:30</value>
+        <variable display_value="Repeat">1c5f4d94c32222002841b63b12d3aeb3</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="DELETE" query="id=4f652d7b8754b010669e63d73cbb351e^sys_idNOT IN07652d7b8754b010669e63d73cbb351f"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>4f652d7b8754b010669e63d73cbb351e</id>
+        <name>Cloudify Resource Poller</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-30 08:47:57</sys_created_on>
+        <sys_id>07652d7b8754b010669e63d73cbb351f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-30 08:47:57</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="DELETE" query="flow=4f652d7b8754b010669e63d73cbb351e^sys_idNOT INcb652d7b8754b010669e63d73cbb352a"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Poll Cloudify Resources">beffcab68710f010669e63d73cbb357d</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>e1784f558780b810669e63d73cbb354d</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Cloudify Resource Poller">4f652d7b8754b010669e63d73cbb351e</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-30 08:47:57</sys_created_on>
+        <sys_id>cb652d7b8754b010669e63d73cbb352a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-30 08:47:57</sys_updated_on>
+        <ui_id>502b7647-ec05-49b5-96c5-a6e10b8686ba</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=cb652d7b8754b010669e63d73cbb352a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>sys_hub_flow_909906b28710f010669e63d73cbb3559</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build&gt;glide-quebec-12-09-2020__patch1-02-18-2021&lt;/compiler_build&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;internal_name&gt;cloudify_resource_poller&lt;/internal_name&gt;&lt;label_cache&gt;[]&lt;/label_cache&gt;&lt;latest_snapshot&gt;82b657d487643410669e63d73cbb3522&lt;/latest_snapshot&gt;&lt;master_snapshot&gt;4f652d7b8754b010669e63d73cbb351e&lt;/master_snapshot&gt;&lt;name&gt;Cloudify Resource Poller&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;remote_trigger_id&gt;c3652d7b8754b010669e63d73cbb3548&lt;/remote_trigger_id&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-27 08:51:57&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;909906b28710f010669e63d73cbb3559&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Cloudify Resource Poller&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cloudify" source="x_607849_cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_909906b28710f010669e63d73cbb3559&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-06 08:49:51&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=909906b28710f010669e63d73cbb3559"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=909906b28710f010669e63d73cbb3559"/&gt;&lt;sys_flow_timer_trigger action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;day_of_month&gt;1&lt;/day_of_month&gt;&lt;day_of_week/&gt;&lt;name/&gt;&lt;run_period&gt;1970-01-01 00:00:30&lt;/run_period&gt;&lt;run_start&gt;2021-05-30 08:47:57&lt;/run_start&gt;&lt;sys_class_name&gt;sys_flow_timer_trigger&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-30 08:47:57&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c3652d7b8754b010669e63d73cbb3548&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-30 08:47:57&lt;/sys_updated_on&gt;&lt;time/&gt;&lt;timer_type&gt;1&lt;/timer_type&gt;&lt;/sys_flow_timer_trigger&gt;&lt;sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:c3652d7b8754b010669e63d73cbb3548^sys_idNOT IN0b652d7b8754b010669e63d73cbb3548"/&gt;&lt;sys_flow_trigger_auto_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;business_calendar/&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;entered_time/&gt;&lt;name&gt;Trigger:c3652d7b8754b010669e63d73cbb3548&lt;/name&gt;&lt;offset/&gt;&lt;offset_type&gt;0&lt;/offset_type&gt;&lt;run_as display_value="System Administrator"&gt;6816f79cc0a8016401c5a33be04be441&lt;/run_as&gt;&lt;run_as_tz/&gt;&lt;run_dayofmonth&gt;1&lt;/run_dayofmonth&gt;&lt;run_dayofweek/&gt;&lt;run_period&gt;1970-01-01 00:00:30&lt;/run_period&gt;&lt;run_start&gt;2021-05-30 08:47:57&lt;/run_start&gt;&lt;run_time/&gt;&lt;run_type&gt;periodically&lt;/run_type&gt;&lt;script&gt;&lt;![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('c3652d7b8754b010669e63d73cbb3548');]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_flow_trigger_auto_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-30 08:47:57&lt;/sys_created_on&gt;&lt;sys_id&gt;0b652d7b8754b010669e63d73cbb3548&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-30 08:47:57&lt;/sys_updated_on&gt;&lt;time_zone/&gt;&lt;trigger display_value=""&gt;c3652d7b8754b010669e63d73cbb3548&lt;/trigger&gt;&lt;upgrade_safe&gt;true&lt;/upgrade_safe&gt;&lt;/sys_flow_trigger_auto_script&gt;&lt;sys_hub_trigger_instance action="delete_multiple" query="flow=909906b28710f010669e63d73cbb3559^sys_idNOT IN14d90ab28710f010669e63d73cbb351e"/&gt;&lt;sys_hub_trigger_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Cloudify Resource Poller"&gt;909906b28710f010669e63d73cbb3559&lt;/flow&gt;&lt;name&gt;Repeat&lt;/name&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-27 08:53:02&lt;/sys_created_on&gt;&lt;sys_id&gt;14d90ab28710f010669e63d73cbb351e&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-30 08:47:57&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Repeat"&gt;f63f0d94c32222002841b63b12d3aeed&lt;/trigger_definition&gt;&lt;trigger_inputs/&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;repeat&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=14d90ab28710f010669e63d73cbb351e"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;14d90ab28710f010669e63d73cbb351e&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-27 08:53:02&lt;/sys_created_on&gt;&lt;sys_id&gt;94d90ab28710f010669e63d73cbb351f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-27 08:53:02&lt;/sys_updated_on&gt;&lt;value&gt;1970-01-01 00:00:30&lt;/value&gt;&lt;variable display_value="Repeat"&gt;1c5f4d94c32222002841b63b12d3aeb3&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=909906b28710f010669e63d73cbb3559^sys_idNOT IN949906b28710f010669e63d73cbb355b"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;909906b28710f010669e63d73cbb3559&lt;/id&gt;&lt;name&gt;Cloudify Resource Poller&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-27 08:51:57&lt;/sys_created_on&gt;&lt;sys_id&gt;949906b28710f010669e63d73cbb355b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-27 08:51:57&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=909906b28710f010669e63d73cbb3559^sys_idNOT IN10d90ab28710f010669e63d73cbb3524"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Poll Cloudify Resources"&gt;e1784f558780b810669e63d73cbb354d&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Cloudify Resource Poller"&gt;909906b28710f010669e63d73cbb3559&lt;/flow&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-27 08:53:02&lt;/sys_created_on&gt;&lt;sys_id&gt;10d90ab28710f010669e63d73cbb3524&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-30 08:47:57&lt;/sys_updated_on&gt;&lt;ui_id&gt;502b7647-ec05-49b5-96c5-a6e10b8686ba&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=10d90ab28710f010669e63d73cbb3524"/&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=909906b28710f010669e63d73cbb3559^sys_idNOT INcf652d7b8754b010669e63d73cbb354a"/&gt;&lt;sys_flow_trigger_plan action="INSERT_OR_UPDATE"&gt;&lt;binding_strategy&gt;com.snc.process_flow.engine.binding.RunAlways&lt;/binding_strategy&gt;&lt;plan&gt;{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"cf652d7b8754b010669e63d73cbb354a","name":"plan"}}&lt;/plan&gt;&lt;plan_id&gt;909906b28710f010669e63d73cbb3559&lt;/plan_id&gt;&lt;snapshot&gt;82b657d487643410669e63d73cbb3522&lt;/snapshot&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-30 08:47:57&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;cf652d7b8754b010669e63d73cbb354a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-30 08:47:57&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;c3652d7b8754b010669e63d73cbb3548&lt;/trigger&gt;&lt;/sys_flow_trigger_plan&gt;&lt;sys_hub_flow_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;internal_name&gt;cloudify_resource_poller&lt;/internal_name&gt;&lt;label_cache&gt;[]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;Cloudify Resource Poller&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;parent_flow display_value="Cloudify Resource Poller"&gt;909906b28710f010669e63d73cbb3559&lt;/parent_flow&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-30 08:47:57&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;4f652d7b8754b010669e63d73cbb351e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-30 08:47:57&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;/sys_hub_flow_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=4f652d7b8754b010669e63d73cbb351e"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=4f652d7b8754b010669e63d73cbb351e"/&gt;&lt;sys_hub_trigger_instance action="delete_multiple" query="flow=4f652d7b8754b010669e63d73cbb351e^sys_idNOT INc3652d7b8754b010669e63d73cbb352b"/&gt;&lt;sys_hub_trigger_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Cloudify Resource Poller"&gt;4f652d7b8754b010669e63d73cbb351e&lt;/flow&gt;&lt;name&gt;Repeat&lt;/name&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-30 08:47:57&lt;/sys_created_on&gt;&lt;sys_id&gt;c3652d7b8754b010669e63d73cbb352b&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-30 08:47:57&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Repeat"&gt;f63f0d94c32222002841b63b12d3aeed&lt;/trigger_definition&gt;&lt;trigger_inputs/&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;repeat&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=c3652d7b8754b010669e63d73cbb352b"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;c3652d7b8754b010669e63d73cbb352b&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-30 08:47:57&lt;/sys_created_on&gt;&lt;sys_id&gt;cf652d7b8754b010669e63d73cbb352b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-30 08:47:57&lt;/sys_updated_on&gt;&lt;value&gt;1970-01-01 00:00:30&lt;/value&gt;&lt;variable display_value="Repeat"&gt;1c5f4d94c32222002841b63b12d3aeb3&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=4f652d7b8754b010669e63d73cbb351e^sys_idNOT IN07652d7b8754b010669e63d73cbb351f"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;4f652d7b8754b010669e63d73cbb351e&lt;/id&gt;&lt;name&gt;Cloudify Resource Poller&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-30 08:47:57&lt;/sys_created_on&gt;&lt;sys_id&gt;07652d7b8754b010669e63d73cbb351f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-30 08:47:57&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=4f652d7b8754b010669e63d73cbb351e^sys_idNOT INcb652d7b8754b010669e63d73cbb352a"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Poll Cloudify Resources"&gt;beffcab68710f010669e63d73cbb357d&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;e1784f558780b810669e63d73cbb354d&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Cloudify Resource Poller"&gt;4f652d7b8754b010669e63d73cbb351e&lt;/flow&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-30 08:47:57&lt;/sys_created_on&gt;&lt;sys_id&gt;cb652d7b8754b010669e63d73cbb352a&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-05-30 08:47:57&lt;/sys_updated_on&gt;&lt;ui_id&gt;502b7647-ec05-49b5-96c5-a6e10b8686ba&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=cb652d7b8754b010669e63d73cbb352a"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1765401057</payload_hash>
+        <record_name>Cloudify Resource Poller</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-06 08:49:51</sys_created_on>
+        <sys_id>9ff869ca87e03010669e63d73cbb35f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179e0839b690000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-06 08:49:51</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>17f869ca8ce030106d3fd192454678f3</update_guid>
+        <update_guid_history>17f869ca8ce030106d3fd192454678f3:1765401057,1f652d7b3554b0109747207a98773b61:1015343600,a2d90ab22f10f0103c56804d5dbbbde2:1006454839,1cd90ab2e210f010a75e22ef83234331:306861798,189906b24310f0104e60a8878625675f:1613647922</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-08 07:29:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>5763a5b5ec464c0cb0e62197d383fb41</sys_id>
+        <sys_metadata>909906b28710f010669e63d73cbb3559</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cloudify Resource Poller</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_909906b28710f010669e63d73cbb3559</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_909906b28710f010669e63d73cbb3559">9ff869ca87e03010669e63d73cbb35f3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-08 07:29:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

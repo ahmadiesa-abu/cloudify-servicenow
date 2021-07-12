@@ -9,15 +9,23 @@
         <name>cloudify_http</name>
         <script><![CDATA[var cloudify_http = Class.create();
 cloudify_http.prototype = {
-    initialize: function(rest_message, http_method, content) {
-		var conf = new cloudify_config();
+    initialize: function(config_name, rest_message, http_method, content) {
+		var conf = new cloudify_config(config_name);
 		this.sm = new sn_ws.RESTMessageV2(rest_message, http_method);
 		var host = (conf.use_ssl ? 'https://':'http://') + conf.host;
 		this.sm.setStringParameter("host", host);
 		this.sm.setStringParameter("tenant", conf.tenant);
 		this.sm.setBasicAuth(conf.username, conf.password);
+		if(conf.mid_server !== null && conf.mid_server !=''){
+			this.sm.setMIDServer(conf.mid_server);
+		}
 		if (content !== null) {
-			this.sm.setRequestBody(content);
+			if(http_method == 'Upload Blueprint'){
+				this.sm.setRequestHeader('Content-Type', 'application/octet-stream');
+				this.sm.setRequestBodyFromAttachment(content);
+			}
+			else
+				this.sm.setRequestBody(content);
 		}
     },
 	
@@ -30,36 +38,30 @@ cloudify_http.prototype = {
     },
 	
     execute: function() {
-			var requestBody;
-			var requestStatus;
+			var responseStatusCode;
 			var responseBody;
 			var parsed = null;
 
 			try {
+				//var response = this.sm.executeAsync();
+				//response.waitForResponse(60); // wait for 60 seconds
+				this.sm.setHttpTimeout(60000); // wait for 60 seconds
 				var response = this.sm.execute();
-
-				responseBody = response.haveError() ? response.getErrorMessage() : response.getBody();
-				requestStatus    = response.getStatusCode();
+				
+				responseBody = response.getBody();
+				responseStatusCode    = response.getStatusCode();
 			} catch(ex) {
 				responseBody  = ex.getMessage();
-				requestBody   = this.sm ? this.sm.getRequestBody() : null;
-				requestStatus = response ? response.getStatusCode() : "500";
-
-				gs.info("Error making HTTP Request");
-				gs.info("HTTP Status: "  + requestStatus);
-				gs.info("Request Body: " + requestBody);
-				gs.info("Response: "     + responseBody);
+				responseStatusCode = response ? response.getStatusCode() : "500";
 			} finally {
-				if (requestStatus > 202) {
-					gs.info("HTTP Request Body: " + requestBody);
-					gs.info("HTTP Request Status: " + requestStatus);
-					gs.info("HTTP Request Error: "  + responseBody);
-					parsed = requestStatus;
-				} else {
+				if (responseStatusCode>202)
+					parsed = {
+						'responseStatusCode': responseStatusCode,
+						'responseBody' : responseBody!=null ? JSON.parse(responseBody):''
+					};
+				else
 					parsed = JSON.parse(responseBody);
-				}
 			}
-
 			return parsed;
     },
 
@@ -69,13 +71,13 @@ cloudify_http.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-13 07:55:23</sys_created_on>
         <sys_id>7e24d3e82faf6010499fff1df699b61f</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_name>cloudify_http</sys_name>
         <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name>sys_script_include_7e24d3e82faf6010499fff1df699b61f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-21 12:32:30</sys_updated_on>
+        <sys_updated_on>2021-06-30 09:02:04</sys_updated_on>
     </sys_script_include>
 </record_update>

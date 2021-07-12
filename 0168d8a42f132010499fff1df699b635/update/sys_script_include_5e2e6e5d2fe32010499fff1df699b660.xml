@@ -13,32 +13,61 @@ cloudify_integration.prototype = {
     },
 	
 	/* Blueprints Integration */
-	uploadBlueprint: function(blueprint_id, application_file_name, visibility, blueprint_archive_url, labels){
-		var http = new cloudify_http("Cloudify Blueprints", "Upload Blueprint", null);
+	uploadBlueprint: function(config_name, blueprint_id, application_file_name, visibility, blueprint_archive_url, blueprint_archive, labels){
+		var http = null;
+		if (blueprint_archive!='' && blueprint_archive!='No attachment found')
+			http = new cloudify_http(config_name, "Cloudify Blueprints", "Upload Blueprint", blueprint_archive);
+		else{
+			http = new cloudify_http(config_name, "Cloudify Blueprints", "Upload Blueprint", null);
+			http.setQueryParam("blueprint_archive_url", blueprint_archive_url);
+		}
 		http.setParam("blueprint_id", blueprint_id);
 		http.setQueryParam("application_file_name", application_file_name);
 		http.setQueryParam("visibility", visibility);
-		http.setQueryParam("blueprint_archive_url", blueprint_archive_url);
+		
 		http.setQueryParam("labels", labels);
+		http.setQueryParam("_include","id");
 		var parsedResponse = http.execute();
 		return parsedResponse;
 	},
-	deleteBlueprint: function(blueprint_id, force){
-		var http = new cloudify_http("Cloudify Blueprints", "Delete Blueprint", null);
+	deleteBlueprint: function(config_name, blueprint_id, force){
+		var http = new cloudify_http(config_name, "Cloudify Blueprints", "Delete Blueprint", null);
 		http.setParam("blueprint_id", blueprint_id);
 		http.setQueryParam("force", force);
 		var parsedResponse = http.execute();
 		return parsedResponse;
 	},
-	listBlueprints: function() {
-		var http = new cloudify_http("Cloudify Blueprints", "List Blueprints", null);
+	listBlueprints: function(config_name) {
+		var http = new cloudify_http(config_name, "Cloudify Blueprints", "List Blueprints", null);
 		http.setQueryParam("_include","id");
 		var parsedResponse = http.execute();
 		return parsedResponse.items;
 	},
+	getBlueprintInputs: function(config_name, blueprint_id){
+		var http = new cloudify_http(config_name, "Cloudify Blueprints", "Get Blueprint", null);
+		http.setQueryParam("id", blueprint_id);
+		http.setQueryParam("_include","plan");
+		var parsedResponse = http.execute();
+		var bp_inputs = parsedResponse.items[0].plan.inputs;
+		Object.keys(bp_inputs).forEach(function(key) {			
+			if (bp_inputs[key]["default"] !== undefined && bp_inputs[key]["type"] === undefined){
+				if (Array.isArray(bp_inputs[key]["default"]))
+					bp_inputs[key]["type"] = 'list';
+				else if (typeof bp_inputs[key]["default"] === 'number')
+					bp_inputs[key]["type"] = 'float';
+				else if (typeof bp_inputs[key]["default"] === 'object')
+					bp_inputs[key]["type"] = 'dict';
+				else if (typeof bp_inputs[key]["default"] === 'boolean')
+					bp_inputs[key]["type"] = 'boolean';
+				else
+					bp_inputs[key]["type"] = 'string';
+			}
+		});
+		return bp_inputs;
+	},
 	
 	/* Deployments Integration */
-	createDeployment: function(blueprint_id, deployment_id, inputs, site_name, labels, private_resource, skip_plugins_validation, visibility){
+	createDeployment: function(config_name, blueprint_id, deployment_id, inputs, site_name, labels, private_resource, skip_plugins_validation, visibility){
 		var content = {
 			"blueprint_id": String(blueprint_id),
 			"private_resource": Boolean(private_resource),
@@ -50,49 +79,57 @@ cloudify_integration.prototype = {
 		if (String(site_name)!=''){
 			content["site_name"] = String(site_name);
 		}
-		gs.info("content after : "+JSON.stringify(content));
-		var http = new cloudify_http("Cloudify Deployments", "Create Deployment", JSON.stringify(content));
+		var http = new cloudify_http(config_name, "Cloudify Deployments", "Create Deployment", JSON.stringify(content));
 		http.setParam("deployment_id", deployment_id);
+		http.setQueryParam("_include","id");
 		var parsedResponse = http.execute();
 		return parsedResponse;
 		
 	},
-	getDeploymentCapabilities: function(deployment_id){
-		var http = new cloudify_http("Cloudify Deployments", "Get Deployment Capabilities", null);
+	getDeploymentCapabilities: function(config_name, deployment_id){
+		var http = new cloudify_http(config_name, "Cloudify Deployments", "Get Deployment Capabilities", null);
 		http.setParam("deployment_id", deployment_id);
 		var parsedResponse = http.execute();
 		return parsedResponse.capabilities;
 	},
-	getDeploymentOutputs: function(deployment_id){
-		var http = new cloudify_http("Cloudify Deployments", "Get Deployment Outputs", null);
+	getDeploymentOutputs: function(config_name, deployment_id){
+		var http = new cloudify_http(config_name, "Cloudify Deployments", "Get Deployment Outputs", null);
 		http.setParam("deployment_id", deployment_id);
 		var parsedResponse = http.execute();
 		return parsedResponse.outputs;
 	},
-	deleteDeployment: function(deployment_id, force){
-		var http = new cloudify_http("Cloudify Deployments", "Delete Deployment", null);
+	deleteDeployment: function(config_name, deployment_id, force){
+		var http = new cloudify_http(config_name, "Cloudify Deployments", "Delete Deployment", null);
 		http.setParam("deployment_id", deployment_id);
 		http.setQueryParam("force", force);
 		var parsedResponse = http.execute();
 		return parsedResponse;
 	},
-	listDeployments: function(){
-		var http = new cloudify_http("Cloudify Deployments", "List Deployments", null);
-		http.setQueryParam("_include","id");
+	listDeployments: function(config_name){
+		var http = new cloudify_http(config_name, "Cloudify Deployments", "List Deployments", null);
+		http.setQueryParam("_include",['id', 'labels']);
 		var parsedResponse = http.execute();
 		return parsedResponse.items;
 	},
+	getDeploymentWorkflows: function(config_name, deployment_id){
+		var http = new cloudify_http(config_name, "Cloudify Deployments", "Get Deployment", null);
+		http.setQueryParam("id", deployment_id);
+		http.setQueryParam("_include","workflows");
+		var parsedResponse = http.execute();
+		var dp_workflows = parsedResponse.items[0].workflows;
+		return dp_workflows;
+	},
 	
 	/* Events Integration */
-	listEvents: function(filter_type, filter_value){
-		var http = new cloudify_http("Cloudify Events", "List Events", null);
+	listEvents: function(config_name, filter_type, filter_value){
+		var http = new cloudify_http(config_name, "Cloudify Events", "List Events", null);
 		http.setQueryParam(filter_type, filter_value);
 		var parsedResponse = http.execute();
 		return parsedResponse.items;
 	},
 	
 	/* Executions Integration */
-	startExecution: function(deployment_id, workflow_id, allow_custom_parameters, parameters, force, queue, schedule){
+	startExecution: function(config_name, deployment_id, workflow_id, allow_custom_parameters, parameters, force, queue, schedule){
 		var content = {
 			"deployment_id": String(deployment_id),
 			"workflow_id": String(workflow_id),
@@ -102,65 +139,111 @@ cloudify_integration.prototype = {
 			"queue": Boolean(queue),
 		};
 		if (String(schedule)!=''){
-			content["schedule"] = String(schedule);
-		}
-		
-		var http = new cloudify_http("Cloudify Exeuctions", "Start Execution", JSON.stringify(content));
+			content["scheduled_time"] = String(schedule);
+		}		
+		var http = new cloudify_http(config_name, "Cloudify Executions", "Start Execution", JSON.stringify(content));
 		http.setQueryParam("_include","id");
 		var parsedResponse = http.execute();
 		return parsedResponse;
 	},
-	cancelExecution: function(excution_id, deployment_id, action){
+	cancelExecution: function(config_name, excution_id, deployment_id, action){
 		var content = {
 			"deployment_id": String(deployment_id),
 			"action": String(action)
 		};
-		var http = new cloudify_http("Cloudify Exeuctions", "Cancel Execution", JSON.stringify(content));
-		http.setParam("excution_id", excution_id);
+		var http = new cloudify_http(config_name, "Cloudify Executions", "Cancel Execution", JSON.stringify(content));
+		http.setParam("execution_id", execution_id);
 		http.setQueryParam("_include","id");
 		var parsedResponse = http.execute();
 		return parsedResponse;
 	},
-	getExecution: function(execution_id){
-		var http = new cloudify_http("Cloudify Exeuctions", "Get Execution", null);
-		http.setParam("excution_id", excution_id);
-		http.setQueryParam("_include","[id, status, error]");
+	getExecution: function(config_name, execution_id){
+		var http = new cloudify_http(config_name, "Cloudify Executions", "Get Execution", null);
+		http.setParam("execution_id", execution_id);
+		http.setQueryParam("_include",['id', 'status', 'error']);
 		var parsedResponse = http.execute();
 		return parsedResponse;
 	},
-	
+	getExecutionsBulk: function(config_name, executions_ids){
+		
+		var conf = new cloudify_config(config_name);
+		var sm = new sn_ws.RESTMessageV2();
+		var host = (conf.use_ssl ? 'https://':'http://') + conf.host;
+		sm.setHttpMethod("get");
+		sm.setBasicAuth(conf.username, conf.password);
+		if(conf.mid_server !== null && conf.mid_server !=''){
+			sm.setMIDServer(conf.mid_server);
+		}
+		sm.setRequestHeader('tenant', conf.tenant);
+		var endpoint = host+'/api/v3.1/executions?_include=id,status,error';
+		for (var i = 0; i < executions_ids.length; i++){
+			endpoint+="&id="+executions_ids[i];
+		}
+		sm.setEndpoint(endpoint);
+		sm.setHttpTimeout(60000);
+		var responseStatusCode;
+		var responseBody;
+		var parsed = null;
+
+		try {
+			sm.setHttpTimeout(60000); // wait for 60 seconds
+			var response = sm.execute();
+			responseBody = response.getBody();
+			responseStatusCode    = response.getStatusCode();
+		} catch(ex) {
+			responseBody  = ex.getMessage();
+			responseStatusCode = response ? response.getStatusCode() : "500";
+		} finally {
+			if (responseStatusCode>202)
+				parsed = {
+					'responseStatusCode': responseStatusCode,
+					'responseBody' : responseBody!=null ? JSON.parse(responseBody):''
+				};
+			else
+				parsed = JSON.parse(responseBody);
+		}
+		
+		return parsed;
+	},
+	listExecutions: function(config_name, deployment_id){
+		var http = new cloudify_http(config_name, "Cloudify Executions", "List Executions", null);
+		http.setQueryParam("deployment_id", deployment_id);
+		http.setQueryParam("_include",['id', 'status', 'workflow_id']);
+		var parsedResponse = http.execute();
+		return parsedResponse.items;
+	},
 	/* Secrets Integration */
-	createSecret: function(secret_key, secret_value, update_if_exists, visibility, is_hidden_value){
+	createSecret: function(config_name, secret_key, secret_value, update_if_exists, visibility, is_hidden_value){
 		var content = {
 			"value": String(secret_value),
 			"update_if_exists": Boolean(update_if_exists),
 			"visibility": String(visibility),
 			"is_hidden_value": Boolean(is_hidden_value)
 		};
-		var http = new cloudify_http("Cloudify Secrets", "Create Secret", JSON.stringify(content));
+		var http = new cloudify_http(config_name, "Cloudify Secrets", "Create Secret", JSON.stringify(content));
 		http.setParam("secret_key", secret_key);
 		var parsedResponse = http.execute();
 		return parsedResponse;
 	},
-	updateSecret: function(secret_key, secret_value, visibility, is_hidden_value){
+	updateSecret: function(config_name, secret_key, secret_value, visibility, is_hidden_value){
 		var content = {
 			"value": String(secret_value),
 			"visibility": String(visibility),
 			"is_hidden_value": Boolean(is_hidden_value)
 		};
-		var http = new cloudify_http("Cloudify Secrets", "Update Secret", JSON.stringify(content));
+		var http = new cloudify_http(config_name, "Cloudify Secrets", "Update Secret", JSON.stringify(content));
 		http.setParam("secret_key", secret_key);
 		var parsedResponse = http.execute();
 		return parsedResponse;
 	},
-	deleteSecret: function(secret_key){
-		var http = new cloudify_http("Cloudify Secrets", "Delete Secret", null);
+	deleteSecret: function(config_name, secret_key){
+		var http = new cloudify_http(config_name, "Cloudify Secrets", "Delete Secret", null);
 		http.setParam("secret_key", secret_key);
 		var parsedResponse = http.execute();
 		return parsedResponse;
 	},
-	getSecret: function(secret_key){
-		var http = new cloudify_http("Cloudify Secrets", "Get Secret", null);
+	getSecret: function(config_name, secret_key){
+		var http = new cloudify_http(config_name, "Cloudify Secrets", "Get Secret", null);
 		http.setParam("secret_key", secret_key);
 		var parsedResponse = http.execute();
 		return parsedResponse;
@@ -172,13 +255,13 @@ cloudify_integration.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-15 12:58:02</sys_created_on>
         <sys_id>5e2e6e5d2fe32010499fff1df699b660</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>102</sys_mod_count>
         <sys_name>cloudify_integration</sys_name>
         <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name>sys_script_include_5e2e6e5d2fe32010499fff1df699b660</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-22 07:34:17</sys_updated_on>
+        <sys_updated_on>2021-06-30 09:21:33</sys_updated_on>
     </sys_script_include>
 </record_update>

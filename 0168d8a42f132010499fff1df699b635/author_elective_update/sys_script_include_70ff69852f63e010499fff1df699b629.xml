@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_607849_cloudify.cloudify_executions_record</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>cloudify_executions_record</name>
+        <script><![CDATA[var cloudify_executions_record = Class.create();
+cloudify_executions_record.prototype = {
+    initialize: function() {
+    },
+	
+	/*
+    * @param {Object} obj                - Object of parsed response
+    * @param {String} request_sys_id     - sys_id of the Catalog Request
+    * @param {String} sc_req_item_sys_id - sys_id of the Requested Item
+    * @returns {Object} Terraform GlideRecord
+    */
+    create: function(execution_id, request_sys_id, sc_req_item_sys_id, cloudify_action_type) {
+		var grExecution = new GlideRecord("x_607849_cloudify_executions");
+		grExecution.initialize();
+		grExecution.request          = request_sys_id;
+		grExecution.requested_item   = sc_req_item_sys_id;
+		grExecution.cloudify_action_type   = cloudify_action_type;
+		grExecution.execution_id     = execution_id;
+		grExecution.last_known_state = "not started"; // default until status is updated
+		grExecution.insert();
+		return grExecution;
+    },
+	
+	/*
+	* @param {String} execution_id - Exceution id
+	* @returns {Object} Executions GlideRecord
+	*/
+	get: function(execution_id) {
+		var record;
+		var grExecution = new GlideRecord("x_607849_cloudify_executions");
+		grExecution.addQuery("execution_id", execution_id);
+		grExecution.setLimit(1);
+		grExecution.query();
+		while (grExecution.next()) {
+			record = grExecution;
+		}
+		return record;
+	},
+
+    type: 'cloudify_executions_record'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-14 13:45:45</sys_created_on>
+        <sys_id>70ff69852f63e010499fff1df699b629</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>cloudify_executions_record</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sys_script_include_70ff69852f63e010499fff1df699b629</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-25 11:19:13</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>sys_script_include_70ff69852f63e010499fff1df699b629</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_607849_cloudify.cloudify_executions_record&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;cloudify_executions_record&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var cloudify_executions_record = Class.create();
+cloudify_executions_record.prototype = {
+    initialize: function() {
+    },
+	
+	/*
+    * @param {Object} obj                - Object of parsed response
+    * @param {String} request_sys_id     - sys_id of the Catalog Request
+    * @param {String} sc_req_item_sys_id - sys_id of the Requested Item
+    * @returns {Object} Terraform GlideRecord
+    */
+    create: function(execution_id, request_sys_id, sc_req_item_sys_id, cloudify_action_type) {
+		var grExecution = new GlideRecord("x_607849_cloudify_executions");
+		grExecution.initialize();
+		grExecution.request          = request_sys_id;
+		grExecution.requested_item   = sc_req_item_sys_id;
+		grExecution.cloudify_action_type   = cloudify_action_type;
+		grExecution.execution_id     = execution_id;
+		grExecution.last_known_state = "not started"; // default until status is updated
+		grExecution.insert();
+		return grExecution;
+    },
+	
+	/*
+	* @param {String} execution_id - Exceution id
+	* @returns {Object} Executions GlideRecord
+	*/
+	get: function(execution_id) {
+		var record;
+		var grExecution = new GlideRecord("x_607849_cloudify_executions");
+		grExecution.addQuery("execution_id", execution_id);
+		grExecution.setLimit(1);
+		grExecution.query();
+		while (grExecution.next()) {
+			record = grExecution;
+		}
+		return record;
+	},
+
+    type: 'cloudify_executions_record'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-14 13:45:45&lt;/sys_created_on&gt;&lt;sys_id&gt;70ff69852f63e010499fff1df699b629&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;cloudify_executions_record&lt;/sys_name&gt;&lt;sys_package display_value="Cloudify" source="x_607849_cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_70ff69852f63e010499fff1df699b629&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-25 11:19:13&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1689840827</payload_hash>
+        <record_name>cloudify_executions_record</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-25 11:19:13</sys_created_on>
+        <sys_id>ed6871a82ff32010499fff1df699b6fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17908c1410f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-25 11:19:13</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>a56871a8b7f3201057005e1d93bbe9fb</update_guid>
+        <update_guid_history>a56871a8b7f3201057005e1d93bbe9fb:-1689840827,095835a886f32010a09ae7ad13dc5865:939578414,0f300a8120a3e010571bbf0ad6464f62:-1376571275,c3427109fe63e0108e009d4409072051:-1344639387,7741f9c59a63e0105db5ca568b478412:1750973383,817079855f63e0100091be5f58f50634:1082651779</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-02 07:26:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>75141eaf411d48a49ede1d39555cf064</sys_id>
+        <sys_metadata>70ff69852f63e010499fff1df699b629</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cloudify_executions_record</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>sys_script_include_70ff69852f63e010499fff1df699b629</sys_update_name>
+        <sys_update_version display_value="sys_script_include_70ff69852f63e010499fff1df699b629">ed6871a82ff32010499fff1df699b6fb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-02 07:26:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
