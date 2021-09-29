@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="DELETE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_607849_cloudify_FirstSetup.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<h1>Cloudify Manager Setup</h1>
+	<p style="font-size:18px;">
+	
+		To setup Cloudify manager , please refer to : 
+
+		https://docs.cloudify.co/latest/trial_getting_started/set_trial_manager/
+
+		after that please turn to configs module to connect to that manager
+	</p>
+</j:jelly>]]></html>
+        <name>FirstSetup</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-24 11:45:32</sys_created_on>
+        <sys_id>a9a60927874ef450669e63d73cbb35bc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>FirstSetup</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sys_ui_page_a9a60927874ef450669e63d73cbb35bc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-24 11:48:12</sys_updated_on>
+    </sys_ui_page>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>sys_ui_page_a9a60927874ef450669e63d73cbb35bc</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category&gt;general&lt;/category&gt;&lt;client_script/&gt;&lt;description/&gt;&lt;direct&gt;false&lt;/direct&gt;&lt;endpoint&gt;x_607849_cloudify_FirstSetup.do&lt;/endpoint&gt;&lt;html&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+&lt;h1&gt;Cloudify Manager Setup&lt;/h1&gt;
+	&lt;p style="font-size:18px;"&gt;
+	
+		To setup Cloudify manager , please refer to : 
+
+		https://docs.cloudify.co/latest/trial_getting_started/set_trial_manager/
+
+		after that please turn to configs module to connect to that manager
+	&lt;/p&gt;
+&lt;/j:jelly&gt;]]&gt;&lt;/html&gt;&lt;name&gt;FirstSetup&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-24 11:45:32&lt;/sys_created_on&gt;&lt;sys_id&gt;a9a60927874ef450669e63d73cbb35bc&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;FirstSetup&lt;/sys_name&gt;&lt;sys_package display_value="Cloudify" source="x_607849_cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_a9a60927874ef450669e63d73cbb35bc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-24 11:48:12&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>567163511</payload_hash>
+        <record_name>FirstSetup</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-24 11:48:12</sys_created_on>
+        <sys_id>ce67c927874ef450669e63d73cbb35d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b77fd476c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-24 11:48:12</sys_updated_on>
+        <type>UI Page</type>
+        <update_guid>4667c927f34ef450e910acc191ab4ad3</update_guid>
+        <update_guid_history>4667c927f34ef450e910acc191ab4ad3:567163511,b6c649277d4ef450c0fcb7563373582d:-1301487131</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-24 12:21:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_page">sys_ui_page</sys_db_object>
+        <sys_id>9fb88d0372c24c7ca6b6b96bc3850084</sys_id>
+        <sys_metadata>a9a60927874ef450669e63d73cbb35bc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FirstSetup</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>sys_ui_page_a9a60927874ef450669e63d73cbb35bc</sys_update_name>
+        <sys_update_version display_value="sys_ui_page_a9a60927874ef450669e63d73cbb35bc">ce67c927874ef450669e63d73cbb35d3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-24 12:21:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

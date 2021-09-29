@@ -24,8 +24,8 @@ cloudify_integration.prototype = {
 		http.setParam("blueprint_id", blueprint_id);
 		http.setQueryParam("application_file_name", application_file_name);
 		http.setQueryParam("visibility", visibility);
-		
-		http.setQueryParam("labels", labels);
+		if(labels)
+			http.setQueryParam("labels", labels);
 		http.setQueryParam("_include","id");
 		var parsedResponse = http.execute();
 		return parsedResponse;
@@ -38,10 +38,22 @@ cloudify_integration.prototype = {
 		return parsedResponse;
 	},
 	listBlueprints: function(config_name) {
-		var http = new cloudify_http(config_name, "Cloudify Blueprints", "List Blueprints", null);
-		http.setQueryParam("_include","id");
-		var parsedResponse = http.execute();
-		return parsedResponse.items;
+		var PAGINATION_SIZE = 1000;
+		var offset = 0;
+		var result = [];
+		var done = false;
+		while (!done){
+			var http = new cloudify_http(config_name, "Cloudify Blueprints", "List Blueprints", null);
+			http.setQueryParam("_include","id");
+			http.setQueryParam("_size",PAGINATION_SIZE);
+			http.setQueryParam("_offset",offset);
+			var parsedResponse = http.execute();
+			if(parsedResponse.items.length<PAGINATION_SIZE)
+				done = true;
+			result = result.concat(parsedResponse.items);	
+			offset += PAGINATION_SIZE;
+		}
+		return result;
 	},
 	getBlueprintInputs: function(config_name, blueprint_id){
 		var http = new cloudify_http(config_name, "Cloudify Blueprints", "Get Blueprint", null);
@@ -67,7 +79,7 @@ cloudify_integration.prototype = {
 	},
 	
 	/* Deployments Integration */
-	createDeployment: function(config_name, blueprint_id, deployment_id, inputs, site_name, labels, private_resource, skip_plugins_validation, visibility){
+	createDeployment: function(config_name, blueprint_id, deployment_id, inputs, site_name, labels, private_resource, skip_plugins_validation, visibility, display_name){
 		var content = {
 			"blueprint_id": String(blueprint_id),
 			"private_resource": Boolean(private_resource),
@@ -79,6 +91,10 @@ cloudify_integration.prototype = {
 		if (String(site_name)!=''){
 			content["site_name"] = String(site_name);
 		}
+		if (String(display_name)!=''){
+			content["display_name"] = String(display_name);
+		}
+		
 		var http = new cloudify_http(config_name, "Cloudify Deployments", "Create Deployment", JSON.stringify(content));
 		http.setParam("deployment_id", deployment_id);
 		http.setQueryParam("_include","id");
@@ -106,10 +122,28 @@ cloudify_integration.prototype = {
 		return parsedResponse;
 	},
 	listDeployments: function(config_name){
-		var http = new cloudify_http(config_name, "Cloudify Deployments", "List Deployments", null);
-		http.setQueryParam("_include",['id', 'labels']);
+		var PAGINATION_SIZE = 1000;
+		var offset = 0;
+		var result = [];
+		var done = false;
+		var http = new cloudify_http(config_name, "Cloudify Manager", "Get Version", null);
+		http.setQueryParam("_include", "version");
 		var parsedResponse = http.execute();
-		return parsedResponse.items;
+		while (!done){
+			http = new cloudify_http(config_name, "Cloudify Deployments", "List Deployments", null);
+			if (parseFloat(parsedResponse.version)>=6)
+				http.setQueryParam("_include",['id', 'labels', 'display_name']);
+			else
+				http.setQueryParam("_include",['id', 'labels']);
+			http.setQueryParam("_size",PAGINATION_SIZE);
+			http.setQueryParam("_offset",offset);
+			parsedResponse = http.execute();
+			if(parsedResponse.items.length<PAGINATION_SIZE)
+				done = true;
+			result = result.concat(parsedResponse.items);	
+			offset += PAGINATION_SIZE;
+		}
+		return result;
 	},
 	getDeploymentWorkflows: function(config_name, deployment_id){
 		var http = new cloudify_http(config_name, "Cloudify Deployments", "Get Deployment", null);
@@ -118,6 +152,36 @@ cloudify_integration.prototype = {
 		var parsedResponse = http.execute();
 		var dp_workflows = parsedResponse.items[0].workflows;
 		return dp_workflows;
+	},
+	getDeploymentInputs: function(config_name, deployment_id){
+		var http = new cloudify_http(config_name, "Cloudify Deployments", "Get Deployment", null);
+		http.setQueryParam("id", deployment_id);
+		http.setQueryParam("_include","inputs");
+		var parsedResponse = http.execute();
+		var dp_inputs = parsedResponse.items[0].inputs;
+		return dp_inputs;
+	},
+	
+	updateDeployment: function(config_name, blueprint_id, deployment_id, inputs){
+		var content = {
+			"blueprint_id": String(blueprint_id),
+			"skip_install": false,
+			"skip_uninstall": false,
+			"skip_reinstall": false,
+			"force": false,
+			"ignore_failure": false,
+			"install_first": false,
+			"inputs": inputs,
+			"reinstall_list": [],
+			"preview": false,
+			
+		};
+		
+		var http = new cloudify_http(config_name, "Cloudify Deployments", "Update Deployment", JSON.stringify(content));
+		http.setParam("deployment_id", deployment_id);
+		var parsedResponse = http.execute();
+		return parsedResponse;
+		
 	},
 	
 	/* Events Integration */
@@ -202,7 +266,6 @@ cloudify_integration.prototype = {
 			else
 				parsed = JSON.parse(responseBody);
 		}
-		
 		return parsed;
 	},
 	listExecutions: function(config_name, deployment_id){
@@ -248,6 +311,13 @@ cloudify_integration.prototype = {
 		var parsedResponse = http.execute();
 		return parsedResponse;
 	},
+	/* Manager Integration */
+	getManagerVersion: function(config_name){
+		var http = new cloudify_http(config_name, "Cloudify Manager", "Get Version", null);
+		http.setQueryParam("_include", "version");
+		var parsedResponse = http.execute();
+		return parsedResponse.version;
+	},
 
     type: 'cloudify_integration'
 };]]></script>
@@ -255,13 +325,13 @@ cloudify_integration.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-15 12:58:02</sys_created_on>
         <sys_id>5e2e6e5d2fe32010499fff1df699b660</sys_id>
-        <sys_mod_count>102</sys_mod_count>
+        <sys_mod_count>128</sys_mod_count>
         <sys_name>cloudify_integration</sys_name>
         <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name>sys_script_include_5e2e6e5d2fe32010499fff1df699b660</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-30 09:21:33</sys_updated_on>
+        <sys_updated_on>2021-08-17 09:36:42</sys_updated_on>
     </sys_script_include>
 </record_update>

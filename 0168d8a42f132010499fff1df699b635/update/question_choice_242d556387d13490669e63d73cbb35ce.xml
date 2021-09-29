@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Region Name">378cd56387d13490669e63d73cbb358d</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-18 07:02:33</sys_created_on>
+        <sys_id>242d556387d13490669e63d73cbb35ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Europe (Frankfurt)</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>question_choice_242d556387d13490669e63d73cbb35ce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-18 07:02:33</sys_updated_on>
+        <text>Europe (Frankfurt)</text>
+        <value>eu-central-1</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=242d556387d13490669e63d73cbb35ce"/>
+</record_update>

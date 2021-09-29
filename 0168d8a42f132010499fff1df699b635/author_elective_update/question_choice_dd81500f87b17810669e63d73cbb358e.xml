@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Region Name">5181500f87b17810669e63d73cbb356e</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-10 08:20:07</sys_created_on>
+        <sys_id>dd81500f87b17810669e63d73cbb358e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Europe (London)</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>question_choice_dd81500f87b17810669e63d73cbb358e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-10 08:20:07</sys_updated_on>
+        <text>Europe (London)</text>
+        <value>eu-west-2</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=dd81500f87b17810669e63d73cbb358e"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>question_choice_dd81500f87b17810669e63d73cbb358e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>100</order><published_ref/><question display_value="Region Name">5181500f87b17810669e63d73cbb356e</question><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-08-10 08:20:07</sys_created_on><sys_id>dd81500f87b17810669e63d73cbb358e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Europe (London)</sys_name><sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package><sys_policy/><sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope><sys_update_name>question_choice_dd81500f87b17810669e63d73cbb358e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-08-10 08:20:07</sys_updated_on><text>Europe (London)</text><value>eu-west-2</value></question_choice><fx_price action="delete_multiple" query="id=dd81500f87b17810669e63d73cbb358e"/></record_update>]]></payload>
+        <payload_hash>-517872254</payload_hash>
+        <record_name>Europe (London)</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-10 08:20:07</sys_created_on>
+        <sys_id>1d81500f87b17810669e63d73cbb3590</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b2f25bd4a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-10 08:20:07</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>1581500f3fb1781064e2edf401e05890</update_guid>
+        <update_guid_history>1581500f3fb1781064e2edf401e05890:-517872254</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Europe (London)">b0d2d44f87b17810669e63d73cbb3500</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-10 08:25:50</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>879383ae866a43e48d086ffde9f1d190</sys_id>
+        <sys_metadata>dd81500f87b17810669e63d73cbb358e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Europe (London)</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent display_value="Slice Differentiator">5181500f87b17810669e63d73cbb356e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>question_choice_dd81500f87b17810669e63d73cbb358e</sys_update_name>
+        <sys_update_version display_value="question_choice_dd81500f87b17810669e63d73cbb358e">1d81500f87b17810669e63d73cbb3590</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-10 08:25:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

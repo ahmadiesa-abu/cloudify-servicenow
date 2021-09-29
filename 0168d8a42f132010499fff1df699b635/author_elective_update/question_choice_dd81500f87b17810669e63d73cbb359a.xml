@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>400</order>
+        <published_ref/>
+        <question display_value="Region Name">5181500f87b17810669e63d73cbb356e</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-10 08:20:07</sys_created_on>
+        <sys_id>dd81500f87b17810669e63d73cbb359a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>US West (Oregon)</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>question_choice_dd81500f87b17810669e63d73cbb359a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-10 08:20:07</sys_updated_on>
+        <text>US West (Oregon)</text>
+        <value>us-west-2</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=dd81500f87b17810669e63d73cbb359a"/>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>dd81500f87b17810669e63d73cbb359a</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-10 08:20:07</sys_created_on>
+        <sys_id>9181500f87b17810669e63d73cbb359c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-10 08:20:07</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>dd81500f87b17810669e63d73cbb359a</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-10 08:20:07</sys_created_on>
+        <sys_id>5981500f87b17810669e63d73cbb359b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-10 08:20:07</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>question_choice_dd81500f87b17810669e63d73cbb359a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><misc>0</misc><order>400</order><published_ref/><question display_value="Region Name">5181500f87b17810669e63d73cbb356e</question><rec_misc>0</rec_misc><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-08-10 08:20:07</sys_created_on><sys_id>dd81500f87b17810669e63d73cbb359a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>US West (Oregon)</sys_name><sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package><sys_policy/><sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope><sys_update_name>question_choice_dd81500f87b17810669e63d73cbb359a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-08-10 08:20:07</sys_updated_on><text>US West (Oregon)</text><value>us-west-2</value></question_choice><fx_price action="delete_multiple" query="id=dd81500f87b17810669e63d73cbb359a"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>misc</field><id>dd81500f87b17810669e63d73cbb359a</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2021-08-10 08:20:07</sys_created_on><sys_id>9181500f87b17810669e63d73cbb359c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-08-10 08:20:07</sys_updated_on><table>question_choice</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>rec_misc</field><id>dd81500f87b17810669e63d73cbb359a</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2021-08-10 08:20:07</sys_created_on><sys_id>5981500f87b17810669e63d73cbb359b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-08-10 08:20:07</sys_updated_on><table>question_choice</table><type>calculated</type></fx_price></record_update>]]></payload>
+        <payload_hash>-1204295826</payload_hash>
+        <record_name>US West (Oregon)</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-10 08:20:07</sys_created_on>
+        <sys_id>5181500f87b17810669e63d73cbb359e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b2f25bdce0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-10 08:20:07</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>5981500f4cb17810717b58ca9528d99d</update_guid>
+        <update_guid_history>5981500f4cb17810717b58ca9528d99d:-1204295826</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="US West (Oregon)">f8d2d44f87b17810669e63d73cbb3506</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-10 08:25:50</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>68f250f0fa3b41b6b3cb0db09e6d5d44</sys_id>
+        <sys_metadata>dd81500f87b17810669e63d73cbb359a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>US West (Oregon)</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent display_value="Slice Differentiator">5181500f87b17810669e63d73cbb356e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>question_choice_dd81500f87b17810669e63d73cbb359a</sys_update_name>
+        <sys_update_version display_value="question_choice_dd81500f87b17810669e63d73cbb359a">5181500f87b17810669e63d73cbb359e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-10 08:25:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

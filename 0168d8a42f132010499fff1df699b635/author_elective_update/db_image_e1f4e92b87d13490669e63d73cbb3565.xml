@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="DELETE">
+        <active>true</active>
+        <category/>
+        <format>png</format>
+        <height>120</height>
+        <image/>
+        <name>aws.png</name>
+        <size_bytes>1849</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-18 07:10:15</sys_created_on>
+        <sys_id>e1f4e92b87d13490669e63d73cbb3565</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>aws.png</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>db_image_e1f4e92b87d13490669e63d73cbb3565</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-18 07:10:15</sys_updated_on>
+        <thumbnail/>
+        <width>120</width>
+    </db_image>
+    <sys_attachment action="DELETE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>image</file_name>
+        <hash>33238151f898b7ae61d36b7142a9f412d228be6169c2ddbed6c806e9ace4d781</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>1849</size_bytes>
+        <size_compressed>1803</size_compressed>
+        <state>pending</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-18 07:10:15</sys_created_on>
+        <sys_id>a1f4e92b87d13490669e63d73cbb3568</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-18 07:10:15</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>e1f4e92b87d13490669e63d73cbb3565</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="DELETE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="a1f4e92b87d13490669e63d73cbb3568">a1f4e92b87d13490669e63d73cbb3568</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-18 07:10:15</sys_created_on>
+        <sys_id>e1f4e92b87d13490669e63d73cbb3568</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="DELETE">
+        <data>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</data>
+        <length>2392</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="a1f4e92b87d13490669e63d73cbb3568">a1f4e92b87d13490669e63d73cbb3568</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-18 07:10:15</sys_created_on>
+        <sys_id>65f4e92b87d13490669e63d73cbb3568</sys_id>
+    </sys_attachment_doc>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>db_image_e1f4e92b87d13490669e63d73cbb3565</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image"><db_image action="INSERT_OR_UPDATE"><active>true</active><category/><format>png</format><height>120</height><image/><name>aws.png</name><size_bytes>1849</size_bytes><sys_class_name>db_image</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-07-18 07:10:15</sys_created_on><sys_id>e1f4e92b87d13490669e63d73cbb3565</sys_id><sys_mod_count>1</sys_mod_count><sys_name>aws.png</sys_name><sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package><sys_policy/><sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope><sys_update_name>db_image_e1f4e92b87d13490669e63d73cbb3565</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-07-18 07:10:15</sys_updated_on><thumbnail/><width>120</width></db_image><sys_attachment action="INSERT_OR_UPDATE"><average_image_color/><chunk_size_bytes>700000</chunk_size_bytes><compressed>true</compressed><content_type>image/png</content_type><file_name>image</file_name><hash>33238151f898b7ae61d36b7142a9f412d228be6169c2ddbed6c806e9ace4d781</hash><image_height/><image_width/><size_bytes>1849</size_bytes><size_compressed>1803</size_compressed><state>pending</state><sys_created_by>admin</sys_created_by><sys_created_on>2021-07-18 07:10:15</sys_created_on><sys_id>a1f4e92b87d13490669e63d73cbb3568</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-07-18 07:10:15</sys_updated_on><table_name>ZZ_YYdb_image</table_name><table_sys_id>e1f4e92b87d13490669e63d73cbb3565</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="image" sys_id="a1f4e92b87d13490669e63d73cbb3568">a1f4e92b87d13490669e63d73cbb3568</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2021-07-18 07:10:15</sys_created_on><sys_id>e1f4e92b87d13490669e63d73cbb3568</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>2392</length><position>1</position><sys_attachment display_value="image" sys_id="a1f4e92b87d13490669e63d73cbb3568">a1f4e92b87d13490669e63d73cbb3568</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2021-07-18 07:10:15</sys_created_on><sys_id>65f4e92b87d13490669e63d73cbb3568</sys_id></sys_attachment_doc></record_update>]]></payload>
+        <payload_hash>1526867543</payload_hash>
+        <record_name>aws.png</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-18 07:10:15</sys_created_on>
+        <sys_id>e9f4e92b87d13490669e63d73cbb3570</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ab87382dc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-18 07:10:15</sys_updated_on>
+        <type>Images</type>
+        <update_guid>61f4e92b9dd13490df0f171036e5e570</update_guid>
+        <update_guid_history>61f4e92b9dd13490df0f171036e5e570:1526867543,a1f4e92bbad13490db2c9e2051e7396d:-40693623,65f4e92befd13490595979e8a65a1067:-1173587597</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="aws.png">5bb5592c8765f490669e63d73cbb35f2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-21 08:37:39</sys_created_on>
+        <sys_db_object display_value="" name="db_image">db_image</sys_db_object>
+        <sys_id>324b328fa31a4480953539a91fc26d59</sys_id>
+        <sys_metadata>e1f4e92b87d13490669e63d73cbb3565</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>aws.png</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>db_image_e1f4e92b87d13490669e63d73cbb3565</sys_update_name>
+        <sys_update_version display_value="db_image_e1f4e92b87d13490669e63d73cbb3565">e9f4e92b87d13490669e63d73cbb3570</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-21 08:37:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

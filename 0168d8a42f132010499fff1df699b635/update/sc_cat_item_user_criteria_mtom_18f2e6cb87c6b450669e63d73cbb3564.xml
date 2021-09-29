@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Ansible Playbook">c4f2e24b87c6b450669e63d73cbb35f2</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-23 05:11:11</sys_created_on>
+        <sys_id>18f2e6cb87c6b450669e63d73cbb3564</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of GCP GKE.Cloudify User</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_18f2e6cb87c6b450669e63d73cbb3564</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-23 05:11:11</sys_updated_on>
+        <user_criteria display_value="Cloudify User">d5a833eb87013850669e63d73cbb354a</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+</record_update>

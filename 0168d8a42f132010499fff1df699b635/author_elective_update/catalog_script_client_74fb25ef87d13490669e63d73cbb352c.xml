@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="DELETE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="AWS VM with VPC">ba2c556f87913490669e63d73cbb35b6</cat_item>
+        <cat_variable>IO:16a9e92f87d13490669e63d73cbb351a</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>FetchAWSVMManagerVersion</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	if (isLoading || newValue == '') {
+		return;
+	}
+	
+	try{
+		var ga = new GlideAjax('cloudify_ui_scripts');
+		ga.addParam('sysparm_name', 'getManagerVersion');
+		ga.addParam('config_name', newValue);
+		ga.getXML(VersionParse);		
+	}catch(error){}
+
+
+}
+
+function VersionParse(response) {
+	var answer = parseFloat(JSON.parse(response.responseXML.documentElement.getAttribute("answer")));
+	if(answer>=6){
+		g_form.setVisible('deployment_name', true);
+		g_form.setMandatory('deployment_name', true);
+		g_form.setMandatory('deployment_id', false);
+		g_form.setVisible('deployment_id', false);
+		
+	}else{
+		g_form.setMandatory('deployment_name', false);
+		g_form.setVisible('deployment_name', false);
+		g_form.setVisible('deployment_id', true);
+		g_form.setMandatory('deployment_id', true);
+		
+	}
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-18 07:41:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>74fb25ef87d13490669e63d73cbb352c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FetchAWSVMManagerVersion</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>catalog_script_client_74fb25ef87d13490669e63d73cbb352c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-18 07:41:20</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>catalog_script_client_74fb25ef87d13490669e63d73cbb352c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="catalog_script_client"&gt;&lt;catalog_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_catalog&gt;true&lt;/applies_catalog&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;false&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;false&lt;/applies_target_record&gt;&lt;applies_to&gt;item&lt;/applies_to&gt;&lt;cat_item display_value="AWS VM with VPC"&gt;ba2c556f87913490669e63d73cbb35b6&lt;/cat_item&gt;&lt;cat_variable&gt;IO:16a9e92f87d13490669e63d73cbb351a&lt;/cat_variable&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;FetchAWSVMManagerVersion&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	if (isLoading || newValue == '') {
+		return;
+	}
+	
+	try{
+		var ga = new GlideAjax('cloudify_ui_scripts');
+		ga.addParam('sysparm_name', 'getManagerVersion');
+		ga.addParam('config_name', newValue);
+		ga.getXML(VersionParse);		
+	}catch(error){}
+
+
+}
+
+function VersionParse(response) {
+	var answer = parseFloat(JSON.parse(response.responseXML.documentElement.getAttribute("answer")));
+	if(answer&gt;=6){
+		g_form.setVisible('deployment_name', true);
+		g_form.setMandatory('deployment_name', true);
+		g_form.setMandatory('deployment_id', false);
+		g_form.setVisible('deployment_id', false);
+		
+	}else{
+		g_form.setMandatory('deployment_name', false);
+		g_form.setVisible('deployment_name', false);
+		g_form.setVisible('deployment_id', true);
+		g_form.setMandatory('deployment_id', true);
+		
+	}
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;catalog_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-07-18 07:41:20&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;74fb25ef87d13490669e63d73cbb352c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;FetchAWSVMManagerVersion&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cloudify" source="x_607849_cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_script_client_74fb25ef87d13490669e63d73cbb352c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-07-18 07:41:20&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;variable_set/&gt;&lt;view/&gt;&lt;/catalog_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2050423893</payload_hash>
+        <record_name>FetchAWSVMManagerVersion</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-18 07:41:20</sys_created_on>
+        <sys_id>091ce9ef87d13490669e63d73cbb35c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ab88ff7f00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-18 07:41:20</sys_updated_on>
+        <type>Catalog Client Scripts</type>
+        <update_guid>011ce9eff7d13490a743c914297e15c6</update_guid>
+        <update_guid_history>011ce9eff7d13490a743c914297e15c6:-2050423893</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="FetchAWSVMManagerVersion">203c01a08765f490669e63d73cbb35a2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-21 07:55:58</sys_created_on>
+        <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
+        <sys_id>15221d6301c8452893e8bc0347c64240</sys_id>
+        <sys_metadata>74fb25ef87d13490669e63d73cbb352c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FetchAWSVMManagerVersion</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>catalog_script_client_74fb25ef87d13490669e63d73cbb352c</sys_update_name>
+        <sys_update_version display_value="catalog_script_client_74fb25ef87d13490669e63d73cbb352c">091ce9ef87d13490669e63d73cbb35c6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-21 07:55:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

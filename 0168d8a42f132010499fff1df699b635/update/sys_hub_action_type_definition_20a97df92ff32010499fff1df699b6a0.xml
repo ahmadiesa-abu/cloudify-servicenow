@@ -12,8 +12,8 @@
         <description/>
         <ih_action>false</ih_action>
         <internal_name>execute_workflow</internal_name>
-        <label_cache>[{"name":"{{action.deployment_id}}","label":"action➛Deployment ID","type":"action","ref":""},{"name":"{{action.workflow_id}}","label":"action➛Workflow ID","type":"action","ref":""},{"name":"{{action.allow_custom_parameters}}","label":"action➛Allow Custom Parameters","type":"action","ref":""},{"name":"{{action.parameters}}","label":"action➛Parameters","type":"action","ref":""},{"name":"{{action.parameters.Parameters}}","label":"action➛Parameters➛Parameters","type":"action","ref":""},{"name":"{{action.parameters.Parameters.parameter_name}}","label":"action➛Parameters➛Parameters➛parameter name","type":"action","ref":""},{"name":"{{action.parameters.Parameters.parameter_value}}","label":"action➛Parameters➛Parameters➛parameter value","type":"action","ref":""},{"name":"{{action.force}}","label":"action➛Force","type":"action","ref":""},{"name":"{{action.queue}}","label":"action➛Queue","type":"action","ref":""},{"name":"{{action.schedule}}","label":"action➛Schedule","type":"action","ref":""},{"name":"{{action.utc_offset}}","label":"action➛UTC Offset","type":"action","ref":""},{"name":"{{action.config_name}}","label":"action➛Config Name","type":"action","ref":""},{"name":"{{step[21146b4d-d77a-43e0-a9e5-1e6defc348a2].variable}}","label":"step➛Call Start Execution APIs➛variable","type":"step","ref":""},{"name":"{{step[21146b4d-d77a-43e0-a9e5-1e6defc348a2].result}}","label":"step➛Call Start Execution APIs➛result","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>032dd1668778f410669e63d73cbb355f</latest_snapshot>
+        <label_cache>[{"name":"{{action.deployment_id}}","label":"action➛Deployment ID","type":"action","ref":""},{"name":"{{action.workflow_id}}","label":"action➛Workflow ID","type":"action","ref":""},{"name":"{{action.allow_custom_parameters}}","label":"action➛Allow Custom Parameters","type":"action","ref":""},{"name":"{{action.parameters}}","label":"action➛Parameters","type":"action","ref":""},{"name":"{{action.parameters.Parameters}}","label":"action➛Parameters➛Parameters","type":"action","ref":""},{"name":"{{action.parameters.Parameters.parameter_name}}","label":"action➛Parameters➛Parameters➛parameter name","type":"action","ref":""},{"name":"{{action.parameters.Parameters.parameter_value}}","label":"action➛Parameters➛Parameters➛parameter value","type":"action","ref":""},{"name":"{{action.force}}","label":"action➛Force","type":"action","ref":""},{"name":"{{action.queue}}","label":"action➛Queue","type":"action","ref":""},{"name":"{{action.schedule}}","label":"action➛Schedule","type":"action","ref":""},{"name":"{{action.utc_offset}}","label":"action➛UTC Offset","type":"action","ref":""},{"name":"{{action.config_name}}","label":"action➛Config Name","type":"action","ref":""},{"name":"{{action.parameters.Parameters.parameter_type}}","label":"action➛Parameters➛Parameters➛parameter type","type":"action","ref":""},{"name":"{{step[21146b4d-d77a-43e0-a9e5-1e6defc348a2].variable}}","label":"step➛Call Start Execution APIs➛variable","type":"step","ref":""},{"name":"{{step[21146b4d-d77a-43e0-a9e5-1e6defc348a2].result}}","label":"step➛Call Start Execution APIs➛result","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>3b43896a87e93010669e63d73cbb3596</latest_snapshot>
         <master_snapshot>181c19bf8714b010669e63d73cbb3524</master_snapshot>
         <name>Start Execution</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>20a97df92ff32010499fff1df699b6a0</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>94</sys_mod_count>
         <sys_name>Start Execution</sys_name>
         <sys_overrides/>
         <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_20a97df92ff32010499fff1df699b6a0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-20 07:30:54</sys_updated_on>
+        <sys_updated_on>2021-07-27 12:24:59</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -70,10 +70,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-29 08:46:52</sys_created_on>
         <sys_id>85eb75b12f372010499fff1df699b606</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-20 07:30:50</sys_updated_on>
+        <sys_updated_on>2021-07-27 12:24:49</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=85eb75b12f372010499fff1df699b606"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -98,17 +98,41 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-04-29 08:46:53</sys_created_on>
         <sys_id>19eb75b12f372010499fff1df699b652</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-20 07:30:50</sys_updated_on>
+        <sys_updated_on>2021-07-27 12:24:49</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   var cfy_integartion = new cloudify_integration();
   // convert inputs array object to dict
   var parameters = {};
   for (var i = 0; i &lt; inputs.parameters.length; i++) {
     var variable = inputs.parameters[i];
-    if (variable.parameter_name!='' &amp;&amp; variable.parameter_value!='')
-    	parameters[variable.parameter_name] = variable.parameter_value;
+    if (variable.parameter_name!='' &amp;&amp; variable.parameter_value!=''){
+      switch(variable.parameter_type){
+        case 'integer':
+          parameters[variable.parameter_name] = parseInt(variable.parameter_value);
+          break;
+        case 'float':
+          parameters[variable.parameter_name] = parseFloat(variable.parameter_value);
+          break;
+        case 'boolean':
+          parameters[variable.parameter_name] = variable.parameter_value.toLowerCase()==='true';
+          break;
+        case 'list':
+          var arrayVal = [];
+          var jsonVal = JSON.parse(variable.parameter_value);
+          for( var j = 0 ;j&lt; jsonVal.length;j++)
+            arrayVal.push(jsonVal[j]);
+          parameters[variable.parameter_name] = arrayVal;
+          break;
+        case 'dict':
+          parameters[variable.parameter_name] = JSON.parse(variable.parameter_value);
+          break;
+        default:
+          parameters[variable.parameter_name] = variable.parameter_value;
+          break;
+      }
+    }
   }
   // format YYYYMMDDHHMM+HHMM
   var schedule = '';
@@ -1815,6 +1839,41 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=20a97df92ff32010499fff1df699b6a0^sys_idNOT IN169ff46687e93010669e63d73cbb35b9,5e9ff46687e93010669e63d73cbb35b9"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>20a97df92ff32010499fff1df699b6a0</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>47b102ee-5f68-41a8-9f7b-fe4032c59c96</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-27 12:08:46</sys_created_on>
+        <sys_id>169ff46687e93010669e63d73cbb35b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-27 12:08:46</sys_updated_on>
+        <transform_compositions>[{"id":"9236702c0f333300f4166fe7c4767e19","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"key","label":"Key","order":0,"attributes":{},"value":"id","type":"string","defaultValue":"","typeLabel":null,"mandatory":false,"choices":[]},{"id":null,"name":"default","label":"Default","order":1,"attributes":{},"value":"","type":"string","defaultValue":"","typeLabel":null,"mandatory":false,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="value_map">8575f8e80f333300f4166fe7c4767e4d</transform_definition_id>
+        <ui_id>81aa3a63-84d9-4af9-8cee-d6b808c4bb0e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>20a97df92ff32010499fff1df699b6a0</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{49ca0c8b-0a0b-4332-973f-08f38f4c0d8f.result}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-27 12:08:46</sys_created_on>
+        <sys_id>5e9ff46687e93010669e63d73cbb35b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-27 12:08:46</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>47b102ee-5f68-41a8-9f7b-fe4032c59c96</ui_id>
+    </sys_hub_pill_compound>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_20a97df92ff32010499fff1df699b6a0^sys_idNOT IN28c451722f372010499fff1df699b698,28dab5712f372010499fff1df699b615,64dab5712f372010499fff1df699b60f,68da75712f372010499fff1df699b6e3,8e2d91668778f410669e63d73cbb350a,a0da71712f372010499fff1df699b6d5,a0dab5712f372010499fff1df699b609,e8da75712f372010499fff1df699b6e9"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>schedule</element>
@@ -2028,17 +2087,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Start Execution">20a97df92ff32010499fff1df699b6a0</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"c91c59bf8714b010669e63d73cbb3511","name":"plan"}}</plan>
-        <snapshot>032dd1668778f410669e63d73cbb355f</snapshot>
+        <snapshot>3b43896a87e93010669e63d73cbb3596</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-30 08:07:08</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c91c59bf8714b010669e63d73cbb3511</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-20 07:30:55</sys_updated_on>
+        <sys_updated_on>2021-07-27 12:25:00</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2051,7 +2110,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>start_execution</internal_name>
-        <label_cache>[{"name":"{{action.deployment_id}}","label":"action➛Deployment ID","type":"action","ref":""},{"name":"{{action.workflow_id}}","label":"action➛Workflow ID","type":"action","ref":""},{"name":"{{action.allow_custom_parameters}}","label":"action➛Allow Custom Parameters","type":"action","ref":""},{"name":"{{action.parameters}}","label":"action➛Parameters","type":"action","ref":""},{"name":"{{action.parameters.Parameters}}","label":"action➛Parameters➛Parameters","type":"action","ref":""},{"name":"{{action.parameters.Parameters.parameter_name}}","label":"action➛Parameters➛Parameters➛parameter name","type":"action","ref":""},{"name":"{{action.parameters.Parameters.parameter_value}}","label":"action➛Parameters➛Parameters➛parameter value","type":"action","ref":""},{"name":"{{action.force}}","label":"action➛Force","type":"action","ref":""},{"name":"{{action.queue}}","label":"action➛Queue","type":"action","ref":""},{"name":"{{action.schedule}}","label":"action➛Schedule","type":"action","ref":""},{"name":"{{action.utc_offset}}","label":"action➛UTC Offset","type":"action","ref":""},{"name":"{{action.config_name}}","label":"action➛Config Name","type":"action","ref":""},{"name":"{{step[21146b4d-d77a-43e0-a9e5-1e6defc348a2].variable}}","label":"step➛Call Start Execution APIs➛variable","type":"step","ref":""},{"name":"{{step[21146b4d-d77a-43e0-a9e5-1e6defc348a2].result}}","label":"step➛Call Start Execution APIs➛result","type":"step","ref":""}]</label_cache>
+        <label_cache>[{"name":"{{action.deployment_id}}","label":"action➛Deployment ID","type":"action","ref":""},{"name":"{{action.workflow_id}}","label":"action➛Workflow ID","type":"action","ref":""},{"name":"{{action.allow_custom_parameters}}","label":"action➛Allow Custom Parameters","type":"action","ref":""},{"name":"{{action.parameters}}","label":"action➛Parameters","type":"action","ref":""},{"name":"{{action.parameters.Parameters}}","label":"action➛Parameters➛Parameters","type":"action","ref":""},{"name":"{{action.parameters.Parameters.parameter_name}}","label":"action➛Parameters➛Parameters➛parameter name","type":"action","ref":""},{"name":"{{action.parameters.Parameters.parameter_value}}","label":"action➛Parameters➛Parameters➛parameter value","type":"action","ref":""},{"name":"{{action.force}}","label":"action➛Force","type":"action","ref":""},{"name":"{{action.queue}}","label":"action➛Queue","type":"action","ref":""},{"name":"{{action.schedule}}","label":"action➛Schedule","type":"action","ref":""},{"name":"{{action.utc_offset}}","label":"action➛UTC Offset","type":"action","ref":""},{"name":"{{action.config_name}}","label":"action➛Config Name","type":"action","ref":""},{"name":"{{action.parameters.Parameters.parameter_type}}","label":"action➛Parameters➛Parameters➛parameter type","type":"action","ref":""},{"name":"{{step[21146b4d-d77a-43e0-a9e5-1e6defc348a2].variable}}","label":"step➛Call Start Execution APIs➛variable","type":"step","ref":""},{"name":"{{step[21146b4d-d77a-43e0-a9e5-1e6defc348a2].result}}","label":"step➛Call Start Execution APIs➛result","type":"step","ref":""}]</label_cache>
         <master>true</master>
         <name>Start Execution</name>
         <natlang/>
@@ -2064,7 +2123,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>181c19bf8714b010669e63d73cbb3524</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2072,7 +2131,7 @@
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-20 07:30:54</sys_updated_on>
+        <sys_updated_on>2021-07-27 12:24:58</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -2108,10 +2167,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-30 08:07:06</sys_created_on>
         <sys_id>601c19bf8714b010669e63d73cbb355b</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-20 07:30:54</sys_updated_on>
+        <sys_updated_on>2021-07-27 12:24:59</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=601c19bf8714b010669e63d73cbb355b"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2178,17 +2237,41 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-30 08:07:07</sys_created_on>
         <sys_id>b01c19bf8714b010669e63d73cbb35bb</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-20 07:30:54</sys_updated_on>
+        <sys_updated_on>2021-07-27 12:24:59</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   var cfy_integartion = new cloudify_integration();
   // convert inputs array object to dict
   var parameters = {};
   for (var i = 0; i &lt; inputs.parameters.length; i++) {
     var variable = inputs.parameters[i];
-    if (variable.parameter_name!='' &amp;&amp; variable.parameter_value!='')
-    	parameters[variable.parameter_name] = variable.parameter_value;
+    if (variable.parameter_name!='' &amp;&amp; variable.parameter_value!=''){
+      switch(variable.parameter_type){
+        case 'integer':
+          parameters[variable.parameter_name] = parseInt(variable.parameter_value);
+          break;
+        case 'float':
+          parameters[variable.parameter_name] = parseFloat(variable.parameter_value);
+          break;
+        case 'boolean':
+          parameters[variable.parameter_name] = variable.parameter_value.toLowerCase()==='true';
+          break;
+        case 'list':
+          var arrayVal = [];
+          var jsonVal = JSON.parse(variable.parameter_value);
+          for( var j = 0 ;j&lt; jsonVal.length;j++)
+            arrayVal.push(jsonVal[j]);
+          parameters[variable.parameter_name] = arrayVal;
+          break;
+        case 'dict':
+          parameters[variable.parameter_name] = JSON.parse(variable.parameter_value);
+          break;
+        default:
+          parameters[variable.parameter_name] = variable.parameter_value;
+          break;
+      }
+    }
   }
   // format YYYYMMDDHHMM+HHMM
   var schedule = '';
@@ -3853,6 +3936,41 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=181c19bf8714b010669e63d73cbb3524^sys_idNOT IN7743896a87e93010669e63d73cbb3596,bf43896a87e93010669e63d73cbb3595"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>181c19bf8714b010669e63d73cbb3524</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{49ca0c8b-0a0b-4332-973f-08f38f4c0d8f.result}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-27 12:24:59</sys_created_on>
+        <sys_id>7743896a87e93010669e63d73cbb3596</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-27 12:24:59</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>47b102ee-5f68-41a8-9f7b-fe4032c59c96</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>181c19bf8714b010669e63d73cbb3524</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>47b102ee-5f68-41a8-9f7b-fe4032c59c96</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-27 12:24:59</sys_created_on>
+        <sys_id>bf43896a87e93010669e63d73cbb3595</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-27 12:24:59</sys_updated_on>
+        <transform_compositions>[{"id":"9236702c0f333300f4166fe7c4767e19","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"key","label":"Key","order":0,"attributes":{},"value":"id","type":"string","defaultValue":"","typeLabel":null,"mandatory":false,"choices":[]},{"id":null,"name":"default","label":"Default","order":1,"attributes":{},"value":"","type":"string","defaultValue":"","typeLabel":null,"mandatory":false,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="value_map">8575f8e80f333300f4166fe7c4767e4d</transform_definition_id>
+        <ui_id>81aa3a63-84d9-4af9-8cee-d6b808c4bb0e</ui_id>
+    </sys_hub_pill_compound>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_181c19bf8714b010669e63d73cbb3524^sys_idNOT IN032dd1668778f410669e63d73cbb3520,281c19bf8714b010669e63d73cbb3545,281c19bf8714b010669e63d73cbb354b,281c19bf8714b010669e63d73cbb3551,281c19bf8714b010669e63d73cbb3557,2c1c19bf8714b010669e63d73cbb3532,a01c19bf8714b010669e63d73cbb3539,a01c19bf8714b010669e63d73cbb353f"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>config_name</element>

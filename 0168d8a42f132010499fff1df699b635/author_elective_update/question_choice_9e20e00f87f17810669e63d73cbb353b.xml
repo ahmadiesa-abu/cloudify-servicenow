@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>3</order>
+        <published_ref/>
+        <question display_value="Slice Location">de20a00f87f17810669e63d73cbb35ef</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-10 09:24:05</sys_created_on>
+        <sys_id>9e20e00f87f17810669e63d73cbb353b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AWS-Edge-Location-3</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>question_choice_9e20e00f87f17810669e63d73cbb353b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-10 09:24:05</sys_updated_on>
+        <text>AWS-Edge-Location-3</text>
+        <value>AWS-Edge-Location-3</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=9e20e00f87f17810669e63d73cbb353b"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>question_choice_9e20e00f87f17810669e63d73cbb353b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>3</order><published_ref/><question display_value="Slice Location">de20a00f87f17810669e63d73cbb35ef</question><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-08-10 09:24:05</sys_created_on><sys_id>9e20e00f87f17810669e63d73cbb353b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>AWS-Edge-Location-3</sys_name><sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package><sys_policy/><sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope><sys_update_name>question_choice_9e20e00f87f17810669e63d73cbb353b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-08-10 09:24:05</sys_updated_on><text>AWS-Edge-Location-3</text><value>AWS-Edge-Location-3</value></question_choice><fx_price action="delete_multiple" query="id=9e20e00f87f17810669e63d73cbb353b"/></record_update>]]></payload>
+        <payload_hash>-1360734872</payload_hash>
+        <record_name>AWS-Edge-Location-3</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-10 09:24:05</sys_created_on>
+        <sys_id>9a20e00f87f17810669e63d73cbb353d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b2f604ed60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-10 09:24:05</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>9220e00fd6f178101dd06b598357c03d</update_guid>
+        <update_guid_history>9220e00fd6f178101dd06b598357c03d:-1360734872</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="AWS-Edge-Location-3">eae0604f87f17810669e63d73cbb357c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-10 09:27:23</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>1aea1bc1fdca4fc08a4ffd4be54259e4</sys_id>
+        <sys_metadata>9e20e00f87f17810669e63d73cbb353b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AWS-Edge-Location-3</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>question_choice_9e20e00f87f17810669e63d73cbb353b</sys_update_name>
+        <sys_update_version display_value="question_choice_9e20e00f87f17810669e63d73cbb353b">9a20e00f87f17810669e63d73cbb353d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-10 09:27:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

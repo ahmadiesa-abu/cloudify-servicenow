@@ -46,12 +46,39 @@ cloudify_ui_scripts.prototype = Object.extendsObject(global.AbstractAjaxProcesso
 		}
 		return JSON.stringify(inputs);
 	},
+	getDeploymentInputs: function(){
+		// for update deployment
+		var inputs = {};
+		try{
+			var deployment_id = this.getParameter('deployment_id');
+			var config_name = this.getParameter('config_name');
+			var cfy_integartion = new cloudify_integration();
+			inputs = cfy_integartion.getDeploymentInputs(config_name, deployment_id);
+		}catch(error){
+			inputs = {};
+		}
+		return JSON.stringify(inputs);
+	},
 	getDeployments: function(){
 		var deps = [];
 		try{
 			var user_id = this.getParameter('user_id');
 			var config_name = this.getParameter('config_name');
-			var gr = new GlideRecord('sys_user');
+			// from deployments table
+			var deployments = new GlideRecordSecure("x_607849_cloudify_deployments");
+			deployments.addQuery("requester", user_id);
+			deployments.addQuery("config_name", config_name);
+			deployments.query();
+
+			while (deployments.next()) {
+				var dep = {'id': String(deployments.deployment_id)};
+				if (deployments.deployment_name!='')
+					dep['display_name'] =  String(deployments.deployment_name);
+				deps.push(dep);
+			}
+			
+			// from integration
+			/*var gr = new GlideRecord('sys_user');
 			gr.get(user_id);
 			var lastIndex = gr.email.lastIndexOf('@');
 			var creator_email = gr.email.substring(0, lastIndex) + '-at-' + gr.email.substring(lastIndex + 1);
@@ -70,7 +97,7 @@ cloudify_ui_scripts.prototype = Object.extendsObject(global.AbstractAjaxProcesso
 				}
 				if(fromSn && sameCrEmail)
 					deps.push(deployments[key]);
-			});
+			});*/
 		}catch(error){
 			deps = [];
 		}
@@ -107,19 +134,33 @@ cloudify_ui_scripts.prototype = Object.extendsObject(global.AbstractAjaxProcesso
 		}
 		return JSON.stringify(params);		
 	},
+	getManagerVersion: function(){
+		var manager_version = 0;
+		try{
+			var config_name = this.getParameter('config_name');
+			var cfy_integartion = new cloudify_integration();
+			manager_version = cfy_integartion.getManagerVersion(config_name);
+		}catch(error){
+			manager_version = 0;
+		}
+		return JSON.stringify(manager_version);
+	},
+	generateUniqueId: function(){
+		return JSON.stringify(gs.generateGUID());
+	},
     type: 'cloudify_ui_scripts'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-03 14:45:09</sys_created_on>
         <sys_id>d9b37b8f87b76010669e63d73cbb351c</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>49</sys_mod_count>
         <sys_name>cloudify_ui_scripts</sys_name>
         <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
         <sys_update_name>sys_script_include_d9b37b8f87b76010669e63d73cbb351c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-20 06:43:11</sys_updated_on>
+        <sys_updated_on>2021-08-17 09:51:08</sys_updated_on>
     </sys_script_include>
 </record_update>

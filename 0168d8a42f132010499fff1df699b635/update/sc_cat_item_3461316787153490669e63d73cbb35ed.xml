@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item">
+    <sc_cat_item action="INSERT_OR_UPDATE">
+        <access_type>restricted</access_type>
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <category display_value="Certified Environments">9d44572b87b5f810669e63d73cbb35c8</category>
+        <checked_out/>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan/>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p style="text-align: left;">          </p>
+<p style="text-align: left;"><span style="font-size: 12pt;">AWS EKS provisioning</span></p>]]></description>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow display_value="AWS-EKS">3916eae387d53490669e63d73cbb3524</flow_designer_flow>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon>01e985ec87e1f490669e63d73cbb3507</icon>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>AWS EKS</name>
+        <no_attachment_v2>true</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>true</no_cart_v2>
+        <no_delivery_time_v2>true</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>true</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>true</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
+        <picture>d30a05ec8725f490669e63d73cbb35ed</picture>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=3461316787153490669e63d73cbb35ed&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <published_ref/>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <request_method>submit</request_method>
+        <roles/>
+        <sc_catalogs>879b87242faf6010499fff1df699b6d0</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template/>
+        <short_description>Create AWS EKS</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <state/>
+        <sys_class_name>sc_cat_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-18 08:04:32</sys_created_on>
+        <sys_id>3461316787153490669e63d73cbb35ed</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>AWS EKS</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sc_cat_item_3461316787153490669e63d73cbb35ed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-12 11:58:19</sys_updated_on>
+        <template/>
+        <template_manager_roles/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=3461316787153490669e63d73cbb35ed"/>
+    <fx_price action="delete_multiple" query="id=3461316787153490669e63d73cbb35ed"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>price</field>
+        <id>3461316787153490669e63d73cbb35ed</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-18 08:04:32</sys_created_on>
+        <sys_id>7861316787153490669e63d73cbb35ee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-18 08:04:34</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>recurring_price</field>
+        <id>3461316787153490669e63d73cbb35ed</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-18 08:04:32</sys_created_on>
+        <sys_id>b8617d6787153490669e63d73cbb3578</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-18 08:04:34</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#3366</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>picture</file_name>
+        <hash>1630b0c431be0f6bb8aca696a236ca03c36c3424729f192a1afb2d6f7cd13bd3</hash>
+        <image_height>197</image_height>
+        <image_width>200</image_width>
+        <size_bytes>4999</size_bytes>
+        <size_compressed>4987</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-21 07:46:36</sys_created_on>
+        <sys_id>d30a05ec8725f490669e63d73cbb35ed</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-21 07:46:36</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item</table_name>
+        <table_sys_id>3461316787153490669e63d73cbb35ed</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="picture" sys_id="d30a05ec8725f490669e63d73cbb35ed">d30a05ec8725f490669e63d73cbb35ed</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-21 07:46:36</sys_created_on>
+        <sys_id>170a05ec8725f490669e63d73cbb35ed</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>6636</length>
+        <position>1</position>
+        <sys_attachment display_value="picture" sys_id="d30a05ec8725f490669e63d73cbb35ed">d30a05ec8725f490669e63d73cbb35ed</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-21 07:46:36</sys_created_on>
+        <sys_id>970a05ec8725f490669e63d73cbb35ed</sys_id>
+    </sys_attachment_doc>
+</record_update>

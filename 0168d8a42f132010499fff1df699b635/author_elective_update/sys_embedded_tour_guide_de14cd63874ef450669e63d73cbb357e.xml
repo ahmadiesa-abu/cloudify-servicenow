@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_guide">
+    <sys_embedded_tour_guide action="DELETE">
+        <active>true</active>
+        <additional_parameters/>
+        <autolaunch_order>0</autolaunch_order>
+        <context>x_607849_cloudify_configs</context>
+        <description/>
+        <has_concl>false</has_concl>
+        <has_intro>true</has_intro>
+        <name>Cloudify Setup</name>
+        <options/>
+        <roles/>
+        <sp_page/>
+        <sp_portal/>
+        <status>published</status>
+        <sys_class_name>sys_embedded_tour_guide</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-24 11:33:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>de14cd63874ef450669e63d73cbb357e</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Cloudify Setup</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>sys_embedded_tour_guide_de14cd63874ef450669e63d73cbb357e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-24 14:22:19</sys_updated_on>
+        <tour_id>TOUR0000002</tour_id>
+        <type>platform</type>
+    </sys_embedded_tour_guide>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>sys_embedded_tour_guide_de14cd63874ef450669e63d73cbb357e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_guide"><sys_embedded_tour_guide action="INSERT_OR_UPDATE"><active>true</active><additional_parameters/><autolaunch_order>0</autolaunch_order><context>x_607849_cloudify_configs</context><description/><has_concl>false</has_concl><has_intro>true</has_intro><name>Cloudify Setup</name><options/><roles/><sp_page/><sp_portal/><status>published</status><sys_class_name>sys_embedded_tour_guide</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-08-24 11:33:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>de14cd63874ef450669e63d73cbb357e</sys_id><sys_mod_count>8</sys_mod_count><sys_name>Cloudify Setup</sys_name><sys_overrides/><sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package><sys_policy/><sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope><sys_update_name>sys_embedded_tour_guide_de14cd63874ef450669e63d73cbb357e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-08-24 14:22:19</sys_updated_on><tour_id>TOUR0000002</tour_id><type>platform</type></sys_embedded_tour_guide></record_update>]]></payload>
+        <payload_hash>-977304810</payload_hash>
+        <record_name>Cloudify Setup</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-24 14:22:19</sys_created_on>
+        <sys_id>57aa21e387cef450669e63d73cbb35ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b788a5e350000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-24 14:22:19</sys_updated_on>
+        <type>Guided Tour</type>
+        <update_guid>dbaa21e3fecef45020ce839c53bf53ec</update_guid>
+        <update_guid_history>dbaa21e3fecef45020ce839c53bf53ec:-977304810,76994de77c4ef45082eb172a5a481820:849336899,ab7949e7854ef450c2f33974939be84c:-977304810,924949e76d4ef450562d073ea047a6bc:141343797,882909e70f4ef450d1672df6bfb1cccb:-66770256,021985e7454ef450da4c504b415e5c7a:561023087,23358da33d4ef450838717f6d35adb9c:-977304810,a654c1632e4ef45029f4d7d57f515b5f:849336899,5214cd63e04ef450b7be3dfe2190a882:523747770</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-24 14:23:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_embedded_tour_guide">sys_embedded_tour_guide</sys_db_object>
+        <sys_id>5ff9962ccafd45b3bc7bc62337dda711</sys_id>
+        <sys_metadata>de14cd63874ef450669e63d73cbb357e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cloudify Setup</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>sys_embedded_tour_guide_de14cd63874ef450669e63d73cbb357e</sys_update_name>
+        <sys_update_version display_value="sys_embedded_tour_guide_de14cd63874ef450669e63d73cbb357e">57aa21e387cef450669e63d73cbb35ed</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-24 14:23:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

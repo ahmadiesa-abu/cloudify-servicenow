@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="DELETE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Create Environment">26b478d62f232010499fff1df699b62b</cat_item>
+        <cat_variable/>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>CreateInputsValidate</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+	if (!g_form.isVisible("deployment_id")){
+		try{
+		var ga = new GlideAjax('cloudify_ui_scripts');
+			ga.addParam('sysparm_name', 'generateUniqueId');
+			ga.getXML(InputsParse);		
+		}catch(error){}
+	}
+}
+function InputsParse(response) {
+	var answer = JSON.parse(response.responseXML.documentElement.getAttribute("answer"));
+	g_form.setValue("deployment_id", answer);
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-13 08:34:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fe7644468791fc50669e63d73cbb3505</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>CreateInputsValidate</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>catalog_script_client_fe7644468791fc50669e63d73cbb3505</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-13 09:04:20</sys_updated_on>
+        <table/>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>catalog_script_client_fe7644468791fc50669e63d73cbb3505</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="catalog_script_client"&gt;&lt;catalog_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_catalog&gt;true&lt;/applies_catalog&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;false&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;false&lt;/applies_target_record&gt;&lt;applies_to&gt;item&lt;/applies_to&gt;&lt;cat_item display_value="Create Environment"&gt;26b478d62f232010499fff1df699b62b&lt;/cat_item&gt;&lt;cat_variable/&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;CreateInputsValidate&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+	if (!g_form.isVisible("deployment_id")){
+		try{
+		var ga = new GlideAjax('cloudify_ui_scripts');
+			ga.addParam('sysparm_name', 'generateUniqueId');
+			ga.getXML(InputsParse);		
+		}catch(error){}
+	}
+}
+function InputsParse(response) {
+	var answer = JSON.parse(response.responseXML.documentElement.getAttribute("answer"));
+	g_form.setValue("deployment_id", answer);
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;catalog_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-07-13 08:34:17&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;fe7644468791fc50669e63d73cbb3505&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;CreateInputsValidate&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cloudify" source="x_607849_cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cloudify"&gt;0168d8a42f132010499fff1df699b635&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_script_client_fe7644468791fc50669e63d73cbb3505&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-07-13 09:04:20&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;variable_set/&gt;&lt;view/&gt;&lt;/catalog_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1896701887</payload_hash>
+        <record_name>CreateInputsValidate</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-13 09:04:20</sys_created_on>
+        <sys_id>3f1f8c4e8791fc50669e63d73cbb35d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a9f1c26e70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-13 09:04:20</sys_updated_on>
+        <type>Catalog Client Scripts</type>
+        <update_guid>731f8c4e2891fc503c0b5a970b2d18d1</update_guid>
+        <update_guid_history>731f8c4e2891fc503c0b5a970b2d18d1:1896701887,3bdd484e2591fc502068b204ec7b0c28:-241607302,dc0d840ea991fc50b122af0724c835c0:1532962498,e29a884a3d91fc50d32a696a795a851d:1789324010,44488c86df91fc50972fa75d89148a42:94299274</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="CreateInputsValidate">832f4c4e8791fc50669e63d73cbb35da</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-13 09:04:33</sys_created_on>
+        <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
+        <sys_id>00324b57654c470d80045de3024b1601</sys_id>
+        <sys_metadata>fe7644468791fc50669e63d73cbb3505</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CreateInputsValidate</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>catalog_script_client_fe7644468791fc50669e63d73cbb3505</sys_update_name>
+        <sys_update_version display_value="catalog_script_client_fe7644468791fc50669e63d73cbb3505">3f1f8c4e8791fc50669e63d73cbb35d1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-13 09:04:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

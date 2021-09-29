@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Deployments" max_length="40" name="x_607849_cloudify_deployments" sizeclass="27" type="collection">
+        <element label="Config Name" max_length="255" name="config_name" type="string_full_utf8"/>
+        <element label="Deployment ID" max_length="255" name="deployment_id" type="string_full_utf8"/>
+        <element label="Deployment Name" max_length="255" name="deployment_name" type="string_full_utf8"/>
+        <element label="Requester" max_length="32" name="requester" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="requester"/>
+        </index>
+    </element>
+</database>

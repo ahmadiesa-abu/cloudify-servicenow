@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Region">98f2e6cb87c6b450669e63d73cbb3528</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-23 05:11:10</sys_created_on>
+        <sys_id>10f2e6cb87c6b450669e63d73cbb3548</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>us-central1</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_update_name>question_choice_10f2e6cb87c6b450669e63d73cbb3548</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-23 05:11:10</sys_updated_on>
+        <text>us-central1</text>
+        <value>us-central1</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=10f2e6cb87c6b450669e63d73cbb3548"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cloudify">0168d8a42f132010499fff1df699b635</application>
+        <file_path/>
+        <instance_id>5f40e87ddb470cd48aea21c40596190b</instance_id>
+        <instance_name>dev101290</instance_name>
+        <name>question_choice_10f2e6cb87c6b450669e63d73cbb3548</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>100</order><published_ref/><question display_value="Region">98f2e6cb87c6b450669e63d73cbb3528</question><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-08-23 05:11:10</sys_created_on><sys_id>10f2e6cb87c6b450669e63d73cbb3548</sys_id><sys_mod_count>0</sys_mod_count><sys_name>us-central1</sys_name><sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package><sys_policy/><sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope><sys_update_name>question_choice_10f2e6cb87c6b450669e63d73cbb3548</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-08-23 05:11:10</sys_updated_on><text>us-central1</text><value>us-central1</value></question_choice><fx_price action="delete_multiple" query="id=10f2e6cb87c6b450669e63d73cbb3548"/></record_update>]]></payload>
+        <payload_hash>-1636076036</payload_hash>
+        <record_name>us-central1</record_name>
+        <reverted_from/>
+        <source>55ded3642fef6010499fff1df699b6aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-23 05:11:10</sys_created_on>
+        <sys_id>5cf2e6cb87c6b450669e63d73cbb3549</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b716b6d330000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-23 05:11:10</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>54f2e6cbecc6b450890b50bc327c7749</update_guid>
+        <update_guid_history>54f2e6cbecc6b450890b50bc327c7749:-1636076036</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="us-central1">4dc3260f87c6b450669e63d73cbb3586</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-23 05:14:47</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>8784b553571f48deb6f48e68669de544</sys_id>
+        <sys_metadata>10f2e6cb87c6b450669e63d73cbb3548</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>us-central1</sys_name>
+        <sys_package display_value="Cloudify" source="x_607849_cloudify">0168d8a42f132010499fff1df699b635</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cloudify">0168d8a42f132010499fff1df699b635</sys_scope>
+        <sys_scope_delete display_value="">d6f695b41d7c45cbb9a339e1dac84391</sys_scope_delete>
+        <sys_update_name>question_choice_10f2e6cb87c6b450669e63d73cbb3548</sys_update_name>
+        <sys_update_version display_value="question_choice_10f2e6cb87c6b450669e63d73cbb3548">5cf2e6cb87c6b450669e63d73cbb3549</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-23 05:14:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
